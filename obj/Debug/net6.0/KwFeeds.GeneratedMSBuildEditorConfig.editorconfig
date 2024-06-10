@@ -1,0 +1,215 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DancingGoat
+build_property.RootNamespace = DancingGoat
+build_property.ProjectDir = /Users/emmy/projects/bles/KwFeeds/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/emmy/projects/bles/KwFeeds
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/FormSections/TitledSection/_TitledSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb3JtU2VjdGlvbnMvVGl0bGVkU2VjdGlvbi9fVGl0bGVkU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/InlineEditors/ColorPickerEditor/_ColorPickerEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9JbmxpbmVFZGl0b3JzL0NvbG9yUGlja2VyRWRpdG9yL19Db2xvclBpY2tlckVkaXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/InlineEditors/TextEditor/_TextEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9JbmxpbmVFZGl0b3JzL1RleHRFZGl0b3IvX1RleHRFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Sections/ThreeColumnSection/_DancingGoat_ThreeColumnSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZWN0aW9ucy9UaHJlZUNvbHVtblNlY3Rpb24vX0RhbmNpbmdHb2F0X1RocmVlQ29sdW1uU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Sections/_DancingGoat_Section_25_75.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZWN0aW9ucy9fRGFuY2luZ0dvYXRfU2VjdGlvbl8yNV83NS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Sections/_DancingGoat_Section_75_25.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZWN0aW9ucy9fRGFuY2luZ0dvYXRfU2VjdGlvbl83NV8yNS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Sections/_DancingGoat_SingleColumnSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZWN0aW9ucy9fRGFuY2luZ0dvYXRfU2luZ2xlQ29sdW1uU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Sections/_DancingGoat_TwoColumnSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZWN0aW9ucy9fRGFuY2luZ0dvYXRfVHdvQ29sdW1uU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/Articles/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9BcnRpY2xlcy9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/Banner/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9CYW5uZXIvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/Cafe/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9DYWZlL0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/CafeCardSection/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9DYWZlQ2FyZFNlY3Rpb24vRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/CompanyAddress/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9Db21wYW55QWRkcmVzcy9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/NavigationMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9OYXZpZ2F0aW9uTWVudS9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/SocialLinks/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9Tb2NpYWxMaW5rcy9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/ViewComponents/TrackingConsent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9WaWV3Q29tcG9uZW50cy9UcmFja2luZ0NvbnNlbnQvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Widgets/CardWidget/_CardWidget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9XaWRnZXRzL0NhcmRXaWRnZXQvX0NhcmRXaWRnZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Widgets/CTAButton/_DancingGoat_General_CTAButtonWidget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9XaWRnZXRzL0NUQUJ1dHRvbi9fRGFuY2luZ0dvYXRfR2VuZXJhbF9DVEFCdXR0b25XaWRnZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Widgets/HeroImageWidget/_HeroImageWidget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9XaWRnZXRzL0hlcm9JbWFnZVdpZGdldC9fSGVyb0ltYWdlV2lkZ2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Widgets/ProductCardWidget/_ProductCardWidget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9XaWRnZXRzL1Byb2R1Y3RDYXJkV2lkZ2V0L19Qcm9kdWN0Q2FyZFdpZGdldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/Widgets/TestimonialWidget/_DancingGoat_LandingPage_TestimonialWidget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9XaWRnZXRzL1Rlc3RpbW9uaWFsV2lkZ2V0L19EYW5jaW5nR29hdF9MYW5kaW5nUGFnZV9UZXN0aW1vbmlhbFdpZGdldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Components/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/PageTemplates/Article/_Article.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZVRlbXBsYXRlcy9BcnRpY2xlL19BcnRpY2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/PageTemplates/Article/_ArticleWithSidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZVRlbXBsYXRlcy9BcnRpY2xlL19BcnRpY2xlV2l0aFNpZGViYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/PageTemplates/LandingPage/_DancingGoat_LandingPageSingleColumn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZVRlbXBsYXRlcy9MYW5kaW5nUGFnZS9fRGFuY2luZ0dvYXRfTGFuZGluZ1BhZ2VTaW5nbGVDb2x1bW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/PageTemplates/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZVRlbXBsYXRlcy9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatArticle/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRBcnRpY2xlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatArticle/RelatedArticles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRBcnRpY2xlL1JlbGF0ZWRBcnRpY2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatCoffee/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRDb2ZmZWUvRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatConfirmation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRDb25maXJtYXRpb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatContacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRDb250YWN0cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatGrinder/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRHcmluZGVyL0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRIb21lL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatPrivacy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRQcml2YWN5L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatProduct/Filter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRQcm9kdWN0L0ZpbHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatProduct/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRQcm9kdWN0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatProduct/ProductsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRQcm9kdWN0L1Byb2R1Y3RzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/HttpErrors/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHR0cEVycm9ycy9Ob3RGb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Shared/DisplayTemplates/ProductListItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Rpc3BsYXlUZW1wbGF0ZXMvUHJvZHVjdExpc3RJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Shared/EditorTemplates/TagViewModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0VkaXRvclRlbXBsYXRlcy9UYWdWaWV3TW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Shared/_DancingGoatLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19EYW5jaW5nR29hdExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Shared/_Event.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19FdmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Shared/_LandingPageLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYW5kaW5nUGFnZUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/Shared/_Reference.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19SZWZlcmVuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
