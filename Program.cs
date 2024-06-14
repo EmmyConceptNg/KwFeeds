@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using KwFeeds;
 
 
 
@@ -36,7 +37,10 @@ builder.Services.AddKentico(features =>
         {
             LandingPage.CONTENT_TYPE_NAME,
             ContactsPage.CONTENT_TYPE_NAME,
-            ArticlePage.CONTENT_TYPE_NAME
+            ArticlePage.CONTENT_TYPE_NAME,
+            KwHomePage.CONTENT_TYPE_NAME,
+            ProductPage.CONTENT_TYPE_NAME,
+            ContactPage.CONTENT_TYPE_NAME,
         }
     });
 

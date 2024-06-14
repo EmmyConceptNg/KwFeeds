@@ -1,3 +1,4 @@
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Register.config
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/appsettings.json
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/package.json
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.staticwebassets.runtime.json
