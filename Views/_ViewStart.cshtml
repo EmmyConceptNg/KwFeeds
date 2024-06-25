@@ -6,12 +6,5 @@
 @inject IWebsiteChannelContext websiteChannelContext;
 
 @{
-    if (string.Equals(websiteChannelContext.WebsiteChannelName, DancingGoatConstants.WEBSITE_CHANNEL_NAME, StringComparison.Ordinal))
-    {
-        Layout = "_DancingGoatLayout";
-    }
-    else
-    {
-        Layout = "_Layout";
-    }
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }

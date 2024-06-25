@@ -1,0 +1,106 @@
+@addTagHelper *, Kentico.Content.Web.Mvc
+@model KwFeeds.Models.AboutPageViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+@section styles
+{
+    <page-builder-styles />
+}
+
+@section scripts
+{
+    <page-builder-scripts />
+}
+
+<section class="page-header-block">
+    <figure>
+        <img src="~/Content/Images/inner-page-header.png" alt="Inner Page Header">
+    </figure>
+    <div class="content">
+        <h2>@Model.Title</h2>
+    </div>
+</section>
+
+
+@for (int i = 0; i < Model.Sections.Count; i++)
+{
+    var sect = Model.Sections[i];
+
+    if (i % 2 == 0) // Even index sections
+    {
+        <section class="content-block text-left-image-right background-background">
+    <figure>
+        <img src="@sect.Image.Url" alt="cows image" title=""> <!-- Ensure .Url is the correct property -->
+    </figure>
+    <div class="content">
+        <p class="sub-title">More than feed</p>
+        <h2>@sect.Heading</h2>
+        <p>@Html.Raw(sect.Content)</p>
+        <a href="#" target="" role="button">Find out more</a>
+    </div>
+</section>
+    }
+    else // Odd index sections
+    {
+        <section class="content-block text-right-image-left background-accent-1">
+    <figure>
+        <img src="@sect.Image.Url" alt="cows image" title=""> <!-- Ensure .Url is the correct property -->
+    </figure>
+    <div class="content">
+        <p class="sub-title">KWFEEDS</p>
+        <h2>@sect.Heading</h2>
+        <p>@Html.Raw(sect.Content)</p>
+        <a href="#" target="" role="button">Find out more</a>
+    </div>
+</section>
+    }
+}
+
+
+
+<section class="form-block">
+    <div class="content">
+        <h2>Contact Us Today</h2>
+        <p>Use the contact form below to get in touch if you have any questions or need some help about our company or
+            products.</p>
+    </div>
+    <form id="contact-form" action="https://trulycontent.com/hollpartitions/contact/" method="post">
+        <p class="half input">
+            <input type="text" name="full_name" id="contact-name" placeholder="&nbsp;" required>
+            <label for="contact-name">Your Full Name*</label>
+        </p>
+        <p class="half input">
+            <input type="email" name="email" id="contact-email" placeholder="&nbsp;" required>
+            <label for="contact-email">Your Email*</label>
+        </p>
+        <p class="half input">
+            <input type="tel" name="phone" id="contact-phone" placeholder="&nbsp;">
+            <label for="contact-phone">Your Phone Number</label>
+        </p>
+        <p class="half select">
+            <select name="appointment_date" id="date" class="date" required>
+                <option disabled hidden selected>Enquiry Type</option>
+                <option value="2024-04-23">Test</option>
+                <option value="2024-04-24">Test</option>
+                <option value="2024-04-25">Test</option>
+                <option value="2024-04-26">Test</option>
+                <option value="2024-04-27">Test</option>
+            </select>
+        </p>
+        <p class="full input">
+            <textarea name="message" id="contact-query" placeholder="&nbsp;"></textarea>
+            <label for="contact-query">Write your message</label>
+        </p>
+        <input type="hidden" name="form_id" value="1581">
+        <div class="submit full">
+            <button type="submit">SUBMIT</button>
+            <input id="recaptcha-token" type="hidden" name="token" value="">
+        </div>
+    </form>
+</section>
+
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />

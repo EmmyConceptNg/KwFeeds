@@ -1,0 +1,102 @@
+@addTagHelper *, Kentico.Content.Web.Mvc
+@model KwFeeds.Models.TestimonialPageViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+@section styles
+{
+    <page-builder-styles />
+}
+
+@section scripts
+{
+    <page-builder-scripts />
+}
+
+ <section class="page-header-block">
+            <figure>
+                <img src="~/Content/Images/inner-page-header.png">
+            </figure>
+            <div class="content">
+                <h2>@Model.Title</h2>
+            </div>
+        </section>
+        <section class="content-block text-left-image-right background-background">
+            <figure>
+                <img srcset="~/Content/Images/cows.png" src="~/Content/Images/cows.png" alt="cows image" title="" />
+            </figure>
+            <div class="content">
+                <p class="sub-title">More than feed</p>
+                <h2>Helping customers produce healthy high performance herds</h2>
+                <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high performance livestock farms.  Today, the choice of alternative feeds is greater than ever and we offer the widest possible range of dry, moist, liquid, blended and compounded feeds alongside more traditional straights, minerals, vitamins, protected fats, secure covers and silage additives.</p>
+                <a href="#" target="" role="button">Find out more</a>
+            </div>
+        </section>
+        <section class="testimonials-block">
+            <ul>
+                @foreach (var sect in Model.Sections)
+{
+
+    <li>
+                    <div class="content">
+                        <h2>@sect.Name</h2>
+                        <h4>@sect.Title</h4>
+                    </div>
+                    <p>
+                        @Html.Raw(sect.Content)
+                    </p>
+                    <figure>
+                        <img src="@sect.Image.Url">
+                    </figure>
+                </li>
+}
+            </ul>
+            <div class="pagination">
+                <p>SHOWING 15/40 TESTIMONIALS</p>
+                <a href="#" target="" role="button">Show More</a>
+            </div>
+        </section>
+        <section class="logos-block">
+            <ul>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="~/Content/Images/UFAS.png">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="~/Content/Images/FEMAS.png">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="~/Content/Images/Image%202.png">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="~/Content/Images/Image%203.png">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="~/Content/Images/logos-FAR.png">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Include the Logo Section from a Partial View -->
+<partial name="~/Views/Shared/_LogoSection.cshtml" />

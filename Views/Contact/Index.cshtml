@@ -1,0 +1,98 @@
+@addTagHelper *, Kentico.Content.Web.Mvc
+@model KwFeeds.Models.ContactPageViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+@section styles
+{
+    <page-builder-styles />
+}
+@section scripts
+{
+    <page-builder-scripts />
+}
+
+<section class="page-header-block">
+    <figure>
+        <img src="~/Content/Images/inner-page-header.png" alt="Contact Us Header">
+    </figure>
+    <div class="content">
+        <h2>@Model.Title</h2>
+    </div>
+</section>
+
+<section class="contact-block">
+    <div class="content">
+        <p class="subtitle">KWFEEDS</p>
+        <h1>OUR DETAILS</h1>
+        <p>@Html.Raw(Model.ContactFormContent)</p>
+    </div>
+    <div class="map">
+        <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2523 3508">
+            <defs>
+                <style>.b{fill:#254081;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}</style>
+            </defs>
+            <!-- SVG Paths Here -->
+            <!-- Example SVG Path -->
+            <path class="b" d="M616.03,3369.65v21.94l12.23,7.91,19.78-2.52,6.11-6.83,2.16-10.79,5.03-7.19,10.79-2.52,16.18,2.88,15.1,7.55,15.46,10.07,7.91,9.35v8.63l3.6,11.87h9.71l6.47-5.75,10.43-9.71,6.83-2.88,7.55-6.83-3.96-7.55-8.99-3.96-2.88-8.27,4.32-11.15,5.39-6.11-2.16-8.27,4.68-7.19h5.03l4.68,6.11v5.75l8.63.72,6.11-5.75,28.41-27.69,22.66-26.61,8.27-8.27,7.91,7.55,16.54,2.16h21.22l16.54-5.39,14.74-4.32,8.63-2.88,3.6-4.68,6.11-1.8,7.91,8.63,2.16,7.55,7.91,3.24,8.27-3.24-1.8-9.71-7.19-3.24-3.96-6.47,4.68-5.39-2.88-10.07,6.11-5.39,6.83-2.88,7.55,10.79-1.8,7.19,1.8,9.71,8.99,5.75,3.24,8.63,5.75,7.55,7.55,3.24,5.03-4.32,7.91-6.47,7.55-.72,6.83,6.83,6.83,10.43,3.24,8.63s3.24,7.91,5.03,8.99c1.8,1.08,14.39,6.11,14.39,6.11l14.39.72,20.14-2.52,4.68-17.98-2.16-12.95,10.79-8.27,11.87-10.07,12.95-3.24,6.47-10.79-12.95-6.47-11.15-2.88v-9.71l12.59-4.68,4.68-9.71-2.88-17.62,9.71-12.23,2.88-11.51v-15.1l3.24-12.59h5.75v8.63l-2.52,10.07,7.19,6.47,8.99-5.75,12.95-9.35,31.65-18.34h15.46l21.94,2.52,16.18-9.71,11.15-2.16,21.22,1.44,16.18,14.39,15.82,11.51,14.39,10.07,14.03,11.51,12.95,2.16,7.19-8.63,10.43-7.91,8.27-5.03,21.94.72,12.23,2.16,13.31,7.55,9.35,6.83s7.55,8.27,8.63,8.27,16.54.72,16.54.72l8.99-14.03v-17.26l-9.35-9.35-11.51-5.03-5.75-6.47,2.88-3.6,17.26-2.16,32.01,1.44,23.02.72,16.92-.38c3.01-.07,3.65-4.28.79-5.23l-7.99-2.66-10.07-10.07-10.79-7.19v-29.13l-4.32-13.31-16.18-8.63-10.43-6.11,3.96-11.51,12.95-6.11,15.82,6.11,8.63,7.19,13.67,8.27,16.18,5.03,15.1-12.95-2.16-17.98-7.55-11.51-4.32-20.5-2.52-17.26-6.11-15.46-1.8-13.31,10.07-2.16h15.82l7.91-8.99,3.6-13.31,4.32-3.96,5.03-3.6-2.16-10.07-9.35-6.11-1.8-7.19,10.43-7.55-1.08-14.03-12.23-19.42-17.26-15.1-7.55-13.31,2.52-16.9-8.27-6.83-1.8-7.91,14.74-5.75,1.08-8.99-7.19-6.11-6.47-2.88,1.08-25.17,5.39-13.31,3.24-11.51-1.44-8.99,6.47-6.11,4.32-6.47-2.16-9.35-10.07-5.39-1.8-7.19,8.27-4.68h7.19l2.88-9.35-7.55-7.55-11.51-2.88-7.55-8.99-5.39-6.47h-7.55l-9.71,2.88-8.99,6.11-5.03,5.75,3.6,5.75,4.68,6.11-9.35,3.6-3.96-7.55-12.95-3.6-8.99,1.08-7.19,5.39-7.19,8.27-6.11,5.75-9.71-1.08-.36-13.67-6.83-1.08-8.63,8.27-6.47,10.79-7.91,5.75-7.19-5.39-2.88-8.63-12.23-3.96-15.46.36-13.31,5.03-5.75,9.35-.36,9.35,8.99,6.47,3.96,5.03,1.08,4.32-9.71,9.71-7.91-3.96-11.87,7.91-10.07,10.79-5.75,11.51-10.79,11.87-.36,23.02,2.52,15.1,4.68,2.52,14.75-6.47,15.46-13.67,15.1-14.03,8.63-1.44,1.8,5.75-10.43,12.23-14.39,17.62-12.95,19.42-14.03,15.82-11.87,18.34-15.82,2.16-9.71,9.71-6.83,11.15-9.71,10.43-11.87,8.63-11.15,10.79-5.39,8.99-1.8,19.42.72,19.06-5.03,10.07-13.31,5.39-17.98,3.6-6.47-4.68-11.15-1.08-10.43,5.75-16.9,2.16-13.67-2.52-13.67-11.87-22.3-4.32-24.1.36-102.14,7.91-19.06,2.88-8.63,9.35-2.16,13.31,3.6,17.98,6.47,12.59-5.75,10.07-12.23,6.83-13.67,6.83-12.23,1.44-14.03-6.83-11.51-5.39-19.06,7.91v16.9s1.8,47.83,1.44,49.99-8.63,16.18-8.63,16.18l-11.15,17.26-19.06,22.66-13.67,12.95-2.16,8.99-6.83,5.03-25.53-5.03-5.75,4.68,2.16,11.51,7.19,6.47,11.15-1.08-1.08,3.96-10.43,4.32-12.59-2.16-6.83-10.79-6.11-.36-5.75,6.11.72,27.33,1.08,11.87-18.34,1.44-8.99,7.55-1.8,12.59-10.07,12.23-20.5,17.62-11.15,10.07-10.43,11.51-6.47,6.47-8.99,4.32-7.55-3.96s-5.03-3.24-6.11-3.6c-1.08-.36-10.07-1.44-10.07-1.44l-8.27,3.6-7.55,6.47-15.1,10.43-9.35,8.27-5.75,7.55Z"/>
+        </svg>
+    </div>
+</section>
+
+<section class="form-block background-accent-1">
+    <div class="content">
+        <h2>Contact Us Today</h2>
+        <p>Use the contact form below to get in touch if you have any question or need some help about our company or products.</p>
+    </div>
+    <form id="form-1581" action="https://trulycontent.com/hollpartitions/contact/" method="post" class="form-1581">
+        <p class="half input">
+            <input type="text" name="full_name" id="contact-name" placeholder="&nbsp;" required>
+            <label for="contact-name">Your Full Name*</label>
+        </p>
+
+        <p class="half input">
+            <input type="email" name="email" id="contact-email" placeholder="&nbsp;" required>
+            <label for="contact-email">Your Email*</label>
+        </p>
+        <p class="half input">
+            <input type="tel" name="phone" id="contact-phone" placeholder="&nbsp;">
+            <label for="contact-phone">Your Phone Number</label>
+        </p>
+        <p class="half select">
+            <select name="appointment_date" id="date" class="date" required>
+                <option disabled hidden selected>Enquiry Type</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Product Support">Product Support</option>
+                <option value="Sales">Sales</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+        <p class="full input">
+            <textarea name="message" id="contact-query" placeholder="&nbsp;"></textarea>
+            <label for="contact-query">Write your message</label>
+        </p>
+        <input type="hidden" name="form_id" value="1581">
+        <div class="submit full">
+            <button type="submit">SUBMIT</button>
+            <input id="recaptcha-token" type="hidden" name="token" value="">
+        </div>
+    </form>
+</section>
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />
+@* 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const polygons = document.querySelectorAll('polygon.b');
+        const modal = document.querySelector('.modal');
+        const closeModal = document.querySelector('.modal .close');
+
+        polygons.forEach(polygon => {
+            polygon.addEventListener('click', () => {
+                modal.classList.add('show');
+            });
+        });
+
+        closeModal.addEventListener('click', *@
