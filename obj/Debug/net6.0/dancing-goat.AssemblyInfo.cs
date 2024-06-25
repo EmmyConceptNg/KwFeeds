@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dancing-goat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f5a2b42e0d3f53862aac0dea67c8ec72f011e7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc3236cc37e0119e35f08b1b824d916a8eda507a")]
 [assembly: System.Reflection.AssemblyProductAttribute("dancing-goat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dancing-goat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
