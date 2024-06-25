@@ -5623,9 +5623,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/emmy/projects/bles/KwFeeds/dancing-goat.csproj",
-      "projectName": "dancing-goat",
-      "projectPath": "/Users/emmy/projects/bles/KwFeeds/dancing-goat.csproj",
+      "projectUniqueName": "/Users/emmy/projects/bles/KwFeeds/KwFeeds.csproj",
+      "projectName": "KwFeeds",
+      "projectPath": "/Users/emmy/projects/bles/KwFeeds/KwFeeds.csproj",
       "packagesPath": "/Users/emmy/.nuget/packages/",
       "outputPath": "/Users/emmy/projects/bles/KwFeeds/obj/",
       "projectStyle": "PackageReference",

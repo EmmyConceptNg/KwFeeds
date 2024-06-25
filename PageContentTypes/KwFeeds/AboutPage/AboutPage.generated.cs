@@ -45,5 +45,11 @@ namespace KwFeeds
 		/// Sections.
 		/// </summary>
 		public IEnumerable<About> Sections { get; set; }
+
+
+		/// <summary>
+		/// PageId.
+		/// </summary>
+		public Guid PageId { get; set; }
 	}
 }

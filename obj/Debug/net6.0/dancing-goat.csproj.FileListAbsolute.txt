@@ -1,0 +1,14 @@
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.csproj.AssemblyReference.cache
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/DancingGoat.SharedResources.es.resources
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.csproj.GenerateResource.cache
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.AssemblyInfoInputs.cache
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.AssemblyInfo.cs
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.csproj.CoreCompileInputs.cache
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.MvcApplicationPartsAssemblyInfo.cs
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.MvcApplicationPartsAssemblyInfo.cache
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.RazorAssemblyInfo.cache
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.RazorAssemblyInfo.cs
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.dll
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/refint/dancing-goat.dll
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/dancing-goat.pdb

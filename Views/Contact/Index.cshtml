@@ -27,7 +27,7 @@
     <div class="content">
         <p class="subtitle">KWFEEDS</p>
         <h1>OUR DETAILS</h1>
-        <p>@Model.ContactFormContent</p>
+        <p>@Html.Raw(Model.ContactFormContent)</p>
     </div>
     <div class="map">
         <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2523 3508">
@@ -81,45 +81,7 @@
     </form>
 </section>
 
-<section class="logos-block">
-    <ul>
-        <li>
-            <a href="#">
-                <figure>
-                    <img src="~/Content/Images/UFAS.png" alt="UFAS Logo">
-                </figure>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <figure>
-                    <img src="~/Content/Images/FEMAS.png" alt="FEMAS Logo">
-                </figure>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <figure>
-                    <img src="~/Content/Images/Image%202.png" alt="Certification Logo">
-                </figure>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <figure>
-                    <img src="~/Content/Images/red%20tractor.png" alt="Red Tractor Logo">
-                </figure>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <figure>
-                    <img src="~/Content/Images/logos-FAR.png" alt="FAR Logo">
-                </figure>
-            </a>
-        </li>
-    </ul>
-</section>
+<partial name="~/Views/Shared/_LogoSection.cshtml" />
 @* 
 <script>
     document.addEventListener('DOMContentLoaded', function() {

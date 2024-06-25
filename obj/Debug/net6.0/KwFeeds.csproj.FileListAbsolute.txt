@@ -3,11 +3,6 @@
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/package.json
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.staticwebassets.runtime.json
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.deps.json
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.runtimeconfig.json
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.pdb
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/es/KwFeeds.resources.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/AngleSharp.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/AngleSharp.Css.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Azure.Core.dll
@@ -196,5 +191,10 @@
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.dll
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/refint/KwFeeds.dll
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.pdb
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.deps.json
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.runtimeconfig.json
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.pdb
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/es/KwFeeds.resources.dll
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.genruntimeconfig.cache
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/ref/KwFeeds.dll

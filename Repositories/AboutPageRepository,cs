@@ -1,0 +1,74 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using CMS.ContentEngine;
+using CMS.Helpers;
+using CMS.Websites;
+using KwFeeds.Models;
+
+namespace KwFeeds.Repositories
+{
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using CMS.ContentEngine;
+    using CMS.Helpers;
+    using CMS.Websites;
+    using KwFeeds.Models;
+
+    namespace KwFeeds.Repositories
+    {
+        public class AboutPageRepository : ContentRepositoryBase
+        {
+            public AboutPageRepository(
+                IWebsiteChannelContext websiteChannelContext,
+                IContentQueryExecutor executor,
+                IProgressiveCache cache)
+                : base(websiteChannelContext, executor, cache)
+            {
+            }
+
+            public async Task<AboutPage> GetAboutPage(int pageId, string languageName, CancellationToken cancellationToken)
+            {
+                // Query for the AboutPage itself
+                var aboutPageQueryBuilder = new ContentItemQueryBuilder()
+                    .ForContentType(AboutPage.CONTENT_TYPE_NAME, config => config
+                        .ForWebsite(WebsiteChannelContext.WebsiteChannelName));
+
+                var aboutPageOptions = new ContentQueryExecutionOptions
+                {
+                    IncludeSecuredItems = true
+                };
+
+                var aboutPageCacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, nameof(AboutPage), pageId, languageName);
+
+                var aboutPageResult = await GetCachedQueryResult<AboutPage>(aboutPageQueryBuilder, aboutPageOptions, aboutPageCacheSettings, null, cancellationToken);
+                var aboutPage = aboutPageResult.FirstOrDefault();
+
+                // Query for all sections
+                var sectionQueryBuilder = new ContentItemQueryBuilder()
+                    .ForContentType("About", config => config // Assuming your content type for sections is named "About"
+                        .ForWebsite(WebsiteChannelContext.WebsiteChannelName));
+
+                var sectionOptions = new ContentQueryExecutionOptions
+                {
+                    IncludeSecuredItems = true
+                };
+
+                var sectionCacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, "About", languageName);
+
+                var sectionResult = await GetCachedQueryResult<About>(sectionQueryBuilder, sectionOptions, sectionCacheSettings, null, cancellationToken);
+
+                // Attach sections to the aboutPage
+                if (aboutPage != null)
+                {
+                    aboutPage.Sections = sectionResult.ToList();
+                }
+
+                return aboutPage;
+            }
+        }
+    }
+}
