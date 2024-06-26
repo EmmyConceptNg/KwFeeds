@@ -73,12 +73,11 @@ var app = builder.Build();
 
 // Initialize Kentico before setting up the middleware pipeline
 app.InitKentico();
-
-// Set up the middleware pipeline
 app.UseStaticFiles();
+app.UseKentico();
+
 app.UseCookiePolicy();
 app.UseAuthentication();
-app.UseKentico();
 app.UseAuthorization();
 app.UseStatusCodePagesWithReExecute("/error/{0}");
 
