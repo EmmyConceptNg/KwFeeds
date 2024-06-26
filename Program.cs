@@ -17,9 +17,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using KwFeeds;
-
 using DotNetEnv;
 
+// Load environment variables
 Env.Load();
 
 AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
@@ -29,6 +29,7 @@ System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolTyp
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add Kentico services
 builder.Services.AddKentico(features =>
 {
     features.UsePageBuilder(new PageBuilderOptions
@@ -52,8 +53,10 @@ builder.Services.AddKentico(features =>
     features.UseActivityTracking();
 });
 
+// Configure routing options
 builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 
+// Add localization and view services
 builder.Services.AddLocalization()
     .AddControllersWithViews()
     .AddViewLocalization()
@@ -62,14 +65,16 @@ builder.Services.AddLocalization()
         options.DataAnnotationLocalizerProvider = (type, factory) => factory.Create(typeof(SharedResources));
     });
 
+// Add Dancing Goat specific services
 builder.Services.AddDancingGoatServices();
 ConfigureMembershipServices(builder.Services);
 
 var app = builder.Build();
 
-// Initialize Kentico before setting up the pipeline.
+// Initialize Kentico before setting up the middleware pipeline
 app.InitKentico();
 
+// Set up the middleware pipeline
 app.UseStaticFiles();
 app.UseCookiePolicy();
 app.UseAuthentication();
@@ -105,6 +110,7 @@ app.MapControllerRoute(
 
 app.Run();
 
+// Method to configure membership services
 static void ConfigureMembershipServices(IServiceCollection services)
 {
     services.AddIdentity<ApplicationUser, NoOpApplicationRole>(options =>
