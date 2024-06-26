@@ -21,12 +21,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using KwFeeds;
-using DotNetEnv;
 
-
-
-// Load environment variables from .env file
-Env.Load();
 
 
 var builder = WebApplication.CreateBuilder(args);
