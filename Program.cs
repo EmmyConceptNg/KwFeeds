@@ -11,7 +11,6 @@ using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
 
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -22,11 +21,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using KwFeeds;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
-
-
 
 builder.Services.AddKentico(features =>
 {
@@ -67,19 +62,14 @@ ConfigureMembershipServices(builder.Services);
 
 var app = builder.Build();
 
+// Initialize Kentico before setting up the pipeline.
 app.InitKentico();
 
 app.UseStaticFiles();
-
 app.UseCookiePolicy();
-
 app.UseAuthentication();
-
-
-app.UseKentico();
-
+app.UseKentico(); // Make sure this is after InitKentico
 app.UseAuthorization();
-
 app.UseStatusCodePagesWithReExecute("/error/{0}");
 
 app.Kentico().MapRoutes();
@@ -110,7 +100,6 @@ app.MapControllerRoute(
 
 app.Run();
 
-
 static void ConfigureMembershipServices(IServiceCollection services)
 {
     services.AddIdentity<ApplicationUser, NoOpApplicationRole>(options =>
@@ -121,7 +110,6 @@ static void ConfigureMembershipServices(IServiceCollection services)
         options.Password.RequireUppercase = false;
         options.Password.RequireLowercase = false;
         options.Password.RequiredUniqueChars = 0;
-        // Ensures, that disabled member cannot sign in.
         options.SignIn.RequireConfirmedAccount = true;
     })
         .AddUserStore<ApplicationUserStore<ApplicationUser>>()
