@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
-
 using DancingGoat;
 using DancingGoat.Models;
-
 using Kentico.Activities.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.Membership;
 using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -20,6 +17,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using KwFeeds;
+
+using DotNetEnv;
+
+Env.Load();
+
+AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
+System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls |
+                                                 System.Net.SecurityProtocolType.Tls11 |
+                                                 System.Net.SecurityProtocolType.Tls12;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,7 +63,6 @@ builder.Services.AddLocalization()
     });
 
 builder.Services.AddDancingGoatServices();
-
 ConfigureMembershipServices(builder.Services);
 
 var app = builder.Build();
@@ -68,7 +73,7 @@ app.InitKentico();
 app.UseStaticFiles();
 app.UseCookiePolicy();
 app.UseAuthentication();
-app.UseKentico(); // Make sure this is after InitKentico
+app.UseKentico();
 app.UseAuthorization();
 app.UseStatusCodePagesWithReExecute("/error/{0}");
 
@@ -112,10 +117,10 @@ static void ConfigureMembershipServices(IServiceCollection services)
         options.Password.RequiredUniqueChars = 0;
         options.SignIn.RequireConfirmedAccount = true;
     })
-        .AddUserStore<ApplicationUserStore<ApplicationUser>>()
-        .AddRoleStore<NoOpApplicationRoleStore>()
-        .AddUserManager<UserManager<ApplicationUser>>()
-        .AddSignInManager<SignInManager<ApplicationUser>>();
+    .AddUserStore<ApplicationUserStore<ApplicationUser>>()
+    .AddRoleStore<NoOpApplicationRoleStore>()
+    .AddUserManager<UserManager<ApplicationUser>>()
+    .AddSignInManager<SignInManager<ApplicationUser>>();
 
     services.ConfigureApplicationCookie(options =>
     {
@@ -127,9 +132,7 @@ static void ConfigureMembershipServices(IServiceCollection services)
             var factory = ctx.HttpContext.RequestServices.GetRequiredService<IUrlHelperFactory>();
             var urlHelper = factory.GetUrlHelper(new ActionContext(ctx.HttpContext, new RouteData(ctx.HttpContext.Request.RouteValues), new ActionDescriptor()));
             var url = urlHelper.Action("Login", "Account") + new Uri(ctx.RedirectUri).Query;
-
             ctx.Response.Redirect(url);
-
             return Task.CompletedTask;
         };
     });
