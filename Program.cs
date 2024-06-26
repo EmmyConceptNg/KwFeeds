@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Threading.Tasks;
+
 using DancingGoat;
 using DancingGoat.Models;
+
 using Kentico.Activities.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.Membership;
 using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
+
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -17,19 +21,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using KwFeeds;
-using DotNetEnv;
 
-// Load environment variables
-Env.Load();
 
-AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
-System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls |
-                                                 System.Net.SecurityProtocolType.Tls11 |
-                                                 System.Net.SecurityProtocolType.Tls12;
 
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
-// Add Kentico services
+
 builder.Services.AddKentico(features =>
 {
     features.UsePageBuilder(new PageBuilderOptions
@@ -53,10 +50,8 @@ builder.Services.AddKentico(features =>
     features.UseActivityTracking();
 });
 
-// Configure routing options
 builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 
-// Add localization and view services
 builder.Services.AddLocalization()
     .AddControllersWithViews()
     .AddViewLocalization()
@@ -65,45 +60,27 @@ builder.Services.AddLocalization()
         options.DataAnnotationLocalizerProvider = (type, factory) => factory.Create(typeof(SharedResources));
     });
 
-// Add Dancing Goat specific services
 builder.Services.AddDancingGoatServices();
+
 ConfigureMembershipServices(builder.Services);
 
-WebApplication app = builder.Build();
+var app = builder.Build();
 
-// ** Call InitKentico before any middleware setup
-try
-{
-    app.InitKentico();
-}
-catch (Exception ex)
-{
-    Console.Error.WriteLine($"Kentico Initialization Exception: {ex.Message}");
-    Console.Error.WriteLine($"Stack Trace: {ex.StackTrace}");
-    return; // Exit if Kentico initialization fails
-}
+app.InitKentico();
 
-// Setup middleware in the correct order
 app.UseStaticFiles();
 
-try
-{
-    app.UseKentico(); // Detailed logging for Kentico middleware setup
-}
-catch (Exception ex)
-{
-    Console.Error.WriteLine($"Kentico Middleware Exception: {ex.Message}");
-    Console.Error.WriteLine($"Stack Trace: {ex.StackTrace}");
-    return; // Exit if Kentico middleware setup fails
-}
-
 app.UseCookiePolicy();
-app.UseCors();
+
 app.UseAuthentication();
+
+
+app.UseKentico();
+
 app.UseAuthorization();
+
 app.UseStatusCodePagesWithReExecute("/error/{0}");
 
-// Configure routing
 app.Kentico().MapRoutes();
 
 app.MapControllerRoute(
@@ -132,6 +109,7 @@ app.MapControllerRoute(
 
 app.Run();
 
+
 static void ConfigureMembershipServices(IServiceCollection services)
 {
     services.AddIdentity<ApplicationUser, NoOpApplicationRole>(options =>
@@ -142,12 +120,13 @@ static void ConfigureMembershipServices(IServiceCollection services)
         options.Password.RequireUppercase = false;
         options.Password.RequireLowercase = false;
         options.Password.RequiredUniqueChars = 0;
+        // Ensures, that disabled member cannot sign in.
         options.SignIn.RequireConfirmedAccount = true;
     })
-    .AddUserStore<ApplicationUserStore<ApplicationUser>>()
-    .AddRoleStore<NoOpApplicationRoleStore>()
-    .AddUserManager<UserManager<ApplicationUser>>()
-    .AddSignInManager<SignInManager<ApplicationUser>>();
+        .AddUserStore<ApplicationUserStore<ApplicationUser>>()
+        .AddRoleStore<NoOpApplicationRoleStore>()
+        .AddUserManager<UserManager<ApplicationUser>>()
+        .AddSignInManager<SignInManager<ApplicationUser>>();
 
     services.ConfigureApplicationCookie(options =>
     {
