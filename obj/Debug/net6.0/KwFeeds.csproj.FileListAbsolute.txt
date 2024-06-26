@@ -3,6 +3,11 @@
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/package.json
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.staticwebassets.runtime.json
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.deps.json
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.runtimeconfig.json
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.pdb
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/es/KwFeeds.resources.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/AngleSharp.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/AngleSharp.Css.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Azure.Core.dll
@@ -13,6 +18,7 @@
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/BananaCakePop.Middleware.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/BouncyCastle.Cryptography.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/CommandLine.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/DotNetEnv.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/GreenDonut.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/HotChocolate.Abstractions.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/HotChocolate.AspNetCore.dll
@@ -118,6 +124,7 @@
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Mono.Cecil.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/SkiaSharp.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Sprache.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/System.ClientModel.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/System.CodeDom.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/System.Collections.Immutable.dll
@@ -177,6 +184,7 @@
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.MvcApplicationPartsAssemblyInfo.cache
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.RazorAssemblyInfo.cache
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.RazorAssemblyInfo.cs
+/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.sourcelink.json
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/es/KwFeeds.resources.cs
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/es/KwFeeds.resources.dll
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/staticwebassets.build.json
@@ -191,13 +199,5 @@
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.dll
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/refint/KwFeeds.dll
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.pdb
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.deps.json
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.runtimeconfig.json
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/KwFeeds.pdb
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/es/KwFeeds.resources.dll
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.genruntimeconfig.cache
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/ref/KwFeeds.dll
-/Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.sourcelink.json
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/DotNetEnv.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Sprache.dll

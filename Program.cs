@@ -27,7 +27,7 @@ System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolTyp
                                                  System.Net.SecurityProtocolType.Tls11 |
                                                  System.Net.SecurityProtocolType.Tls12;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add Kentico services
 builder.Services.AddKentico(features =>
@@ -69,18 +69,41 @@ builder.Services.AddLocalization()
 builder.Services.AddDancingGoatServices();
 ConfigureMembershipServices(builder.Services);
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
-// Initialize Kentico before setting up the middleware pipeline
-app.InitKentico();
+// ** Call InitKentico before any middleware setup
+try
+{
+    app.InitKentico();
+}
+catch (Exception ex)
+{
+    Console.Error.WriteLine($"Kentico Initialization Exception: {ex.Message}");
+    Console.Error.WriteLine($"Stack Trace: {ex.StackTrace}");
+    return; // Exit if Kentico initialization fails
+}
+
+// Setup middleware in the correct order
 app.UseStaticFiles();
-app.UseKentico();
+
+try
+{
+    app.UseKentico(); // Detailed logging for Kentico middleware setup
+}
+catch (Exception ex)
+{
+    Console.Error.WriteLine($"Kentico Middleware Exception: {ex.Message}");
+    Console.Error.WriteLine($"Stack Trace: {ex.StackTrace}");
+    return; // Exit if Kentico middleware setup fails
+}
 
 app.UseCookiePolicy();
+app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStatusCodePagesWithReExecute("/error/{0}");
 
+// Configure routing
 app.Kentico().MapRoutes();
 
 app.MapControllerRoute(
@@ -109,7 +132,6 @@ app.MapControllerRoute(
 
 app.Run();
 
-// Method to configure membership services
 static void ConfigureMembershipServices(IServiceCollection services)
 {
     services.AddIdentity<ApplicationUser, NoOpApplicationRole>(options =>
@@ -137,7 +159,9 @@ static void ConfigureMembershipServices(IServiceCollection services)
             var factory = ctx.HttpContext.RequestServices.GetRequiredService<IUrlHelperFactory>();
             var urlHelper = factory.GetUrlHelper(new ActionContext(ctx.HttpContext, new RouteData(ctx.HttpContext.Request.RouteValues), new ActionDescriptor()));
             var url = urlHelper.Action("Login", "Account") + new Uri(ctx.RedirectUri).Query;
+
             ctx.Response.Redirect(url);
+
             return Task.CompletedTask;
         };
     });
