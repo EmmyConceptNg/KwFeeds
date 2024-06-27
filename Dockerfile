@@ -27,6 +27,7 @@
 # COPY --from=publish /app/publish .
 # ENTRYPOINT ["dotnet", "KwFeeds.dll"]
 
+# Build Stage
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["KwFeeds.csproj", "./"]
@@ -35,19 +36,27 @@ COPY . .
 WORKDIR "/src/."
 RUN dotnet build "KwFeeds.csproj" -c Release -o /app/build
 
+# Publish Stage
 FROM build AS publish
 RUN dotnet publish "KwFeeds.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
+# Runtime Stage
+FROM ubuntu:latest AS runtime
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Use Debian bookworm
-FROM debian:bookworm AS runtime
-WORKDIR /app
-
 # Install Snapd
 RUN apt-get update && apt-get install -y snapd
+
+# Install sudo
+RUN apt-get update && apt-get install -y sudo
+
+# Create a user with sudo privileges
+RUN useradd -G sudo -M -s /bin/bash appuser
+
+# Enable systemctl to run with sudo
+RUN echo "Defaults    requiretty" > /etc/sudoers.d/systemctl
+RUN echo "Defaults    !requiretty" >> /etc/sudoers.d/systemctl
 
 # Start the snapd service
 RUN sudo systemctl start snapd
