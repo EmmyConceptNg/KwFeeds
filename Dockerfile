@@ -45,6 +45,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
+# Copy the license file into the container
+COPY license.txt .
+
 # Add Microsoft package repository for .NET
 RUN apt-get update && \
     apt-get install -y wget gnupg && \
