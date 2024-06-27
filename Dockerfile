@@ -58,9 +58,15 @@ RUN dotnet tool install --global Kentico.Xperience.DbManager --version 29.1.5
 # Ensure the .dotnet/tools directory is in the PATH
 ENV PATH="$PATH:/root/.dotnet/tools"
 
+# Verify the tool installation
+RUN dotnet tool list -g
+
 # Set environment variables for sensitive information
 ENV DB_PASSWORD="EmmyConcept_55555"
 ENV ADMIN_PASSWORD="EmmyConcept_55555"
+
+# Run a simple tool command to verify it's recognized
+RUN dotnet kentico-xperience-dbmanager --version
 
 # Run the database manager command
 RUN dotnet kentico-xperience-dbmanager -- \
