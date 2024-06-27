@@ -27,6 +27,7 @@
 # COPY --from=publish /app/publish .
 # ENTRYPOINT ["dotnet", "KwFeeds.dll"]
 
+
 # Use the .NET SDK 8.0 for building the project
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
@@ -55,8 +56,8 @@ RUN apt-get update && \
 # Install Kentico Database Manager Tool
 RUN dotnet tool install --global Kentico.Xperience.DbManager --version 29.1.5
 
-# Ensure the .dotnet/tools directory is in the PATH
-ENV PATH="$PATH:/root/.dotnet/tools"
+# Ensure the .dotnet/tools directory is in the PATH for the root user
+ENV PATH="/root/.dotnet/tools:$PATH"
 
 # Verify the tool installation
 RUN dotnet tool list -g
@@ -66,10 +67,10 @@ ENV DB_PASSWORD="EmmyConcept_55555"
 ENV ADMIN_PASSWORD="EmmyConcept_55555"
 
 # Run a simple tool command to verify it's recognized
-RUN dotnet kentico-xperience-dbmanager --version
+RUN /root/.dotnet/tools/kentico-xperience-dbmanager --version
 
 # Run the database manager command
-RUN dotnet kentico-xperience-dbmanager -- \
+RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
     -d KwFeeds_2024-06-26T08-42Z \
     -u CloudSA71d9f3dc \
     -s "tcp:kwfeeds.database.windows.net,1433" \
