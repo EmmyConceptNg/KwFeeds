@@ -27,9 +27,8 @@
 # COPY --from=publish /app/publish .
 # ENTRYPOINT ["dotnet", "KwFeeds.dll"]
 
-
-# Use the .NET SDK 8.0 for building the project
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+# Use the .NET SDK 6.0 for building the project (to match the framework version)
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["KwFeeds.csproj", "./"]
 RUN dotnet restore "KwFeeds.csproj"
@@ -40,8 +39,8 @@ RUN dotnet build "KwFeeds.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "KwFeeds.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-# Use the ASP.NET 8.0 runtime for running the application
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+# Use the ASP.NET 6.0 runtime for running the application
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
@@ -54,7 +53,7 @@ RUN apt-get update && \
     wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb && \
     dpkg -i packages-microsoft-prod.deb && \
     apt-get update && \
-    apt-get install -y dotnet-sdk-8.0
+    apt-get install -y dotnet-sdk-6.0
 
 # Install Kentico Database Manager Tool
 RUN dotnet tool install --global Kentico.Xperience.DbManager --version 29.1.5
