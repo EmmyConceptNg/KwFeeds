@@ -55,8 +55,8 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y dotnet-sdk-6.0
 
-# Install Kentico Database Manager Tool
-RUN dotnet tool install --global Kentico.Xperience.DbManager --version 29.1.5
+# Install the specific version of Kentico Database Manager Tool (matching project version)
+RUN dotnet tool install --global Kentico.Xperience.DbManager --version 29.1.3
 
 # Ensure the .dotnet/tools directory is in the PATH for the root user
 ENV PATH="/root/.dotnet/tools:$PATH"
