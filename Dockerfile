@@ -66,9 +66,6 @@ RUN dotnet tool list -g
 ENV DB_PASSWORD="EmmyConcept_55555"
 ENV ADMIN_PASSWORD="EmmyConcept_55555"
 
-# Run a simple tool command to verify it's recognized
-RUN /root/.dotnet/tools/kentico-xperience-dbmanager --version
-
 # Run the database manager command
 RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
     -d KwFeeds_2024-06-26T08-42Z \
