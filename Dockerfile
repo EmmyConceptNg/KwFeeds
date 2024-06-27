@@ -49,8 +49,11 @@ WORKDIR /app
 # Install Snapd
 RUN apt-get update && apt-get install -y snapd
 
+# Start the snapd service
+RUN sudo systemctl start snapd
+
 # Enable classic confinement for Snap
-# RUN snap install core20 --classic
+RUN snap install core20 --classic
 
 # Install .NET SDK 6.0 using Snap
 RUN sudo snap install dotnet-sdk --channel=6.0 --classic
