@@ -27,8 +27,8 @@
 # COPY --from=publish /app/publish .
 # ENTRYPOINT ["dotnet", "KwFeeds.dll"]
 
-# Build Stage
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+# Use the .NET SDK 8.0 for building the project
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["KwFeeds.csproj", "./"]
 RUN dotnet restore "KwFeeds.csproj"
@@ -36,42 +36,27 @@ COPY . .
 WORKDIR "/src/."
 RUN dotnet build "KwFeeds.csproj" -c Release -o /app/build
 
-# Publish Stage
 FROM build AS publish
 RUN dotnet publish "KwFeeds.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-# Runtime Stage
-FROM ubuntu:latest AS runtime
+# Use the ASP.NET 8.0 runtime for running the application
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Install Snapd
-RUN apt-get update && apt-get install -y snapd
+# Add Microsoft package repository for .NET
+RUN apt-get update && \
+    apt-get install -y wget gnupg && \
+    wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb && \
+    dpkg -i packages-microsoft-prod.deb && \
+    apt-get update && \
+    apt-get install -y dotnet-sdk-8.0
 
-# Install sudo
-RUN apt-get update && apt-get install -y sudo
+# Install Kentico Database Manager Tool
+RUN dotnet tool install --global Kentico.Xperience.DbManager --version 29.1.5
 
-# Create a user with sudo privileges
-RUN useradd -G sudo -M -s /bin/bash appuser
-
-# Enable systemctl to run with sudo
-RUN echo "Defaults    requiretty" > /etc/sudoers.d/systemctl
-RUN echo "Defaults    !requiretty" >> /etc/sudoers.d/systemctl
-
-# Start the snapd service
-RUN sudo systemctl start snapd
-
-# Enable classic confinement for Snap
-RUN snap install core20 --classic
-
-# Install .NET SDK 6.0 using Snap
-RUN sudo snap install dotnet-sdk --channel=6.0 --classic
-
-# Create an alias for the dotnet command
-RUN sudo snap alias dotnet-sdk.dotnet dotnet
-
-# Install Kentico Database Manager
-RUN dotnet tool install -g kentico-xperience-dbmanager
+# Ensure the .dotnet/tools directory is in the PATH
+ENV PATH="$PATH:/root/.dotnet/tools"
 
 # Set environment variables for sensitive information
 ENV DB_PASSWORD="EmmyConcept_55555"
