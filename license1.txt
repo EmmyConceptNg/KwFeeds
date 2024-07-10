@@ -1,0 +1,6 @@
+DOMAIN:kwfeeds.onrender.com
+PRODUCT:CV13
+LICENSE:6b4e24ca-9410-438c-9a6c-46b3a2f3c4e1
+EXPIRATION:20250225
+SERVERS:0
+QH+prvF3aKKNwd09+8ygT+G2k7t2QjUiePyfpwdBkdoVzTvCPK0CuYteMsltkfmJfFRCS7hdlFDO4UVPTziioy+pGVQcq+vRl2g+vW0dRzbyki/q4kFpP5/6zPJaaqXjqtGdBsfqg6+WABatF0cSFXAgmz/eMmF5FeZrhUi7oN/Zlpr0kyD8ASExm2datXqHznPYFvTWBw0GLHfQy22rad7DzEqkwqnccf4uTHvmh+FQVAwcOyqp+kcVi26zVIhydzxDYOh4MvfDNAKKkOuYwvp6cdyhkCUaSFDbtpKpdiKNQHtFimSGsGaaIVQWFDdfa0oEMdglRtOYHQ0ubdfoEA==

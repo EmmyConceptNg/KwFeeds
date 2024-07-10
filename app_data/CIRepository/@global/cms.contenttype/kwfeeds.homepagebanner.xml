@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Reusable</ClassContentTypeType>
+  <ClassDisplayName>HomePageBanner</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="7467f130-654d-460d-be67-269e0c756a01" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="ad4e300d-06b3-4244-a851-045d5c72adb7" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="cf3cfbb2-1407-44d2-bd70-56d8d35ed7ea" isunique="true" system="true" />
+      <field column="tag" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="57106db3-beca-4843-8aa8-d8bf7e3d29d0" visible="true">
+        <properties>
+          <defaultvalue>MORE THAN FEED</defaultvalue>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>tag</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="title" columnprecision="0" columntype="longtext" enabled="true" guid="42143824-b3eb-49bc-b778-e06e72f33bbc" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>title</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <ConfigurationName>Kentico.Administration.WebsitesStructuredContent</ConfigurationName>
+          <controlname>Kentico.Administration.RichTextEditor</controlname>
+        </settings>
+      </field>
+      <field column="button_text" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="35a53961-c8ab-4aad-b27c-9c4f2240c62a" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>button_text</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>838446f3-04a7-4ed3-87df-6600a4ad5166</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassIconClass>xp-accordion</ClassIconClass>
+  <ClassName>KwFeeds.HomePageBanner</ClassName>
+  <ClassShortName>KwFeedsHomePageBanner</ClassShortName>
+  <ClassTableName>KwFeeds_HomePageBanner</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>

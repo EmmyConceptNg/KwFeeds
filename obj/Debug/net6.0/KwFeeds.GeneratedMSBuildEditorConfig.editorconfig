@@ -182,6 +182,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRQcm9kdWN0L1Byb2R1Y3RzTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/emmy/projects/bles/KwFeeds/Views/HomePage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZVBhZ2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/emmy/projects/bles/KwFeeds/Views/HttpErrors/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHR0cEVycm9ycy9Ob3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

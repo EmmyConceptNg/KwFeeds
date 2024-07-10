@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.homepagebanner>
+  <button_text>MORE THAN FEED</button_text>
+  <ContentItemDataCommonDataID>
+    <GUID>04fe93d2-e9d1-4d42-9550-a3ae5b40173c</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Banner-7koweik7</CodeName>
+      <GUID>0eba93d3-d67d-40e5-9273-5d1ec691c294</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>4a05c9f3-e31d-448e-b562-3bc10fdb88db</ContentItemDataGUID>
+  <tag>MORE THAN FEED</tag>
+  <title>
+    <![CDATA[<p>MORE THAN FEED MORE THAN FEED MORE THAN FEED</p>]]>
+  </title>
+</contentitemdata.kwfeeds.homepagebanner>

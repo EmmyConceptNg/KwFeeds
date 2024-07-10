@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.homepagebanner>
+  <button_text>Tempor qui aut tempo</button_text>
+  <ContentItemDataCommonDataID>
+    <GUID>11e60185-8e8a-445d-b115-23b4ce963a83</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-6adr3seu</CodeName>
+      <GUID>37c5ac60-4ca6-4dc2-8351-0a2c33004910</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>b66b31b0-9849-4c0d-99f2-5d63e433c38a</ContentItemDataGUID>
+  <tag>Quia voluptatem opti</tag>
+  <title>Quam anim debitis qu.s</title>
+</contentitemdata.kwfeeds.homepagebanner>

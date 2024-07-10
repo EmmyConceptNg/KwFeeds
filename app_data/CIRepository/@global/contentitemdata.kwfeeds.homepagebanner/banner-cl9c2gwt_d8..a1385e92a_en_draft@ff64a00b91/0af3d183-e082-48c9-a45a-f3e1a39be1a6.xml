@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.homepagebanner>
+  <button_text>MORE THAN FEED</button_text>
+  <ContentItemDataCommonDataID>
+    <GUID>d8ef04eb-20e7-4708-b1dd-4b5a1385e92a</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Banner-cl9c2gwt</CodeName>
+      <GUID>d6e3d0d4-37a2-424a-ba8e-823aa4974a3a</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>0af3d183-e082-48c9-a45a-f3e1a39be1a6</ContentItemDataGUID>
+  <tag>MORE THAN FEED</tag>
+  <title>
+    <![CDATA[<p>MORE THAN FEED MORE THAN FEED MORE THAN FEED</p>]]>
+  </title>
+</contentitemdata.kwfeeds.homepagebanner>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>Home-26fg048v</CodeName>
+    <GUID>fad5235a-894e-40ec-b59b-a1a9525e28a5</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>5cd81bce-cee0-426a-b3b5-0a3cf1fa5692</WebPageItemGUID>
+  <WebPageItemName>Home-26fg048v</WebPageItemName>
+  <WebPageItemOrder>1</WebPageItemOrder>
+  <WebPageItemTreePath>/homepage</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>3aa9997c-246d-4655-b7ea-c3ca9e7beed9</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>KwFeeds</CodeName>
+      <GUID>e833e04e-27fb-44a7-a2c9-5d7e4ecf3261</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>
