@@ -11,7 +11,6 @@ using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
 
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -20,12 +19,8 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
-using KwFeeds;
-
-
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddKentico(features =>
 {
@@ -38,9 +33,7 @@ builder.Services.AddKentico(features =>
             LandingPage.CONTENT_TYPE_NAME,
             ContactsPage.CONTENT_TYPE_NAME,
             ArticlePage.CONTENT_TYPE_NAME,
-            KwHomePage.CONTENT_TYPE_NAME,
-            ProductPage.CONTENT_TYPE_NAME,
-            ContactPage.CONTENT_TYPE_NAME,
+            HomePage.CONTENT_TYPE_NAME
         }
     });
 
@@ -66,49 +59,30 @@ ConfigureMembershipServices(builder.Services);
 
 var app = builder.Build();
 
+// Initialize Kentico
 app.InitKentico();
 
-app.UseStaticFiles();
-
-app.UseCookiePolicy();
-
-app.UseAuthentication();
-
-
+// Use Kentico middleware
 app.UseKentico();
 
+// Other middleware
+app.UseStaticFiles();
+app.UseCookiePolicy();
+app.UseAuthentication();
 app.UseAuthorization();
-
 app.UseStatusCodePagesWithReExecute("/error/{0}");
 
+// Use Kentico's routing
 app.Kentico().MapRoutes();
 
+// Additional routes
 app.MapControllerRoute(
-   name: "error",
-   pattern: "error/{code}",
-   defaults: new { controller = "HttpErrors", action = "Error" }
-);
-
-app.MapControllerRoute(
-    name: DancingGoatConstants.DEFAULT_ROUTE_NAME,
-    pattern: $"{{{WebPageRoutingOptions.LANGUAGE_ROUTE_VALUE_KEY}}}/{{controller}}/{{action}}",
-    constraints: new
-    {
-        controller = DancingGoatConstants.CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS
-    }
-);
-
-app.MapControllerRoute(
-    name: DancingGoatConstants.DEFAULT_ROUTE_WITHOUT_LANGUAGE_PREFIX_NAME,
-    pattern: "{controller}/{action}",
-    constraints: new
-    {
-        controller = DancingGoatConstants.CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS
-    }
+    name: "error",
+    pattern: "error/{code}",
+    defaults: new { controller = "HttpErrors", action = "Error" }
 );
 
 app.Run();
-
 
 static void ConfigureMembershipServices(IServiceCollection services)
 {
@@ -123,10 +97,10 @@ static void ConfigureMembershipServices(IServiceCollection services)
         // Ensures, that disabled member cannot sign in.
         options.SignIn.RequireConfirmedAccount = true;
     })
-        .AddUserStore<ApplicationUserStore<ApplicationUser>>()
-        .AddRoleStore<NoOpApplicationRoleStore>()
-        .AddUserManager<UserManager<ApplicationUser>>()
-        .AddSignInManager<SignInManager<ApplicationUser>>();
+    .AddUserStore<ApplicationUserStore<ApplicationUser>>()
+    .AddRoleStore<NoOpApplicationRoleStore>()
+    .AddUserManager<UserManager<ApplicationUser>>()
+    .AddSignInManager<SignInManager<ApplicationUser>>();
 
     services.ConfigureApplicationCookie(options =>
     {
