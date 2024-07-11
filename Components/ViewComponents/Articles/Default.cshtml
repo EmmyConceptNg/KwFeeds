@@ -1,4 +1,4 @@
-﻿@using DancingGoat.Models;
+﻿@* @using DancingGoat.Models;
 
 @model ArticlesSectionViewModel
 
@@ -89,5 +89,95 @@
                 @HtmlLocalizer["More articles"]
             </a>
         </div>
+    </div>
+</div> *@
+
+
+@using DancingGoat.Models;
+
+@model ArticlesSectionViewModel
+
+@{
+    var i = 1;
+}
+
+<div class="articles-section">
+    <div class="row">
+        @{
+            var first = true;
+        }
+        @foreach (var article in Model.Articles)
+        {
+            if (first)
+            {
+                first = false;
+                <section class="content-block text-left-image-right background-background">
+                    <figure>
+                        @if (article.TeaserUrl != null)
+                        {
+                            <img srcset="@article.TeaserUrl" src="@article.TeaserUrl" alt="@article.Title" title="@article.Title"
+                                class="article-tile-image" loading="lazy" />
+                        }
+                    </figure>
+                    <div class="content">
+                        <p class="sub-title">@article.Title</p>
+                        <h2>@HtmlLocalizer["Helping customers produce healthy high performance herds"]</h2>
+                        <p>@article.Summary</p>
+                        <a href="@article.Url" target="" role="button">@HtmlLocalizer["Find out more"]</a>
+                    </div>
+                </section>
+            }
+            else
+            {
+                var lastInRow = "";
+                if (i % 4 == 0)
+                {
+                    lastInRow = "last";
+                }
+
+                if (i % 2 == 0)
+                {
+                    <section class="content-block text-left-image-right background-background @lastInRow">
+                        <figure>
+                            @if (article.TeaserUrl != null)
+                            {
+                                <img srcset="@article.TeaserUrl" src="@article.TeaserUrl" alt="@article.Title" title="@article.Title"
+                                    class="article-tile-image" loading="lazy" />
+                            }
+                        </figure>
+                        <div class="content">
+                            <p class="sub-title">@HtmlLocalizer["KWFEEDS"]</p>
+                            <h2>@HtmlLocalizer["Supporting farming"]</h2>
+                            <p>@article.Summary</p>
+                            <a href="@article.Url" target="" role="button">@HtmlLocalizer["Find out more"]</a>
+                        </div>
+                    </section>
+                }
+                else
+                {
+                    <section class="content-block text-right-image-left background-background @lastInRow">
+                        <figure>
+                            @if (article.TeaserUrl != null)
+                            {
+                                <img srcset="@article.TeaserUrl" src="@article.TeaserUrl" alt="@article.Title" title="@article.Title"
+                                    class="article-tile-image" loading="lazy" />
+                            }
+                        </figure>
+                        <div class="content">
+                            <p class="sub-title">@HtmlLocalizer["KWFEEDS"]</p>
+                            <h2>@HtmlLocalizer["Supporting farming"]</h2>
+                            <p>@article.Summary</p>
+                            <a href="@article.Url" target="" role="button">@HtmlLocalizer["Find out more"]</a>
+                        </div>
+                    </section>
+                }
+
+                if (i % 4 == 0)
+                {
+                    <div class="clear"></div>
+                }
+                i++;
+            }
+        }
     </div>
 </div>

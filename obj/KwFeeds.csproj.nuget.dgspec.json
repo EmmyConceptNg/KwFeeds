@@ -47,10 +47,6 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
-            "Kentico.Content.Web.Mvc": {
-              "target": "Package",
-              "version": "[2.0.1, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.11, )"
