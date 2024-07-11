@@ -69,14 +69,15 @@ ENV DB_PASSWORD="EmmyConcept_55555"
 ENV ADMIN_PASSWORD="EmmyConcept_55555"
 
 # Run the database manager command
-RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
-    -d KwFeeds_2024-06-26T08-42Z \
-    -u CloudSA71d9f3dc \
-    -s "tcp:kwfeeds.database.windows.net,1433" \
-    -p "$DB_PASSWORD" \
-    -a "$ADMIN_PASSWORD" \
-    --license-file "license.txt" \
-    --use-existing-database
+RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- -s "kwfeeds.database.windows.net" -u "CloudSA71d9f3dc" -p "EmmyConcept_55555" -a "EmmyConcept_55555" -d "KwFeeds_2024-06-26T08-42Z" --use-existing-database --license-file "license2.txt"
+# RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
+#     -d KwFeeds_2024-06-26T08-42Z \
+#     -u CloudSA71d9f3dc \
+#     -s "tcp:kwfeeds.database.windows.net,1433" \
+#     -p "$DB_PASSWORD" \
+#     -a "$ADMIN_PASSWORD" \
+#     --license-file "license.txt" \
+#     --use-existing-database
 
 # Create a non-root user and set permissions
 RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
