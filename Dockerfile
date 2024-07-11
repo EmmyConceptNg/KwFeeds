@@ -76,7 +76,8 @@ RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
     -p "$DB_PASSWORD" \
     -a "$ADMIN_PASSWORD" \
     --license-file "license.txt" \
-    --recreate-existing-database
+    --use-existing-database
+    # --recreate-existing-database
 
 # Create a non-root user and set permissions
 RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
