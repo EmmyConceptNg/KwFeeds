@@ -36,8 +36,26 @@ namespace KwFeeds
 
 
 		/// <summary>
-		/// Title.
+		/// hero_section.
 		/// </summary>
-		public string Title { get; set; }
+		public IEnumerable<HomePageBanner> hero_section { get; set; }
+
+
+		/// <summary>
+		/// products_of_the_month.
+		/// </summary>
+		public IEnumerable<SingleProduct> products_of_the_month { get; set; }
+
+
+		/// <summary>
+		/// products.
+		/// </summary>
+		public IEnumerable<SingleProduct> products { get; set; }
+
+
+		/// <summary>
+		/// about.
+		/// </summary>
+		public IEnumerable<About> about { get; set; }
 	}
 }

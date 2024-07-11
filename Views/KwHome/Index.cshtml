@@ -14,155 +14,135 @@
     <page-builder-scripts />
 }
 
-<section class="intro-block">
-    <div class="slider auto-scroll">
-        <input type="radio" name="slider_header" id="slide-0" checked>
-        <input type="radio" name="slider_header" id="slide-1">
-        <input type="radio" name="slider_header" id="slide-2">
-        <ul>
-            <li>
-                <video class="background" src="~/Content/Images/KW-hero-image.mp4" playsinline muted autoplay loop poster=""></video>
-                <div class="content">
-                    <p>More than feed1</p>
-                    <h2>Helping customers produce healthy high performance herds</h2>
-                    <div class="actions">
-                        <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">Find out more</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <video class="background" src="~/Content/Images/KW-hero-image.mp4" playsinline muted autoplay loop poster=""></video>
-                <div class="content">
-                    <p>More than feed2</p>
-                    <h2>Helping customers produce healthy high performance herds</h2>
-                    <div class="actions">
-                        <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">Find out more</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <video class="background" src="~/Content/Images/KW-hero-image.mp4" playsinline muted autoplay loop poster=""></video>
-                <div class="content">
-                    <p>More than feed3</p>
-                    <h2>Helping customers produce healthy high performance herds</h2>
-                    <div class="actions">
-                        <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">Find out more</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section class="actions-block">
-    <ul>
-        <li>
-            <a href="#">
-                <figure>
-                    <img srcset="~/Content/Images/product-of-the-month.png" src="~/Content/Images/product-of-the-month.png" title="Product of the Month">
-                </figure>
-                <div class="content">
-                    <h3>PRODUCT OF THE MONTH</h3>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <figure>
-                    <img srcset="~/Content/Images/kw-in-the-press.png" src="~/Content/Images/kw-in-the-press.png" title="KW in the Press">
-                </figure>
-                <div class="content">
-                    <h3>FIND KW</h3>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <figure>
-                    <img srcset="~/Content/Images/find-kw.png" src="~/Content/Images/find-kw.png" title="Find KW">
-                </figure>
-                <div class="content">
-                    <h3>Menus</h3>
-                </div>
-            </a>
-        </li>
-    </ul>
-</section>
-
-<section class="product-block">
-    <div class="content">
-        <h2>Our Products</h2>
-    </div>
-    <div class="slider auto-scroll transition-slide">
-        <input type="radio" name="slider_products" id="slide-products-0" checked>
-        <input type="radio" name="slider_products" id="slide-products-1">
-        <input type="radio" name="slider_products" id="slide-products-2">
-        <input type="radio" name="slider_products" id="slide-products-3">
-        <input type="radio" name="slider_products" id="slide-products-4">
-        <input type="radio" name="slider_products" id="slide-products-5">
-        <input type="radio" name="slider_products" id="slide-products-6">
-        <input type="radio" name="slider_products" id="slide-products-7">
-        <input type="radio" name="slider_products" id="slide-products-8">
-        <ul>
-            <li>
-                <div class="product-logo">
-                    <figure>
-                        <img src="~/Content/Images/KW-new-logo.png" alt="KW-new-logo" />
-                    </figure>
-                </div>
-                <figure>
-                    <img src="~/Content/Images/draff.png">
-                </figure>
-                <div class="content">
-                    <h2>Draff</h2>
-                    <p>Draff is a highly palatable and succulent moist feed that provides a rich source of digestible fibre and protein.</p>
-                    <div class="actions">
-                        <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">Find out more</a>
-                    </div>
-                </div>
-            </li>
-            <!-- Repeat similar blocks for other products -->
-        </ul>
-        <div class="arrows">
-            <label for="slide-products-0"></label>
-            <label for="slide-products-1"></label>
-            <label for="slide-products-2"></label>
-            <label for="slide-products-3"></label>
-            <label for="slide-products-4"></label>
-            <label for="slide-products-5"></label>
-            <label for="slide-products-6"></label>
-            <label for="slide-products-7"></label>
-            <label for="slide-products-8"></label>
+    <section class="intro-block">
+        <div class="slider auto-scroll">
+            @if (Model.HeroSection != null)
+            {
+                <input type="radio" name="slider_header" id="slide-0" checked>
+                @for (var i = 1; i <= Model.HeroSection.Count(); i++)
+                {
+                    <input type="radio" name="slider_header" id="slide-@(i)">
+                }
+                <ul>
+                    @foreach (var hero in Model.HeroSection)
+                    {
+                        <li>
+                            <video class="background" src="~/Content/Images/KW-hero-image.mp4" playsinline="" muted="" autoplay="" loop="" poster=""></video>
+                            <div class="content">
+                                <p>@hero.tag</p>
+                                <h2>@hero.title</h2>
+                                <div class="actions">
+                                    <a href="#" target="" role="button">@hero.button_text</a>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No Hero Sections available</p>
+            }
         </div>
-    </div>
-    <div class="actions">
-        <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">All Products</a>
-    </div>
-</section>
-
-<section class="content-block text-left-image-right background-background">
-    <figure>
-        <img srcset="~/Content/Images/cows.png" src="~/Content/Images/cows.png" alt="cows image" title="" />
-    </figure>
-    <div class="content">
-        <p class="sub-title">More than feed</p>
-        <h2>Helping customers produce healthy high performance herds</h2>
-        <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high performance livestock farms. Today, the choice of alternative feeds is greater than ever and we offer the widest possible range of dry, moist, liquid, blended and compounded feeds alongside more traditional straights, minerals, vitamins, protected fats, secure covers and silage additives.</p>
-        <a href="#" target="" role="button">Find out more</a>
-    </div>
-</section>
-
-<section class="content-block text-right-image-left background-background">
-    <figure>
-        <img srcset="~/Content/Images/tractor.png" src="~/Content/Images/tractor.png" alt="tractor image" title="" />
-    </figure>
-    <div class="content">
-        <p class="sub-title">KWFEEDS</p>
-        <h2>Supporting farming </h2>
-        <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high performance livestock farms.</p>
-        <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high performance livestock farms. Today, the choice of alternative feeds is greater than ever and we offer the widest possible range of dry, moist, liquid, blended and compounded feeds alongside more traditional straights, minerals, vitamins, protected fats, secure covers and silage additives.</p>
-        <a href="#" target="" role="button">Find out more</a>
-    </div>
-</section>
-
+    </section>
+    <section class="actions-block">
+        <ul>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img srcset="~/Content/Images/product-of-the-month.png" src="~/images/product-of-the-month.png" title="Product of the Month">
+                    </figure>
+                    <div class="content">
+                        <h3>PRODUCT OF THE MONTH</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img srcset="~/Content/Images/kw-in-the-press.png" src="~/images/kw-in-the-press.png" title="KW in the Press">
+                    </figure>
+                    <div class="content">
+                        <h3>FIND KW</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img srcset="~/Content/Images/find-kw.png" src="~/images/find-kw.png" title="Find KW">
+                    </figure>
+                    <div class="content">
+                        <h3>Menus</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="product-block">
+        <div class="content">
+            <h2>Our Products</h2>
+        </div>
+        <div class="slider auto-scroll transition-slide">
+            @for (var i = 0; i < Model.Products.Count(); i++)
+            {
+                <input type="radio" name="slider_products" id="slide-products-@(i)" @(i == 0 ? "checked" : null) />
+            }
+            <ul>
+                @foreach (var product in Model.Products)
+                {
+                    <li>
+                        <div class="product-logo">
+                            <figure>
+                                <img src="~/images/KW-new-logo.png" alt="KW-new-logo" />
+                            </figure>
+                        </div>
+                        <figure>
+                            @* <img src="@product.images.FirstOrDefault().AssetUrl"> *@
+                        </figure>
+                        <div class="content">
+                            <h2>@product.name</h2>
+                            <p>@product.nutritional_information</p>
+                            <div class="actions">
+                                <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">Find out more</a>
+                            </div>
+                        </div>
+                    </li>
+                }
+                <!-- Repeat similar blocks for other products if needed -->
+            </ul>
+            <div class="arrows">
+                @for (var i = 0; i < Model.Products.Count(); i++)
+                {
+                    <label for="slide-products-@(i)"></label>
+                }
+            </div>
+        </div>
+        <div class="actions">
+            <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">All Products</a>
+        </div>
+    </section>
+    <section class="content-block text-left-image-right background-background">
+        <figure>
+            <img srcset="~/images/cows.png" src="~/images/cows.png" alt="cows image" title="" />
+        </figure>
+        <div class="content">
+            <p class="sub-title">More than feed</p>
+            <h2>Helping customers produce healthy high performance herds</h2>
+            <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high performance livestock farms. Today, the choice of alternative feeds is greater than ever and we offer the widest possible range of dry, moist, liquid, blended and compounded feeds alongside more traditional straights, minerals, vitamins, protected fats, secure covers and silage additives.</p>
+            <a href="#" target="" role="button">Find out more</a>
+        </div>
+    </section>
+    <section class="content-block text-right-image-left background-background">
+        <figure>
+            <img srcset="~/images/tractor.png" src="~/images/tractor.png" alt="cows image" title="" />
+        </figure>
+        <div class="content">
+            <p class="sub-title">KWFEEDS</p>
+            <h2>Supporting farming</h2>
+            <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high performance livestock farms.</p>
+            <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high performance livestock farms. Today, the choice of alternative feeds is greater than ever and we offer the widest possible range of dry, moist, liquid, blended and compounded feeds alongside more traditional straights, minerals, vitamins, protected fats, secure covers and silage additives.</p>
+            <a href="#" target="" role="button">Find out more</a>
+        </div>
+    </section>
 <partial name="~/Views/Shared/_LogoSection.cshtml" />

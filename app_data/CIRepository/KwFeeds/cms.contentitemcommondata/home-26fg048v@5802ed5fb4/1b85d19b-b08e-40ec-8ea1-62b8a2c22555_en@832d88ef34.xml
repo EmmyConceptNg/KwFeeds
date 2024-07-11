@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>Home-26fg048v</CodeName>
+    <GUID>fad5235a-894e-40ec-b59b-a1a9525e28a5</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>e4a8fb12-ebc2-45d0-930f-c9fba2780c85</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataFirstPublishedWhen>2024-07-09 18:36:35Z</ContentItemCommonDataFirstPublishedWhen>
+  <ContentItemCommonDataGUID>1b85d19b-b08e-40ec-8ea1-62b8a2c22555</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataLastPublishedWhen>2024-07-11 01:45:42Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>60397008-4732-4bc2-8c34-ab6b871fe906</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>baea0443-3146-401d-a811-777179630188</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>1b85d19b-b08e-40ec-8ea1-62b8a2c22555</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>Banner-ci5fdv5b</CodeName>
+        <GUID>99b608e8-a4a2-4b7b-aa19-65220ed4ccc9</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>60397008-4732-4bc2-8c34-ab6b871fe906</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>211c7a6b-c61f-4ad5-aeef-30758b01521e</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>1b85d19b-b08e-40ec-8ea1-62b8a2c22555</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>Banner2-e5pj7u0e</CodeName>
+        <GUID>654260ea-d20d-4a63-b25b-14babb9dbf39</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
+</cms.contentitemcommondata>

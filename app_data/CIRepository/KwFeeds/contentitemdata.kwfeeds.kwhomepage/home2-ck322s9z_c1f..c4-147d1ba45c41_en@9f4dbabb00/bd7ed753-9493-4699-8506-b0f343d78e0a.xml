@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.kwhomepage>
+  <ContentItemDataCommonDataID>
+    <GUID>c1f1d06a-8bab-47cc-8ac4-147d1ba45c41</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home2-ck322s9z</CodeName>
+      <GUID>065e7423-caba-4086-9c20-bf16648a268f</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>bd7ed753-9493-4699-8506-b0f343d78e0a</ContentItemDataGUID>
+  <hero_section>
+    <![CDATA[[{"Identifier":"39fca4fd-a3a9-4c34-9e2f-f9b64b785640"}]]]>
+  </hero_section>
+</contentitemdata.kwfeeds.kwhomepage>

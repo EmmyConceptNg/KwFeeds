@@ -1,12 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
-
 using CMS.ContentEngine;
 using CMS.Websites;
-
 using Kentico.Content.Web.Mvc.Routing;
-
 using KwFeeds;
 using KwFeeds.Models;
 using KwFeeds.Controllers;
@@ -30,17 +27,21 @@ namespace KwFeeds.Controllers
         public async Task<IActionResult> Index()
         {
             var query = new ContentItemQueryBuilder()
-                                // Scopes the query to pages of the MEDLAB.Home content type
                                 .ForContentType(KwHomePage.CONTENT_TYPE_NAME,
                                 config => config
-                                    // Retrieves the page with the /Home tree path under the MEDLABClinicPages website channel
                                     .ForWebsite("KwFeeds", PathMatch.Single("/Home")));
 
-            // Executes the query and stores the data in the generated 'Home' class
-            KwHomePage page = (await executor.GetMappedWebPageResult<KwHomePage>(query)).FirstOrDefault();
+            var result = await executor.GetMappedWebPageResult<KwHomePage>(query);
+            var page = result.FirstOrDefault();
 
-            // Passes the home page content to the view using HomePageViewModel
-            return View("Views/KwHome/Index.cshtml", new HomePageViewModel(page));
+            if (page == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new HomePageViewModel(page);
+            return View("Index", viewModel);
         }
     }
 }
+

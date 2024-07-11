@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageurlpath>
+  <WebPageUrlPath>es/Home/home2</WebPageUrlPath>
+  <WebPageUrlPathContentLanguageID>
+    <CodeName>es</CodeName>
+    <GUID>fc939370-8f94-4fc9-8cc4-bfdef6ab748c</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebPageUrlPathContentLanguageID>
+  <WebPageUrlPathGUID>920ec77e-045b-4e48-b316-1645ce87aaf5</WebPageUrlPathGUID>
+  <WebPageUrlPathHash>
+    <![CDATA[3D435D4C1325E4AC8BEA4617A1C34D109435C6E20167216358AAACBBD4190FEE]]>
+  </WebPageUrlPathHash>
+  <WebPageUrlPathIsDraft>False</WebPageUrlPathIsDraft>
+  <WebPageUrlPathIsLatest>True</WebPageUrlPathIsLatest>
+  <WebPageUrlPathWebPageItemID>
+    <CodeName>Home2-ck322s9z</CodeName>
+    <GUID>c79fe843-7b7c-4d8f-83aa-4df0b54f87af</GUID>
+    <ObjectType>cms.webpageitem</ObjectType>
+  </WebPageUrlPathWebPageItemID>
+  <WebPageUrlPathWebsiteChannelID>
+    <GUID>3aa9997c-246d-4655-b7ea-c3ca9e7beed9</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>KwFeeds</CodeName>
+      <GUID>e833e04e-27fb-44a7-a2c9-5d7e4ecf3261</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageUrlPathWebsiteChannelID>
+</cms.webpageurlpath>

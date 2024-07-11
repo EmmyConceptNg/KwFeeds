@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hvI9bcpqhOw=",
+  "dgSpecHash": "+BWWI53zl5Q=",
   "success": true,
   "projectFilePath": "/Users/emmy/projects/bles/KwFeeds/KwFeeds.csproj",
   "expectedPackageFiles": [
     "/Users/emmy/.nuget/packages/anglesharp/0.17.1/anglesharp.0.17.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/anglesharp.css/0.17.0/anglesharp.css.0.17.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/awssdk.core/3.1.10/awssdk.core.3.1.10.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/awssdk.s3/3.1.9/awssdk.s3.3.1.9.nupkg.sha512",
     "/Users/emmy/.nuget/packages/azure.core/1.39.0/azure.core.1.39.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/emmy/.nuget/packages/azure.storage.blobs/12.20.0/azure.storage.blobs.12.20.0.nupkg.sha512",
@@ -13,8 +15,13 @@
     "/Users/emmy/.nuget/packages/azure.storage.queues/12.18.0/azure.storage.queues.12.18.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/bananacakepop.middleware/16.0.1/bananacakepop.middleware.16.0.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/bouncycastle.cryptography/2.3.0/bouncycastle.cryptography.2.3.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/castle.core/4.0.0/castle.core.4.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/castle.windsor/4.0.0/castle.windsor.4.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/commandlineparser/2.9.1/commandlineparser.2.9.1.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/documentformat.openxml/2.7.2/documentformat.openxml.2.7.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/dotnetenv/3.0.0/dotnetenv.3.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/facebook/6.4.2/facebook.6.4.2.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/globallink.connect/4.18.3.1/globallink.connect.4.18.3.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/greendonut/13.9.4/greendonut.13.9.4.nupkg.sha512",
     "/Users/emmy/.nuget/packages/hotchocolate/13.9.4/hotchocolate.13.9.4.nupkg.sha512",
     "/Users/emmy/.nuget/packages/hotchocolate.abstractions/13.9.4/hotchocolate.abstractions.13.9.4.nupkg.sha512",
@@ -44,17 +51,30 @@
     "/Users/emmy/.nuget/packages/htmlsanitizer/8.0.865/htmlsanitizer.8.0.865.nupkg.sha512",
     "/Users/emmy/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/emmy/.nuget/packages/kentico.aira.client/1.0.25/kentico.aira.client.1.0.25.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/kentico.content.web.mvc/2.0.1/kentico.content.web.mvc.2.0.1.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/kentico.languagepack.english/11.0.0/kentico.languagepack.english.11.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/kentico.libraries/11.0.0/kentico.libraries.11.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/kentico.web.mvc/3.0.0/kentico.web.mvc.3.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/kentico.xperience.admin/29.1.3/kentico.xperience.admin.29.1.3.nupkg.sha512",
     "/Users/emmy/.nuget/packages/kentico.xperience.azurestorage/29.1.3/kentico.xperience.azurestorage.29.1.3.nupkg.sha512",
     "/Users/emmy/.nuget/packages/kentico.xperience.core/29.1.3/kentico.xperience.core.29.1.3.nupkg.sha512",
     "/Users/emmy/.nuget/packages/kentico.xperience.imageprocessing/29.1.3/kentico.xperience.imageprocessing.29.1.3.nupkg.sha512",
     "/Users/emmy/.nuget/packages/kentico.xperience.webapp/29.1.3/kentico.xperience.webapp.29.1.3.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/linqtotwitter/4.0.0/linqtotwitter.4.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/mailkit/4.5.0/mailkit.4.5.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.aspnet.mvc/5.2.3/microsoft.aspnet.mvc.5.2.3.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.aspnet.razor/3.2.3/microsoft.aspnet.razor.3.2.3.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.aspnet.webpages/3.2.3/microsoft.aspnet.webpages.3.2.3.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.aspnetcore.spaservices.extensions/6.0.29/microsoft.aspnetcore.spaservices.extensions.6.0.29.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.azure.search/3.0.2/microsoft.azure.search.3.0.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.bcl.timeprovider/8.0.0/microsoft.bcl.timeprovider.8.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.data.edm/5.6.4/microsoft.data.edm.5.6.4.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.data.odata/5.6.4/microsoft.data.odata.5.6.4.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.data.services.client/5.6.4/microsoft.data.services.client.5.6.4.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.data.sqlclient/5.2.0/microsoft.data.sqlclient.5.2.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.2.0/microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.dotnet.platformabstractions/1.1.2/microsoft.dotnet.platformabstractions.1.1.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.entityframeworkcore/6.0.11/microsoft.entityframeworkcore.6.0.11.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.11/microsoft.entityframeworkcore.abstractions.6.0.11.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.11/microsoft.entityframeworkcore.analyzers.6.0.11.nupkg.sha512",
@@ -69,6 +89,7 @@
     "/Users/emmy/.nuget/packages/microsoft.extensions.configuration.binder/6.0.0/microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.1/microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.extensions.dependencymodel/1.1.2/microsoft.extensions.dependencymodel.1.1.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.extensions.fileproviders.abstractions/6.0.0/microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.extensions.fileproviders.embedded/6.0.29/microsoft.extensions.fileproviders.embedded.6.0.29.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.extensions.fileproviders.physical/6.0.0/microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
@@ -93,13 +114,22 @@
     "/Users/emmy/.nuget/packages/microsoft.identitymodel.tokens/7.3.1/microsoft.identitymodel.tokens.7.3.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.netcore.platforms/1.1.1/microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.netcore.targets/1.1.3/microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.rest.clientruntime/2.3.4/microsoft.rest.clientruntime.2.3.4.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.rest.clientruntime.azure/3.3.4/microsoft.rest.clientruntime.azure.3.3.4.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.sharepointonline.csom/16.1.6621.1200/microsoft.sharepointonline.csom.16.1.6621.1200.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.spatial/6.15.0/microsoft.spatial.6.15.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.web.infrastructure/1.0.0/microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/mimekit/4.5.0/mimekit.4.5.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/mono.cecil/0.11.5/mono.cecil.0.11.5.nupkg.sha512",
     "/Users/emmy/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/nuget.core/2.14.0/nuget.core.2.14.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/openpop.net/2.0.4.369/openpop.net.2.0.4.369.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/paypal/1.8.0/paypal.1.8.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -116,6 +146,11 @@
     "/Users/emmy/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/rx-core/2.2.5/rx-core.2.2.5.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/rx-interfaces/2.2.5/rx-interfaces.2.2.5.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/rx-linq/2.2.5/rx-linq.2.2.5.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/rx-main/2.2.5/rx-main.2.2.5.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/rx-platformservices/2.2.5/rx-platformservices.2.2.5.nupkg.sha512",
     "/Users/emmy/.nuget/packages/skiasharp/2.88.8/skiasharp.2.88.8.nupkg.sha512",
     "/Users/emmy/.nuget/packages/skiasharp.nativeassets.linux.nodependencies/2.88.8/skiasharp.nativeassets.linux.nodependencies.2.88.8.nupkg.sha512",
     "/Users/emmy/.nuget/packages/skiasharp.nativeassets.macos/2.88.8/skiasharp.nativeassets.macos.2.88.8.nupkg.sha512",
@@ -128,14 +163,24 @@
     "/Users/emmy/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.collections.concurrent/4.3.0/system.collections.concurrent.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.collections.nongeneric/4.0.1/system.collections.nongeneric.4.0.1.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.collections.specialized/4.0.1/system.collections.specialized.4.0.1.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.componentmodel/4.0.1/system.componentmodel.4.0.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.componentmodel.primitives/4.1.0/system.componentmodel.primitives.4.1.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.componentmodel.typeconverter/4.1.0/system.componentmodel.typeconverter.4.1.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.configuration.configurationmanager/6.0.1/system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.console/4.3.0/system.console.4.3.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.data.hashfunction.core/1.8.2.2/system.data.hashfunction.core.1.8.2.2.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.data.hashfunction.crc/1.8.2.2/system.data.hashfunction.crc.1.8.2.2.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.data.hashfunction.interfaces/1.0.0.2/system.data.hashfunction.interfaces.1.0.0.2.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.diagnostics.tracesource/4.0.0/system.diagnostics.tracesource.4.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.dynamic.runtime/4.0.11/system.dynamic.runtime.4.0.11.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.formats.asn1/8.0.0/system.formats.asn1.8.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.globalization/4.3.0/system.globalization.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.globalization.calendars/4.3.0/system.globalization.calendars.4.3.0.nupkg.sha512",
@@ -148,6 +193,7 @@
     "/Users/emmy/.nuget/packages/system.io.filesystem.accesscontrol/5.0.0/system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.io.filesystem.primitives/4.3.0/system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.io.hashing/7.0.0/system.io.hashing.7.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.io.packaging/4.0.0/system.io.packaging.4.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.io.pipelines/6.0.0/system.io.pipelines.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.linq/4.3.0/system.linq.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.linq.expressions/4.3.0/system.linq.expressions.4.3.0.nupkg.sha512",
@@ -174,7 +220,10 @@
     "/Users/emmy/.nuget/packages/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.runtime.interopservices.runtimeinformation/4.3.0/system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.runtime.loader/4.3.0/system.runtime.loader.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.runtime.numerics/4.3.0/system.runtime.numerics.4.3.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.runtime.serialization.formatters/4.3.0/system.runtime.serialization.formatters.4.3.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.runtime.serialization.primitives/4.3.0/system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.security.accesscontrol/6.0.0/system.security.accesscontrol.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.security.cryptography.algorithms/4.3.0/system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.security.cryptography.cng/4.3.0/system.security.cryptography.cng.4.3.0.nupkg.sha512",
@@ -187,6 +236,7 @@
     "/Users/emmy/.nuget/packages/system.security.cryptography.x509certificates/4.3.0/system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.security.permissions/6.0.0/system.security.permissions.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.spatial/5.6.4/system.spatial.5.6.4.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.text.encoding.codepages/6.0.0/system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg.sha512",
@@ -197,11 +247,326 @@
     "/Users/emmy/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.threading.thread/4.3.0/system.threading.thread.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.threading.timer/4.3.0/system.threading.timer.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.xml.xmldocument/4.0.1/system.xml.xmldocument.4.0.1.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/system.xml.xmlserializer/4.0.11/system.xml.xmlserializer.4.0.11.nupkg.sha512",
+    "/Users/emmy/.nuget/packages/windowsazure.storage/7.2.0/windowsazure.storage.7.2.0.nupkg.sha512",
     "/Users/emmy/.nuget/packages/yarp.reverseproxy/2.1.0/yarp.reverseproxy.2.1.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Castle.Core 4.0.0 depends on System.ComponentModel.TypeConverter (>= 4.0.1) but System.ComponentModel.TypeConverter 4.0.1 was not found. An approximate best match of System.ComponentModel.TypeConverter 4.1.0 was resolved.",
+      "libraryId": "System.ComponentModel.TypeConverter",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Microsoft.Rest.ClientRuntime 2.3.4 requires Newtonsoft.Json (>= 9.0.1 && < 10.0.0) but version Newtonsoft.Json 13.0.3 was resolved.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AWSSDK.Core 3.1.10' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AWSSDK.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AWSSDK.S3 3.1.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AWSSDK.S3",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Facebook 6.4.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Facebook",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'GlobalLink.Connect 4.18.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "GlobalLink.Connect",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Kentico.Content.Web.Mvc 2.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Kentico.Content.Web.Mvc",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Kentico.Libraries 11.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Kentico.Libraries",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Kentico.Web.Mvc 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Kentico.Web.Mvc",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'linqtotwitter 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "linqtotwitter",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Mvc 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Mvc",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebPages",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Data.Edm 5.6.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Data.Edm",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Data.OData 5.6.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Data.OData",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Data.Services.Client 5.6.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Data.Services.Client",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.SharePointOnline.CSOM 16.1.6621.1200' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.SharePointOnline.CSOM",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Spatial 6.15.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Spatial",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Web.Xdt 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Web.Xdt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NuGet.Core 2.14.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NuGet.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenPop.NET 2.0.4.369' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenPop.NET",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PayPal 1.8.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PayPal",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Rx-Core 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Rx-Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Rx-Interfaces 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Rx-Interfaces",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Rx-Linq 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Rx-Linq",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Rx-PlatformServices 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Rx-PlatformServices",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.HashFunction.Core 1.8.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Data.HashFunction.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.HashFunction.CRC 1.8.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Data.HashFunction.CRC",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.HashFunction.Interfaces 1.0.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Data.HashFunction.Interfaces",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Spatial 5.6.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Spatial",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

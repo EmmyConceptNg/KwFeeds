@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.homepagebanner>
+  <button_text>Learn more</button_text>
+  <ContentItemDataCommonDataID>
+    <GUID>abe3f531-3270-4bc7-962c-010adaa8fbba</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Bannner-59wzoy3n</CodeName>
+      <GUID>c58385e4-dff1-46cb-8452-3b057b5bd37e</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>903085d4-7ead-4208-8a7a-a105178cc2cc</ContentItemDataGUID>
+  <tag>MORE THAN FEED</tag>
+  <title>
+    <![CDATA[<p>more than just feeds</p>]]>
+  </title>
+</contentitemdata.kwfeeds.homepagebanner>

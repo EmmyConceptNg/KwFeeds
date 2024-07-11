@@ -1,27 +1,28 @@
 ﻿using System;
 using System.Threading.Tasks;
-
 using DancingGoat;
 using DancingGoat.Models;
-
 using Kentico.Activities.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.Membership;
 using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using KwFeeds.Data;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
 builder.Services.AddKentico(features =>
 {
     features.UsePageBuilder(new PageBuilderOptions
@@ -46,7 +47,7 @@ builder.Services.AddKentico(features =>
 builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 
 builder.Services.AddLocalization()
-    .AddControllersWithViews()
+    .AddControllersWithViews().AddRazorRuntimeCompilation()
     .AddViewLocalization()
     .AddDataAnnotationsLocalization(options =>
     {
@@ -56,6 +57,12 @@ builder.Services.AddLocalization()
 builder.Services.AddDancingGoatServices();
 
 ConfigureMembershipServices(builder.Services);
+
+// Add Entity Framework Core services
+builder.Services.AddDbContext<KwFeedsContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CMSConnectionString")));
+
+builder.Services.AddScoped<IKwFeedsRepository, KwFeedsRepository>();
 
 var app = builder.Build();
 
@@ -81,6 +88,10 @@ app.MapControllerRoute(
     pattern: "error/{code}",
     defaults: new { controller = "HttpErrors", action = "Error" }
 );
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
 
@@ -120,4 +131,4 @@ static void ConfigureMembershipServices(IServiceCollection services)
     });
 
     services.AddAuthorization();
-}
+}   
