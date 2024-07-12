@@ -7,13 +7,13 @@
     <vc:banner banner="@Model.Banner" />
 }
 
-    <vc:cafe-card-section cafes="@Model.Cafes" />
+    <vc:cafe-card-section cafes="@Model.Products" />
 
 
-@* @if (Model.Event != null)
-{
-    <partial name="_Event" model="@Model.Event" />
-} *@
+    @* @if (Model.Event != null)
+    {
+        <partial name="_Event" model="@Model.Event" />
+    } *@
 
 @if (Model.ArticlesSection != null)
 {
