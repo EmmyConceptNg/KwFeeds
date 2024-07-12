@@ -1,64 +1,131 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 
 @model DancingGoat.Models.ArticlesSectionViewModel
+
+
+<section class="page-header-block">
+    <figure>
+        <img src="images/inner-page-header.png">
+    </figure>
+    <div class="content">
+        <h2>About KWFeeds</h2>
+    </div>
+</section>
+
+
 @{
-    var i = 1;
+    var i = 0;
 }
-<div class="articles-page">
-    <div class="articles-section">
-        <div class="row">
+
+        
             @foreach (var article in @Model.Articles)
             {
-                var lastInRow = "";
-                if (i % 4 == 0)
-                {
-                    lastInRow = "last";
-                }
+                var positionClass = i % 2 == 0 ? "text-left-image-right" : "text-right-image-left";
+                var bgcolor = i % 2 == 0 ? "background-background" : " background-accent-1";
 
-                <div class="col-xs-12 col-md-3 article-tile article-tile-small @lastInRow">
-                    <div class="article-tile-inner">
-                        @if (article.TeaserUrl != null)
-                        {
-                            <a href="@article.Url">
-                                <img src="@Url.Content(article.TeaserUrl)" alt="@article.Title" title="@article.Title" class="article-tile-image" loading="lazy" />
-                            </a>
-                        }
-                        <div class="article-tile-info">
-                            <div class="article-tile-date">
-                                @article.PublicationDate.ToString("m")
-                            </div>
-                            <div class="article-tile-content">
-                                <h2 class="h4">
-                                    <a href="@article.Url">
-                                        @if (article.IsSecured && !User.Identity.IsAuthenticated)
-                                        {
-                                            <em class="icon-lock"></em>
-                                        }
-                                        @article.Title
-                                    </a>
-                                </h2>
-                                @if (article.IsSecured && !User.Identity.IsAuthenticated)
-                                {
-                                    <p class="article-tile-text">
-                                        <strong>
-                                            @HtmlLocalizer["Sign in to access this article"].Value
-                                        </strong>
-
-                                    </p>
-                                }
-                                <p class="article-tile-text">
-                                    @article.Summary
-                                </p>
-                            </div>
-                        </div>
+                <section class="content-block @positionClass @bgcolor">
+                    @if (article.TeaserUrl != null)
+                    {
+                        <figure>
+                            <img srcset="@Url.Content(article.TeaserUrl)" src="@Url.Content(article.TeaserUrl)"
+                                alt="@article.Title" title="@article.Title" />
+                        </figure>
+                    }
+                    
+                    <div class="content">
+                        <p class="sub-title">More than feed</p>
+                        <h2 class="h4">
+                            @article.Title
+                        </h2>
+                       
+                        <p>@article.Summary</p>
+                        <a href="#" target="" role="button">Find out more</a>
                     </div>
-                </div>
-                if (i % 4 == 0)
+                </section>
+
+                if (i % 4 == 3)
                 {
                     <div class="clear"></div>
                 }
                 i++;
             }
-        </div>
+
+<section class="form-block">
+    <div class="content">
+        <h2>Contact Us Today</h2>
+        <p>Use the contact form below to get in touch if you have any question or need some help about our company or
+            products.</p>
     </div>
-</div>
+    <form id="form-1581" action="https://trulycontent.com/hollpartitions/contact/" method="post" class="form-1581">
+        <p class="half input">
+            <input type="text" name="full_name" id="contact-name" placeholder="&nbsp;" required="">
+            <label for="contact-name">Your Full Name*</label>
+        </p>
+
+        <p class="half input">
+            <input type="email" name="email" id="contact-email" placeholder="&nbsp;" required="">
+            <label for="contact-email">Your Email*</label>
+        </p>
+        <p class="half input">
+            <input type="tel" name="phone" id="contact-phone" placeholder="&nbsp;">
+            <label for="contact-phone">Your Phone Number</label>
+        </p>
+        <p class="half select">
+            <select name="appointment_date" id="date" class="date" required="">
+                <option disabled="" hidden="" selected="">Enquiry Type</option>
+                <option value="2024-04-23">Test</option>
+                <option value="2024-04-24">Test</option>
+                <option value="2024-04-25">Test</option>
+                <option value="2024-04-26">Test</option>
+                <option value="2024-04-27">Test</option>
+            </select>
+        </p>
+        <p class="full input">
+            <textarea name="message" id="contact-query" placeholder="&nbsp;"></textarea>
+            <label for="contact-query">Write your message</label>
+        </p>
+        <input type="hidden" name="form_id" value="1581">
+        <div class="submit full">
+            <button type="submit">SUBMIT</button>
+            <input id="recaptcha-token" type="hidden" name="token" value="">
+        </div>
+    </form>
+</section>
+
+@{
+    var l = 4;
+}
+<section class="about-block">
+    @foreach (var article in @Model.Articles.Take(2))
+    {
+        var lastInRow = "";
+        if (l % 2 == 0)
+        {
+            lastInRow = "last";
+        }
+        <div class="about-container">
+            @if (article.TeaserUrl != null)
+            {
+                <figure>
+                    <img srcset="@Url.Content(article.TeaserUrl)" src="@Url.Content(article.TeaserUrl)" alt="@article.Title"
+                        title="@article.Title" />
+                </figure>
+            }
+            <div class="content">
+                <p class="sub-title">ABOUT</p>
+                <h3>@article.Title</h3>
+                <p>@article.Summary</p>
+                <a href="#" target="" role="button">Find out more</a>
+            </div>
+        </div>
+
+        if (l % 2 == 0)
+        {
+            <div class="clear"></div>
+        }
+        l++;
+    }
+</section>
+
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />

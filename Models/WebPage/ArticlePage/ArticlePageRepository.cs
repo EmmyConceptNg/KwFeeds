@@ -35,9 +35,9 @@ namespace DancingGoat.Models
 
 
         /// <summary>
-        /// Returns list of <see cref="ArticlePage"/> web pages.
+        /// Returns list of <see cref="AboutPage"/> web pages.
         /// </summary>
-        public async Task<IEnumerable<ArticlePage>> GetArticles(string treePath, string languageName, bool includeSecuredItems, int topN = 0, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<AboutPage>> GetArticles(string treePath, string languageName, bool includeSecuredItems, int topN = 0, CancellationToken cancellationToken = default)
         {
             var queryBuilder = GetQueryBuilder(topN, treePath, languageName);
 
@@ -48,14 +48,14 @@ namespace DancingGoat.Models
 
             var cacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, treePath, languageName, includeSecuredItems, topN);
 
-            return await GetCachedQueryResult<ArticlePage>(queryBuilder, options, cacheSettings, GetDependencyCacheKeys, cancellationToken);
+            return await GetCachedQueryResult<AboutPage>(queryBuilder, options, cacheSettings, GetDependencyCacheKeys, cancellationToken);
         }
 
 
         /// <summary>
-        /// Returns list of <see cref="ArticlePage"/> content items with guids passed in parameter.
+        /// Returns list of <see cref="AboutPage"/> content items with guids passed in parameter.
         /// </summary>
-        public async Task<IEnumerable<ArticlePage>> GetArticles(ICollection<Guid> guids, string languageName, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<AboutPage>> GetArticles(ICollection<Guid> guids, string languageName, CancellationToken cancellationToken = default)
         {
             var queryBuilder = GetQueryBuilder(guids, languageName);
 
@@ -63,14 +63,14 @@ namespace DancingGoat.Models
 
             var cacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, languageName, guids.GetHashCode());
 
-            return await GetCachedQueryResult<ArticlePage>(queryBuilder, options, cacheSettings, GetDependencyCacheKeys, cancellationToken);
+            return await GetCachedQueryResult<AboutPage>(queryBuilder, options, cacheSettings, GetDependencyCacheKeys, cancellationToken);
         }
 
 
         /// <summary>
-        /// Returns <see cref="ArticlePage"/> web page by ID and language name.
+        /// Returns <see cref="AboutPage"/> web page by ID and language name.
         /// </summary>
-        public async Task<ArticlePage> GetArticle(int id, string languageName, CancellationToken cancellationToken = default)
+        public async Task<AboutPage> GetArticle(int id, string languageName, CancellationToken cancellationToken = default)
         {
             var queryBuilder = GetQueryBuilder(id, languageName);
 
@@ -79,9 +79,9 @@ namespace DancingGoat.Models
                 IncludeSecuredItems = true
             };
 
-            var cacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, nameof(ArticlePage), id, languageName);
+            var cacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, nameof(AboutPage), id, languageName);
 
-            var result = await GetCachedQueryResult<ArticlePage>(queryBuilder, options, cacheSettings, GetDependencyCacheKeys, cancellationToken);
+            var result = await GetCachedQueryResult<AboutPage>(queryBuilder, options, cacheSettings, GetDependencyCacheKeys, cancellationToken);
 
             return result.FirstOrDefault();
         }
@@ -95,7 +95,7 @@ namespace DancingGoat.Models
                 config => config
                     .WithLinkedItems(1)
                     .TopN(topN)
-                    .OrderBy(OrderByColumn.Desc(nameof(ArticlePage.ArticlePagePublishDate)))
+                    .OrderBy(OrderByColumn.Desc(nameof(AboutPage.ArticlePagePublishDate)))
                     .ForWebsite(WebsiteChannelContext.WebsiteChannelName, PathMatch.Children(treePath)));
         }
 
@@ -109,7 +109,7 @@ namespace DancingGoat.Models
                  .WithLinkedItems(1);
             }).InLanguage(languageName)
             .Parameters(q =>
-                q.OrderBy(OrderByColumn.Desc(nameof(ArticlePage.ArticlePagePublishDate))));
+                q.OrderBy(OrderByColumn.Desc(nameof(AboutPage.ArticlePagePublishDate))));
         }
 
 
@@ -127,12 +127,12 @@ namespace DancingGoat.Models
         private static ContentItemQueryBuilder GetQueryBuilder(string languageName, Action<ContentTypeQueryParameters> configureQuery = null)
         {
             return new ContentItemQueryBuilder()
-                    .ForContentType(ArticlePage.CONTENT_TYPE_NAME, configureQuery)
+                    .ForContentType(AboutPage.CONTENT_TYPE_NAME, configureQuery)
                     .InLanguage(languageName);
         }
 
 
-        private async Task<ISet<string>> GetDependencyCacheKeys(IEnumerable<ArticlePage> articles, CancellationToken cancellationToken)
+        private async Task<ISet<string>> GetDependencyCacheKeys(IEnumerable<AboutPage> articles, CancellationToken cancellationToken)
         {
             var dependencyCacheKeys = new HashSet<string>(StringComparer.InvariantCultureIgnoreCase);
 
@@ -141,14 +141,14 @@ namespace DancingGoat.Models
                 dependencyCacheKeys.UnionWith(GetDependencyCacheKeys(article));
             }
 
-            dependencyCacheKeys.UnionWith(await webPageLinkedItemsDependencyRetriever.Get(articles.Select(articlePage => articlePage.SystemFields.WebPageItemID), 1, cancellationToken));
+            dependencyCacheKeys.UnionWith(await webPageLinkedItemsDependencyRetriever.Get(articles.Select(aboutPage => aboutPage.SystemFields.WebPageItemID), 1, cancellationToken));
             dependencyCacheKeys.Add(CacheHelper.GetCacheItemName(null, WebsiteChannelInfo.OBJECT_TYPE, "byid", WebsiteChannelContext.WebsiteChannelID));
 
             return dependencyCacheKeys;
         }
 
 
-        private IEnumerable<string> GetDependencyCacheKeys(ArticlePage article)
+        private IEnumerable<string> GetDependencyCacheKeys(AboutPage article)
         {
             if (article == null)
             {

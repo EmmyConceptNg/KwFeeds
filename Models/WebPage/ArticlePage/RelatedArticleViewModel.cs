@@ -9,20 +9,20 @@ namespace DancingGoat.Models
     public record RelatedArticleViewModel(string Title, string TeaserUrl, string Summary, string Text, DateTime PublicationDate, Guid Guid, string Url)
     {
         /// <summary>
-        /// Validates and maps <see cref="ArticlePage"/> to a <see cref="RelatedArticleViewModel"/>.
+        /// Validates and maps <see cref="AboutPage"/> to a <see cref="RelatedArticleViewModel"/>.
         /// </summary>
-        public static async Task<RelatedArticleViewModel> GetViewModel(ArticlePage articlePage, IWebPageUrlRetriever urlRetriever, string languageName)
+        public static async Task<RelatedArticleViewModel> GetViewModel(AboutPage aboutPage, IWebPageUrlRetriever urlRetriever, string languageName)
         {
-            var url = await urlRetriever.Retrieve(articlePage, languageName);
+            var url = await urlRetriever.Retrieve(aboutPage, languageName);
 
             return new RelatedArticleViewModel
             (
-                articlePage.ArticleTitle,
-                articlePage.ArticlePageTeaser.FirstOrDefault()?.ImageFile.Url,
-                articlePage.ArticlePageSummary,
-                articlePage.ArticlePageText,
-                articlePage.ArticlePagePublishDate,
-                articlePage.SystemFields.ContentItemGUID,
+                aboutPage.ArticleTitle,
+                aboutPage.ArticlePageTeaser.FirstOrDefault()?.ImageFile.Url,
+                aboutPage.ArticlePageSummary,
+                aboutPage.ArticlePageText,
+                aboutPage.ArticlePagePublishDate,
+                aboutPage.SystemFields.ContentItemGUID,
                 url.RelativePath
             );
         }
