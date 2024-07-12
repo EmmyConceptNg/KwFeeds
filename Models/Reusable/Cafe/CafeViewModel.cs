@@ -5,7 +5,7 @@ namespace DancingGoat.Models
     public record CafeViewModel(string Name, string Description, string NutritionalInformation, string Ingredients, string FeedingGuidelines, string UsageTips, string StorageInstructions, string PhotoPath, string PhotoShortDescription)
     {
         /// <summary>
-        /// Maps <see cref=Cafe"/> to a <see cref="CafeViewModel"/>.
+        /// Maps <see cref=Products"/> to a <see cref="CafeViewModel"/>.
         /// </summary>
         public static CafeViewModel GetViewModel(Products cafe)
         {
