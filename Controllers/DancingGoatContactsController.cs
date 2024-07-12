@@ -63,7 +63,7 @@ namespace DancingGoat.Controllers
         }
 
 
-        private List<CafeViewModel> GetCompanyCafesModel(IEnumerable<Cafe> cafes)
+        private List<CafeViewModel> GetCompanyCafesModel(IEnumerable<Products> cafes)
         {
             return cafes.Select(cafe => CafeViewModel.GetViewModel(cafe)).ToList();
         }

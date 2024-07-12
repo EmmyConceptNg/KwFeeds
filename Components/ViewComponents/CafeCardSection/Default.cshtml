@@ -1,6 +1,6 @@
 ﻿@using DancingGoat.Models
 @model IEnumerable<CafeViewModel>
-
+@* 
 <div class="row cafe-cards">
     <div class="title-wrapper">
         <h1 class="title-tab">@HtmlLocalizer["Taste our coffee"]</h1>
@@ -13,4 +13,85 @@
             </div>
         }
     </div>
-</div>
+</div> *@
+
+
+
+<section class="actions-block">
+    <ul>
+        <li>
+            <a href="#">
+                <figure>
+                    <img srcset="~/Content/Images/product-of-the-month.png" src="~/Content/Images/product-of-the-month.png"
+                        title="Product of the Month">
+                </figure>
+                <div class="content">
+                    <h3>PRODUCT OF THE MONTH</h3>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img srcset="~/Content/Images/kw-in-the-press.png" src="~/Content/Images/kw-in-the-press.png" title="KW in the Press">
+                </figure>
+                <div class="content">
+                    <h3>FIND KW</h3>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img srcset="~/Content/Images/find-kw.png" src="~/Content/Images/find-kw.png" title="Find KW">
+                </figure>
+                <div class="content">
+                    <h3>Menus</h3>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+<section class="product-block">
+    <div class="content">
+        <h2>Our Products</h2>
+    </div>
+    <div class="slider auto-scroll transition-slide">
+        <input type="radio" name="slider_products" id="slide-products-0" checked>
+        <input type="radio" name="slider_products" id="slide-products-1">
+        <input type="radio" name="slider_products" id="slide-products-2">
+        <input type="radio" name="slider_products" id="slide-products-3">
+        <input type="radio" name="slider_products" id="slide-products-4">
+        <input type="radio" name="slider_products" id="slide-products-5">
+        <input type="radio" name="slider_products" id="slide-products-6">
+        <input type="radio" name="slider_products" id="slide-products-7">
+        <input type="radio" name="slider_products" id="slide-products-8">
+        <ul>
+
+            @foreach (var cafe in Model)
+            {
+                <li>
+                
+                    <vc:cafe cafe="@cafe" />
+                
+                </li>
+            }
+           
+            <!-- Repeat similar blocks for other products -->
+        </ul>
+        <div class="arrows">
+            <label for="slide-products-0"></label>
+            <label for="slide-products-1"></label>
+            <label for="slide-products-2"></label>
+            <label for="slide-products-3"></label>
+            <label for="slide-products-4"></label>
+            <label for="slide-products-5"></label>
+            <label for="slide-products-6"></label>
+            <label for="slide-products-7"></label>
+            <label for="slide-products-8"></label>
+        </div>
+    </div>
+    <div class="actions">
+        <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">All Products</a>
+    </div>
+</section>

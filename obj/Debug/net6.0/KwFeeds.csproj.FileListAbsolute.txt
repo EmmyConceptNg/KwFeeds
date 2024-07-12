@@ -1,3 +1,4 @@
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/app_data/CIRepository/repository.config
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Register.config
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/appsettings.json
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/package.json
@@ -45,6 +46,7 @@
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/HotChocolate.Utilities.DependencyInjection.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/HotChocolate.Validation.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/HtmlSanitizer.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Humanizer.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Kentico.Aira.Client.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Kentico.Aira.Model.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Kentico.Xperience.Admin.Base.dll
@@ -100,6 +102,11 @@
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.Bcl.TimeProvider.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
 /Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
@@ -201,9 +208,3 @@
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.pdb
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.genruntimeconfig.cache
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/ref/KwFeeds.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Humanizer.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
-/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll

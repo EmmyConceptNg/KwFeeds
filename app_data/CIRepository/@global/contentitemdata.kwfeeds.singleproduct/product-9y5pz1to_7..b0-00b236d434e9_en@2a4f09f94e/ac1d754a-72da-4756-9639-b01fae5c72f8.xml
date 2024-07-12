@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.singleproduct>
+  <ContentItemDataCommonDataID>
+    <GUID>771468a2-8ef3-4e20-b2b0-00b236d434e9</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Product-9y5pz1to</CodeName>
+      <GUID>d687493f-bd61-41b4-bf38-5f7110192561</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>ac1d754a-72da-4756-9639-b01fae5c72f8</ContentItemDataGUID>
+  <feeding_guidelines>
+    <![CDATA[<p>dsfdf</p>]]>
+  </feeding_guidelines>
+  <health_benefits>
+    <![CDATA[<p>dfds</p>]]>
+  </health_benefits>
+  <images>
+    <![CDATA[[{"Identifier":"f3396fcc-4e03-4230-9c68-3e7820eccb1a","Name":"Screenshot-2024-07-01-at-14-01-33.png","Size":360737,"Dimensions":{"Width":3360,"Height":2092}}]]]>
+  </images>
+  <ingredients>
+    <![CDATA[<p>sdfsdfd</p>]]>
+  </ingredients>
+  <name>
+    <![CDATA[D & G  Shirt]]>
+  </name>
+  <nutritional_information>
+    <![CDATA[<p>dfdfdff</p>]]>
+  </nutritional_information>
+  <storage_instructions>
+    <![CDATA[<p>dfdfds</p>]]>
+  </storage_instructions>
+  <usage_tips>
+    <![CDATA[<p>dfdfds</p>]]>
+  </usage_tips>
+</contentitemdata.kwfeeds.singleproduct>

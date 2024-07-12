@@ -28,7 +28,7 @@ namespace DancingGoat.Models
                 EventViewModel.GetViewModel(home.HomePageEvent.OrderBy(o => Math.Abs((o.EventDate - DateTime.Today).TotalDays)).FirstOrDefault()),
                 home.HomePageOurStory,
                 ReferenceViewModel.GetViewModel(home.HomePageReference.FirstOrDefault()),
-                home.HomePageCafes.Select(CafeViewModel.GetViewModel),
+                home.Products.Select(CafeViewModel.GetViewModel),
                 home.HomePageArticlesSection.FirstOrDefault())
             {
                 WebPage = home

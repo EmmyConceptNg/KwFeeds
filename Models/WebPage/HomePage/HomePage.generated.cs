@@ -60,9 +60,9 @@ namespace DancingGoat.Models
 
 
 		/// <summary>
-		/// HomePageCafes.
+		/// Products.
 		/// </summary>
-		public IEnumerable<Cafe> HomePageCafes { get; set; }
+		public IEnumerable<Products> Products { get; set; }
 
 
 		/// <summary>

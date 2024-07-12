@@ -16,15 +16,15 @@ using CMS.ContentEngine;
 namespace DancingGoat.Models
 {
 	/// <summary>
-	/// Represents a content item of type <see cref="Cafe"/>.
+	/// Represents a content item of type <see cref="Products"/>.
 	/// </summary>
 	[RegisterContentTypeMapping(CONTENT_TYPE_NAME)]
-	public partial class Cafe : IContentItemFieldsSource
+	public partial class Products : IContentItemFieldsSource
 	{
 		/// <summary>
 		/// Code name of the content type.
 		/// </summary>
-		public const string CONTENT_TYPE_NAME = "DancingGoat.Cafe";
+		public const string CONTENT_TYPE_NAME = "DancingGoat.Products";
 
 
 		/// <summary>
@@ -35,45 +35,46 @@ namespace DancingGoat.Models
 
 
 		/// <summary>
-		/// CafeName.
+		/// Name.
 		/// </summary>
-		public string CafeName { get; set; }
+		public string Name { get; set; }
+		public string Description { get; set; }
 
 
 		/// <summary>
-		/// CafeIsCompanyCafe.
+		/// isProductofTheMonth.
 		/// </summary>
-		public bool CafeIsCompanyCafe { get; set; }
+		public bool isProductofTheMonth { get; set; }
 
 
 		/// <summary>
-		/// CafeStreet.
+		/// NutritionalInformation.
 		/// </summary>
-		public string CafeStreet { get; set; }
+		public string NutritionalInformation { get; set; }
 
 
 		/// <summary>
-		/// CafeCity.
+		/// Ingredients.
 		/// </summary>
-		public string CafeCity { get; set; }
+		public string Ingredients { get; set; }
 
 
 		/// <summary>
-		/// CafeCountry.
+		/// FeedingGuidelines.
 		/// </summary>
-		public string CafeCountry { get; set; }
+		public string FeedingGuidelines { get; set; }
 
 
 		/// <summary>
-		/// CafeZipCode.
+		/// UsageTips.
 		/// </summary>
-		public string CafeZipCode { get; set; }
+		public string UsageTips { get; set; }
 
 
 		/// <summary>
-		/// CafePhone.
+		/// StorageInstructions.
 		/// </summary>
-		public string CafePhone { get; set; }
+		public string StorageInstructions { get; set; }
 
 
 		/// <summary>
@@ -83,14 +84,14 @@ namespace DancingGoat.Models
 
 
 		/// <summary>
-		/// CafeAdditionalNotes.
+		/// CafeHealthBenefits.
 		/// </summary>
-		public string CafeAdditionalNotes { get; set; }
+		public string CafeHealthBenefits { get; set; }
 
 
 		/// <summary>
 		/// CafeCuppingOffer.
 		/// </summary>
-		public IEnumerable<Coffee> CafeCuppingOffer { get; set; }
+		// public IEnumerable<Coffee> CafeCuppingOffer { get; set; }
 	}
 }

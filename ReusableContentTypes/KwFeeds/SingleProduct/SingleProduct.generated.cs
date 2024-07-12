@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using CMS.ContentEngine;
+using CMS.MediaLibrary;
 
 namespace KwFeeds
 {
@@ -35,38 +36,50 @@ namespace KwFeeds
 
 
 		/// <summary>
-		/// Title.
+		/// name.
 		/// </summary>
-		public string Title { get; set; }
+		public string name { get; set; }
 
 
 		/// <summary>
-		/// ProductLogo.
+		/// nutritional_information.
 		/// </summary>
-		public ContentItemAsset ProductLogo { get; set; }
+		public string nutritional_information { get; set; }
 
 
 		/// <summary>
-		/// ProductImage.
+		/// ingredients.
 		/// </summary>
-		public ContentItemAsset ProductImage { get; set; }
+		public string ingredients { get; set; }
 
 
 		/// <summary>
-		/// ProductDescription.
+		/// feeding_guidelines.
 		/// </summary>
-		public string ProductDescription { get; set; }
+		public string feeding_guidelines { get; set; }
 
 
 		/// <summary>
-		/// ProductAdditionalInfo.
+		/// usage_tips.
 		/// </summary>
-		public string ProductAdditionalInfo { get; set; }
+		public string usage_tips { get; set; }
 
 
 		/// <summary>
-		/// GUID.
+		/// storage_instructions.
 		/// </summary>
-		public Guid GUID { get; set; }
+		public string storage_instructions { get; set; }
+
+
+		/// <summary>
+		/// health_benefits.
+		/// </summary>
+		public string health_benefits { get; set; }
+
+
+		/// <summary>
+		/// images.
+		/// </summary>
+		public IEnumerable<AssetRelatedItem> images { get; set; }
 	}
 }
