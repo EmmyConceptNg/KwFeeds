@@ -5,7 +5,7 @@
 
 <section class="page-header-block">
     <figure>
-        <img src="images/inner-page-header.png">
+        <img src="~/Content/Images/inner-page-header.png">
     </figure>
     <div class="content">
         <h2>About KWFeeds</h2>
@@ -15,9 +15,7 @@
 
 @{
     var i = 0;
-}
-
-        
+}       
             @foreach (var article in @Model.Articles)
             {
                 var positionClass = i % 2 == 0 ? "text-left-image-right" : "text-right-image-left";
