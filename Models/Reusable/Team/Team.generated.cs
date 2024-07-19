@@ -12,45 +12,46 @@
 using System;
 using System.Collections.Generic;
 using CMS.ContentEngine;
-using CMS.Websites;
 
 namespace DancingGoat.Models
 {
 	/// <summary>
-	/// Represents a page of type <see cref="ContactsPage"/>.
+	/// Represents a content item of type <see cref="Team"/>.
 	/// </summary>
 	[RegisterContentTypeMapping(CONTENT_TYPE_NAME)]
-	public partial class ContactsPage : IWebPageFieldsSource, ISEOFields
+	public partial class Team : IContentItemFieldsSource
 	{
 		/// <summary>
 		/// Code name of the content type.
 		/// </summary>
-		public const string CONTENT_TYPE_NAME = "DancingGoat.ContactsPage";
+		public const string CONTENT_TYPE_NAME = "DancingGoat.Team";
 
 
 		/// <summary>
-		/// Represents system properties for a web page item.
+		/// Represents system properties for a content item.
 		/// </summary>
 		[SystemField]
-		public WebPageFields SystemFields { get; set; }
+		public ContentItemFields SystemFields { get; set; }
 
 
 		/// <summary>
-		/// SEOFieldsTitle.
+		/// TeamTitle.
 		/// </summary>
-		public string SEOFieldsTitle { get; set; }
+		public string JobTitle { get; set; }
+
+
+		/// <summary>
+		/// TeamHeroBannerImage.
+		/// </summary>
+		public IEnumerable<Image> TeamImage { get; set; }
+
+
+		/// <summary>
+		/// TeamPromoText.
+		/// </summary>
+		public string Name { get; set; }
 		public string Content { get; set; }
 
 
-		/// <summary>
-		/// SEOFieldsDescription.
-		/// </summary>
-		public string SEOFieldsDescription { get; set; }
-
-
-		/// <summary>
-		/// SEOFieldsAllowSearchIndexing.
-		/// </summary>
-		public bool SEOFieldsAllowSearchIndexing { get; set; }
 	}
 }

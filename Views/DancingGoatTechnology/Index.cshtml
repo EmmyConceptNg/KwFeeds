@@ -1,0 +1,129 @@
+@model DancingGoat.Models.TechnologyIndexViewModel
+
+
+<section class="page-header-block">
+            <figure>
+                <img src="~/Content/Images/inner-page-header.png">
+            </figure>
+            <div class="content">
+                <h2>Technology</h2>
+            </div>
+        </section>
+        <section class="content-block text-full-width background-background">
+            <div class="content">
+                <p class="sub-title">More than feed</p>
+                <h2>@Model.Title</h2>
+                <p>@Model.Content</p>
+            </div>
+        </section>
+        
+@{
+    var i = 0;
+}       
+@foreach (var article in @Model.Articles.Take(2))
+            {
+                var positionClass = i % 2 == 0 ? "text-left-image-right" : "text-right-image-left";
+                var bgcolor = i % 2 == 0 ? "background-background" : " background-accent-1";
+
+                <section class="content-block @positionClass @bgcolor">
+                    @if (article.TeaserUrl != null)
+                    {
+                        <figure>
+                            <img srcset="@Url.Content(article.TeaserUrl)" src="@Url.Content(article.TeaserUrl)"
+                                alt="@article.Title" title="@article.Title" />
+                        </figure>
+                    }
+                    
+                    <div class="content">
+                        <p class="sub-title">More than feed</p>
+                        <h2 class="h4">
+                            @article.Title
+                        </h2>
+                       
+                        <p>@article.Summary</p>
+                        <a href="#" target="" role="button">Find out more</a>
+                    </div>
+                </section>
+
+                if (i % 4 == 3)
+                {
+                    <div class="clear"></div>
+                }
+                i++;
+            }
+        <section class="form-block">
+            <div class="content">
+                <h2>Contact Us Today</h2>
+                <p>Use the contact form below to get in touch if you have any question or need some help about our company or products.</p>
+            </div>
+            <form id="form-1581" action="https://trulycontent.com/hollpartitions/contact/" method="post" class="form-1581">
+                <p class="half input">
+                    <input type="text" name="full_name" id="contact-name" placeholder="&nbsp;" required="">
+                    <label for="contact-name">Your Full Name*</label>
+                </p>
+
+                <p class="half input">
+                    <input type="email" name="email" id="contact-email" placeholder="&nbsp;" required="">
+                    <label for="contact-email">Your Email*</label>
+                </p>
+                <p class="half input">
+                    <input type="tel" name="phone" id="contact-phone" placeholder="&nbsp;">
+                    <label for="contact-phone">Your Phone Number</label>
+                </p>
+                <p class="half select">
+                    <select name="appointment_date" id="date" class="date" required="">
+                        <option disabled="" hidden="" selected="">Enquiry Type</option>
+                        <option value="2024-04-23">Test</option>
+                        <option value="2024-04-24">Test</option>
+                        <option value="2024-04-25">Test</option>
+                        <option value="2024-04-26">Test</option>
+                        <option value="2024-04-27">Test</option>
+                    </select>
+                </p>
+                <p class="full input">
+                    <textarea name="message" id="contact-query" placeholder="&nbsp;"></textarea>
+                    <label for="contact-query">Write your message</label>
+                </p>
+                <input type="hidden" name="form_id" value="1581">
+                <div class="submit full">
+                    <button type="submit">SUBMIT</button>
+                    <input id="recaptcha-token" type="hidden" name="token" value="">
+                </div>
+            </form>
+        </section>
+       <section class="about-block">
+    @{
+        var l = 4;
+    }
+    @foreach (var article in @Model.Articles.Take(2))
+    {
+        var lastInRow = "";
+        if (l % 2 == 0)
+        {
+            lastInRow = "last";
+        }
+        <div class="about-container">
+            @if (article.TeaserUrl != null)
+            {
+                <figure>
+                    <img srcset="@Url.Content(article.TeaserUrl)" src="@Url.Content(article.TeaserUrl)" alt="@article.Title"
+                        title="@article.Title" />
+                </figure>
+            }
+            <div class="content">
+                <p class="sub-title">ABOUT</p>
+                <h3>@article.Title</h3>
+                <p>@article.Summary</p>
+                <a href="#" target="" role="button">Find out more</a>
+            </div>
+        </div>
+
+        if (l % 2 == 0)
+        {
+            <div class="clear"></div>
+        }
+        l++;
+    }
+</section>
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />

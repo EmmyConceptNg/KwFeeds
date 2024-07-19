@@ -74,5 +74,6 @@ namespace DancingGoat.Models
 		/// ContactEmail.
 		/// </summary>
 		public string ContactEmail { get; set; }
+		
 	}
 }

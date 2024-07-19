@@ -17,15 +17,15 @@ using CMS.Websites;
 namespace DancingGoat.Models
 {
 	/// <summary>
-	/// Represents a page of type <see cref="ContactsPage"/>.
+	/// Represents a page of type <see cref="TechnologyPage"/>.
 	/// </summary>
 	[RegisterContentTypeMapping(CONTENT_TYPE_NAME)]
-	public partial class ContactsPage : IWebPageFieldsSource, ISEOFields
+	public partial class TechnologyPage : IWebPageFieldsSource, ISEOFields
 	{
 		/// <summary>
 		/// Code name of the content type.
 		/// </summary>
-		public const string CONTENT_TYPE_NAME = "DancingGoat.ContactsPage";
+		public const string CONTENT_TYPE_NAME = "DancingGoat.TechnologyPage";
 
 
 		/// <summary>
@@ -39,6 +39,7 @@ namespace DancingGoat.Models
 		/// SEOFieldsTitle.
 		/// </summary>
 		public string SEOFieldsTitle { get; set; }
+		public string Title { get; set; }
 		public string Content { get; set; }
 
 

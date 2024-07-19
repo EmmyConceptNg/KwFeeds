@@ -58,7 +58,8 @@ namespace DancingGoat.Controllers
             {
                 CompanyContact = ContactViewModel.GetViewModel(contact),
                 CompanyCafes = GetCompanyCafesModel(cafes),
-                WebPage = contactsPage
+                WebPage = contactsPage,
+                 Content = contactsPage.Content
             };
         }
 

@@ -36,6 +36,11 @@ namespace DancingGoat
             services.AddSingleton<ProductSectionRepository>();
             services.AddSingleton<ProductPageRepository>();
             services.AddSingleton<ProductRepository>();
+            services.AddSingleton<TechnologyPageRepository>();
+            services.AddSingleton<NutritionPageRepository>();
+            services.AddSingleton<TeamRepository>();
+            services.AddSingleton<TestimonialRepository>();
+            services.AddSingleton<TestimonialPageRepository>();
         }
 
 
