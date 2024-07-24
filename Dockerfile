@@ -16,7 +16,7 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Copy the license file into the container
-COPY license2.txt .
+COPY license2.txt /app/license2.txt
 
 # Add Microsoft package repository for .NET and install necessary tools
 RUN apt-get update && \
@@ -43,7 +43,7 @@ RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
     -s "tcp:kwfeeds.database.windows.net,1433" \
     -p "$DB_PASSWORD" \
     -a "$ADMIN_PASSWORD" \
-    --license-file "license2.txt" \
+    --license-file "/app/license2.txt" \
     --use-existing-database
 
 # Create a non-root user and set permissions
