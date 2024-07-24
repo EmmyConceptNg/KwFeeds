@@ -16,15 +16,15 @@ using CMS.ContentEngine;
 namespace DancingGoat.Models
 {
 	/// <summary>
-	/// Represents a content item of type <see cref="Coffee"/>.
+	/// Represents a content item of type <see cref="SingleProduct"/>.
 	/// </summary>
 	[RegisterContentTypeMapping(CONTENT_TYPE_NAME)]
-	public partial class Coffee : IContentItemFieldsSource, IProductFields
+	public partial class SingleProduct : IContentItemFieldsSource, IProductFields
 	{
 		/// <summary>
 		/// Code name of the content type.
 		/// </summary>
-		public const string CONTENT_TYPE_NAME = "DancingGoat.Coffee";
+		public const string CONTENT_TYPE_NAME = "DancingGoat.SingleProduct";
 
 
 		/// <summary>
@@ -35,15 +35,15 @@ namespace DancingGoat.Models
 
 
 		/// <summary>
-		/// CoffeeProcessing.
+		/// SingleProductProcessing.
 		/// </summary>
-		public IEnumerable<TagReference> CoffeeProcessing { get; set; }
+		public IEnumerable<TagReference> SingleProductProcessing { get; set; }
 
 
 		/// <summary>
-		/// CoffeeTastes.
+		/// SingleProductTastes.
 		/// </summary>
-		public IEnumerable<TagReference> CoffeeTastes { get; set; }
+		public IEnumerable<TagReference> SingleProductTastes { get; set; }
 
 
 		/// <summary>
@@ -62,6 +62,12 @@ namespace DancingGoat.Models
 		/// ProductFieldsShortDescription.
 		/// </summary>
 		public string ProductFieldsShortDescription { get; set; }
+		public string ProductFieldNutritionalInformation { get; set; }
+		public string ProductFieldIngredients { get; set; }
+		public string ProductFieldFeedingGuidelines { get; set; }
+		public string ProductFieldUsageTips { get; set; }
+		public string ProductFieldHandlingInstructions { get; set; }
+		public string ProductFieldHealthBenefits { get; set; }
 
 
 		/// <summary>

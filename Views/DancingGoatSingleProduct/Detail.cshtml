@@ -1,0 +1,154 @@
+﻿@using DancingGoat.Models
+
+@model SingleProductDetailViewModel;
+
+@{
+    ViewData["PageClass"] = "inverted";
+    ViewData["Title"] = Model.Name;
+}
+
+@* <article class="product-detail">
+    <div class="tag-row">
+        @foreach (var item in Model.Processing.Union(Model.Tastes))
+        {
+            <div class="tag">
+                @item.Title
+            </div>
+        }
+    </div>
+</article> *@
+
+
+<section class="page-header-block">
+    <figure>
+        <img src="~/Content/Images/inner-page-header.png">
+    </figure>
+    <div class="content">
+        <h2>OUR FEEDS - @Model.Name</h2>
+    </div>
+</section>
+
+<section class="single-project-block">
+    <div class="slider gallery">
+        <div class="product-logo">
+            <figure>
+                <img src="@Model.ImageUrl" alt="@Model.Name" title="@Model.Name" />
+            </figure>
+        </div>
+        <input type="radio" name="slider_gallery" id="slider-gallery-0" checked="">
+        <input type="radio" name="slider_gallery" id="slider-gallery-1">
+        <input type="radio" name="slider_gallery" id="slider-gallery-2">
+        <input type="radio" name="slider_gallery" id="slider-gallery-3">
+        <ul>
+            <li>
+                <figure>
+                    <img src="@Model.ImageUrl" alt="@Model.Name" title="@Model.Name" />
+                </figure>
+            </li>
+            <li>
+                <figure>
+                     <img src="@Model.ImageUrl" alt="@Model.Name" title="@Model.Name" />
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="@Model.ImageUrl" alt="@Model.Name" title="@Model.Name" />
+                </figure>
+            </li>
+            <li>
+                <figure>
+                     <img src="@Model.ImageUrl" alt="@Model.Name" title="@Model.Name" />
+                </figure>
+            </li>
+        </ul>
+        <div class="thumbnails">
+            <label for="slider-gallery-0">
+                <img src="images/cow.png" alt="">
+            </label>
+            <label for="slider-gallery-1">
+                 <img src="@Model.ImageUrl" alt="@Model.Name" title="@Model.Name" />
+            </label>
+            <label for="slider-gallery-2">
+                <img src="images/cow.png" alt="">
+            </label>
+            <label for="slider-gallery-3">
+                 <img src="@Model.ImageUrl" alt="@Model.Name" title="@Model.Name" />
+            </label>
+        </div>
+    </div>
+    <div class="product-info">
+        <p class="sub-title">HOME / OUR FEEDS / @Model.Name</p>
+        <h1>@Model.Name</h1>
+        <p class="short-description">@Html.Raw(Model.ShortDescription)</p>
+        <div class="actions">
+            <a href="#" target="" role="button">PRODUCT INFORMATION</a>
+            <a href="#" target="" role="button">nutritional information</a>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="accordion-nutritional-information">
+            <h3><label for="accordion-nutritional-information">Nutritional Information</label></h3>
+            <div class="panel">
+                <p>@Model.NutritionalInformation</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="accordion-ingredients">
+            <h3><label for="accordion-ingredients">Ingredients</label></h3>
+            <div class="panel">
+                <p>@Model.Ingredients</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="accordion-feeding-guidelines">
+            <h3><label for="accordion-feeding-guidelines">Feeding Guidelines</label></h3>
+            <div class="panel">
+                <p>@Model.FeedingGuidelines</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="accordion-usage-tips">
+            <h3><label for="accordion-usage-tips">Usage Tips and Best Practices</label></h3>
+            <div class="panel">
+                <p>@Model.UsageTips</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="accordion-storage">
+            <h3><label for="accordion-storage">Storage and Handling Instructions</label></h3>
+            <div class="panel">
+                <p>@Model.HandlingInstructions</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="accordion-health-benefits">
+            <h3><label for="accordion-health-benefits">Health Benefits</label></h3>
+            <div class="panel">
+                <p>@Model.HealthBenefits</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="key-features-block">
+    <div class="content">
+        <p class="sub-title">KWFEEDS</p>
+        <h1>AB FEEDS</h1>
+        <div>
+            <ul>
+                <li>High energy content for improved milk production and weight gain.</li>
+                <li>Rich source of protein for muscle development and maintenance.</li>
+                <li>Easily digestible ingredients for efficient nutrient absorption.</li>
+                <li>Balanced formulation to support overall health and vitality.</li>
+                <li>Ideal for lactating cows, growing calves, and finishing cattle.</li>
+            </ul>
+        </div>
+        <div>
+            <p>@Html.Raw(Model.Description)
+            </p>
+            <div class="actions">
+                <a href="#" target="" role="button">Got A Question?</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />

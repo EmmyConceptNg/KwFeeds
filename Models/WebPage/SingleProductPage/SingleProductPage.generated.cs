@@ -17,15 +17,15 @@ using CMS.Websites;
 namespace DancingGoat.Models
 {
 	/// <summary>
-	/// Represents a page of type <see cref="CoffeePage"/>.
+	/// Represents a page of type <see cref="SingleProductPage"/>.
 	/// </summary>
 	[RegisterContentTypeMapping(CONTENT_TYPE_NAME)]
-	public partial class CoffeePage : IWebPageFieldsSource
+	public partial class SingleProductPage : IWebPageFieldsSource
 	{
 		/// <summary>
 		/// Code name of the content type.
 		/// </summary>
-		public const string CONTENT_TYPE_NAME = "DancingGoat.CoffeePage";
+		public const string CONTENT_TYPE_NAME = "DancingGoat.SingleProductPage";
 
 
 		/// <summary>
@@ -38,6 +38,6 @@ namespace DancingGoat.Models
 		/// <summary>
 		/// RelatedItem.
 		/// </summary>
-		public IEnumerable<Coffee> RelatedItem { get; set; }
+		public IEnumerable<SingleProduct> RelatedItem { get; set; }
 	}
 }

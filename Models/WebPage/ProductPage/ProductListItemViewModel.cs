@@ -5,7 +5,7 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record ProductListItemViewModel(string Name, string ImagePath, string Url)
+    public record ProductListItemViewModel(string Name, string Description, string ShortDescription, string ImagePath, string Url)
     {
         public static async Task<ProductListItemViewModel> GetViewModel(IProductPage productPage, IWebPageUrlRetriever urlRetriever, string languageName)
         {
@@ -16,6 +16,8 @@ namespace DancingGoat.Models
 
             return new ProductListItemViewModel(
                 product.ProductFieldsName,
+                product.ProductFieldsDescription,
+                product.ProductFieldsShortDescription,
                 image?.ImageFile.Url,
                 path
             );

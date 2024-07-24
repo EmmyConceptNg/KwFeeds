@@ -16,7 +16,7 @@ namespace DancingGoat.Helpers.Generator
     /// </summary>
     public class FormConsentGenerator
     {
-        public const string CONSENT_NAME = "DancingGoatCoffeeSampleListForm";
+        public const string CONSENT_NAME = "DancingGoatSingleProductSampleListForm";
         internal const string CONSENT_DISPLAY_NAME = "Dancing Goat - Coffee sample list form";
 
         private const string CONSENT_LONG_TEXT_EN = "<p>This is a sample consent declaration used for demonstration purposes only. "

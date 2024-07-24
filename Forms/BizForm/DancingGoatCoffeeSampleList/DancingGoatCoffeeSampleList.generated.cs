@@ -18,27 +18,27 @@ using CMS.DataEngine;
 using CMS.OnlineForms;
 using CMS.OnlineForms.Types;
 
-[assembly: RegisterBizForm(DancingGoatCoffeeSampleListItem.CLASS_NAME, typeof(DancingGoatCoffeeSampleListItem))]
+[assembly: RegisterBizForm(DancingGoatSingleProductSampleListItem.CLASS_NAME, typeof(DancingGoatSingleProductSampleListItem))]
 
 namespace CMS.OnlineForms.Types
 {
 	/// <summary>
-	/// Represents a content item of type DancingGoatCoffeeSampleListItem.
+	/// Represents a content item of type DancingGoatSingleProductSampleListItem.
 	/// </summary>
-	public partial class DancingGoatCoffeeSampleListItem : BizFormItem
+	public partial class DancingGoatSingleProductSampleListItem : BizFormItem
 	{
 		#region "Constants and variables"
 
 		/// <summary>
 		/// The name of the data class.
 		/// </summary>
-		public const string CLASS_NAME = "BizForm.DancingGoatCoffeeSampleList";
+		public const string CLASS_NAME = "BizForm.DancingGoatSingleProductSampleList";
 
 
 		/// <summary>
-		/// The instance of the class that provides extended API for working with DancingGoatCoffeeSampleListItem fields.
+		/// The instance of the class that provides extended API for working with DancingGoatSingleProductSampleListItem fields.
 		/// </summary>
-		private readonly DancingGoatCoffeeSampleListItemFields mFields;
+		private readonly DancingGoatSingleProductSampleListItemFields mFields;
 
 		#endregion
 
@@ -145,32 +145,32 @@ namespace CMS.OnlineForms.Types
 
 
 		/// <summary>
-		/// Gets an object that provides extended API for working with DancingGoatCoffeeSampleListItem fields.
+		/// Gets an object that provides extended API for working with DancingGoatSingleProductSampleListItem fields.
 		/// </summary>
 		[RegisterProperty]
-		public DancingGoatCoffeeSampleListItemFields Fields
+		public DancingGoatSingleProductSampleListItemFields Fields
 		{
 			get => mFields;
 		}
 
 
 		/// <summary>
-		/// Provides extended API for working with DancingGoatCoffeeSampleListItem fields.
+		/// Provides extended API for working with DancingGoatSingleProductSampleListItem fields.
 		/// </summary>
 		[RegisterAllProperties]
-		public partial class DancingGoatCoffeeSampleListItemFields : AbstractHierarchicalObject<DancingGoatCoffeeSampleListItemFields>
+		public partial class DancingGoatSingleProductSampleListItemFields : AbstractHierarchicalObject<DancingGoatSingleProductSampleListItemFields>
 		{
 			/// <summary>
-			/// The content item of type DancingGoatCoffeeSampleListItem that is a target of the extended API.
+			/// The content item of type DancingGoatSingleProductSampleListItem that is a target of the extended API.
 			/// </summary>
-			private readonly DancingGoatCoffeeSampleListItem mInstance;
+			private readonly DancingGoatSingleProductSampleListItem mInstance;
 
 
 			/// <summary>
-			/// Initializes a new instance of the <see cref="DancingGoatCoffeeSampleListItemFields" /> class with the specified content item of type DancingGoatCoffeeSampleListItem.
+			/// Initializes a new instance of the <see cref="DancingGoatSingleProductSampleListItemFields" /> class with the specified content item of type DancingGoatSingleProductSampleListItem.
 			/// </summary>
-			/// <param name="instance">The content item of type DancingGoatCoffeeSampleListItem that is a target of the extended API.</param>
-			public DancingGoatCoffeeSampleListItemFields(DancingGoatCoffeeSampleListItem instance)
+			/// <param name="instance">The content item of type DancingGoatSingleProductSampleListItem that is a target of the extended API.</param>
+			public DancingGoatSingleProductSampleListItemFields(DancingGoatSingleProductSampleListItem instance)
 			{
 				mInstance = instance;
 			}
@@ -272,11 +272,11 @@ namespace CMS.OnlineForms.Types
 		#region "Constructors"
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="DancingGoatCoffeeSampleListItem" /> class.
+		/// Initializes a new instance of the <see cref="DancingGoatSingleProductSampleListItem" /> class.
 		/// </summary>
-		public DancingGoatCoffeeSampleListItem() : base(CLASS_NAME)
+		public DancingGoatSingleProductSampleListItem() : base(CLASS_NAME)
 		{
-			mFields = new DancingGoatCoffeeSampleListItemFields(this);
+			mFields = new DancingGoatSingleProductSampleListItemFields(this);
 		}
 
 		#endregion

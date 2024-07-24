@@ -34,7 +34,7 @@ namespace DancingGoat.AdminComponents
         public const string IDENTIFIER = "Kentico.Xperience.Application.SampleDataGenerator";
 
         private const int DANCING_GOAT_WEBSITE_CHANNEL_ID = 1;
-        private const string FORM_NAME = "DancingGoatCoffeeSampleList";
+        private const string FORM_NAME = "DancingGoatSingleProductSampleList";
         private const string FORM_FIELD_NAME = "Consent";
         private const string DATA_PROTECTION_SETTINGS_KEY = "DataProtectionSamplesEnabled";
 
