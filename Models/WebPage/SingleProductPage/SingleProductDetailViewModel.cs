@@ -6,7 +6,7 @@ using CMS.ContentEngine;
 
 namespace DancingGoat.Models
 {
-    public record SingleProductDetailViewModel(string Name, string Description, string ShortDescription, string NutritionalInformation, string Ingredients, string FeedingGuidelines, string UsageTips, string HandlingInstructions, string HealthBenefits, string ImageUrl, IEnumerable<Tag> Tastes, IEnumerable<Tag> Processing)
+    public record SingleProductDetailViewModel(string Name, string Description, string ShortDescription, string NutritionalInformation, string Ingredients, string FeedingGuidelines, string UsageTips, string HandlingInstructions, string HealthBenefits, string ImageUrl, IEnumerable<Tag> Location, IEnumerable<Tag> TypeOfStock, IEnumerable<Tag> TypeOfFeed, IEnumerable<Tag> StorageOptions, IEnumerable<Tag> FeedingSystem)
     {
         /// <summary>
         /// Maps <see cref="SingleProductPage"/> to a <see cref="SingleProductDetailViewModel"/>.
@@ -27,8 +27,11 @@ namespace DancingGoat.Models
                 singleProduct.ProductFieldHandlingInstructions,
                 singleProduct.ProductFieldHealthBenefits,
                 image?.ImageFile.Url,
-                await taxonomyRetriever.RetrieveTags(singleProduct.SingleProductTastes.Select(taste => taste.Identifier), languageName),
-                await taxonomyRetriever.RetrieveTags(singleProduct.SingleProductProcessing.Select(processing => processing.Identifier), languageName)
+                await taxonomyRetriever.RetrieveTags(singleProduct.Location.Select(taste => taste.Identifier), languageName),
+                await taxonomyRetriever.RetrieveTags(singleProduct.TypeOfStock.Select(processing => processing.Identifier), languageName),
+                await taxonomyRetriever.RetrieveTags(singleProduct.TypeOfFeed.Select(processing => processing.Identifier), languageName),
+                await taxonomyRetriever.RetrieveTags(singleProduct.StorageOptions.Select(processing => processing.Identifier), languageName),
+                await taxonomyRetriever.RetrieveTags(singleProduct.FeedingSystem.Select(processing => processing.Identifier), languageName)
             );
         }
     }

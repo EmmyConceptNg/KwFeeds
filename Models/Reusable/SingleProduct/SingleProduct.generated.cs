@@ -37,13 +37,16 @@ namespace DancingGoat.Models
 		/// <summary>
 		/// SingleProductProcessing.
 		/// </summary>
-		public IEnumerable<TagReference> SingleProductProcessing { get; set; }
+		public IEnumerable<TagReference> StorageOptions { get; set; }
+		public IEnumerable<TagReference> FeedingSystem { get; set; }
+		public IEnumerable<TagReference> TypeOfStock { get; set; }
+		public IEnumerable<TagReference> TypeOfFeed { get; set; }
 
 
 		/// <summary>
-		/// SingleProductTastes.
+		/// Location.
 		/// </summary>
-		public IEnumerable<TagReference> SingleProductTastes { get; set; }
+		public IEnumerable<TagReference> Location { get; set; }
 
 
 		/// <summary>
