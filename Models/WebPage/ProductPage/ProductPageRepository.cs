@@ -89,7 +89,7 @@ namespace DancingGoat.Models
         private static ContentItemQueryBuilder GetQueryBuilder(string languageName, Action<ContentTypeQueryParameters> configure = null)
         {
             return new ContentItemQueryBuilder()
-                    .ForContentType(CoffeePage.CONTENT_TYPE_NAME, configure)
+                    .ForContentType(SingleProductPage.CONTENT_TYPE_NAME, configure)
                     .ForContentType(GrinderPage.CONTENT_TYPE_NAME, configure)
                     .InLanguage(languageName);
         }

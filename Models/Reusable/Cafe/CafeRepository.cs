@@ -42,14 +42,24 @@ namespace DancingGoat.Models
         }
 
 
+        // private static ContentItemQueryBuilder GetQueryBuilder(int count, string languageName)
+        // {
+        //     return new ContentItemQueryBuilder()
+        //             .ForContentType(Products.CONTENT_TYPE_NAME,
+        //                 config => config
+        //                     .WithLinkedItems(1)
+        //                     .TopN(count)
+        //                     .Where(where => where.WhereTrue(nameof(Products.isProductofTheMonth))))
+        //             .InLanguage(languageName);
+        // }
+
         private static ContentItemQueryBuilder GetQueryBuilder(int count, string languageName)
         {
             return new ContentItemQueryBuilder()
                     .ForContentType(Products.CONTENT_TYPE_NAME,
                         config => config
                             .WithLinkedItems(1)
-                            .TopN(count)
-                            .Where(where => where.WhereTrue(nameof(Products.isProductofTheMonth))))
+                            .TopN(count))
                     .InLanguage(languageName);
         }
 

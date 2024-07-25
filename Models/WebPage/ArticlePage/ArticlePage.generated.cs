@@ -17,15 +17,15 @@ using CMS.Websites;
 namespace DancingGoat.Models
 {
 	/// <summary>
-	/// Represents a page of type <see cref="ArticlePage"/>.
+	/// Represents a page of type <see cref="AboutPage"/>.
 	/// </summary>
 	[RegisterContentTypeMapping(CONTENT_TYPE_NAME)]
-	public partial class ArticlePage : IWebPageFieldsSource, ISEOFields
+	public partial class AboutPage : IWebPageFieldsSource, ISEOFields
 	{
 		/// <summary>
 		/// Code name of the content type.
 		/// </summary>
-		public const string CONTENT_TYPE_NAME = "DancingGoat.ArticlePage";
+		public const string CONTENT_TYPE_NAME = "DancingGoat.AboutPage";
 
 
 		/// <summary>

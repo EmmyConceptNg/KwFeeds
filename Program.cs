@@ -35,7 +35,8 @@ builder.Services.AddKentico(features =>
         {
             LandingPage.CONTENT_TYPE_NAME,
             ContactsPage.CONTENT_TYPE_NAME,
-            ArticlePage.CONTENT_TYPE_NAME,
+            TechnologyPage.CONTENT_TYPE_NAME,
+            AboutPage.CONTENT_TYPE_NAME,
             HomePage.CONTENT_TYPE_NAME
         }
     });

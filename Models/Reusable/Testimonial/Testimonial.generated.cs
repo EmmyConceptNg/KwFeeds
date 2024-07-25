@@ -16,15 +16,15 @@ using CMS.ContentEngine;
 namespace DancingGoat.Models
 {
 	/// <summary>
-	/// Represents a content item of type <see cref="Coffee"/>.
+	/// Represents a content item of type <see cref="Testimonial"/>.
 	/// </summary>
 	[RegisterContentTypeMapping(CONTENT_TYPE_NAME)]
-	public partial class Coffee : IContentItemFieldsSource, IProductFields
+	public partial class Testimonial : IContentItemFieldsSource
 	{
 		/// <summary>
 		/// Code name of the content type.
 		/// </summary>
-		public const string CONTENT_TYPE_NAME = "DancingGoat.Coffee";
+		public const string CONTENT_TYPE_NAME = "DancingGoat.Testimonial";
 
 
 		/// <summary>
@@ -35,38 +35,23 @@ namespace DancingGoat.Models
 
 
 		/// <summary>
-		/// CoffeeProcessing.
+		/// TeamTitle.
 		/// </summary>
-		public IEnumerable<TagReference> CoffeeProcessing { get; set; }
+		public string JobTitle { get; set; }
 
 
 		/// <summary>
-		/// CoffeeTastes.
+		/// TeamHeroBannerImage.
 		/// </summary>
-		public IEnumerable<TagReference> CoffeeTastes { get; set; }
+		public IEnumerable<Image> Image { get; set; }
 
 
 		/// <summary>
-		/// ProductFieldsName.
+		/// TeamPromoText.
 		/// </summary>
-		public string ProductFieldsName { get; set; }
+		public string Name { get; set; }
+		public string Content { get; set; }
 
 
-		/// <summary>
-		/// ProductFieldsDescription.
-		/// </summary>
-		public string ProductFieldsDescription { get; set; }
-
-
-		/// <summary>
-		/// ProductFieldsShortDescription.
-		/// </summary>
-		public string ProductFieldsShortDescription { get; set; }
-
-
-		/// <summary>
-		/// ProductFieldsImage.
-		/// </summary>
-		public IEnumerable<Image> ProductFieldsImage { get; set; }
 	}
 }

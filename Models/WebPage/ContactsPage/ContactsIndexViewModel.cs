@@ -11,6 +11,8 @@ namespace DancingGoat.Models
         /// </summary>
         public ContactViewModel CompanyContact { get; set; }
 
+        public string Content { get; init; }
+
 
         /// <summary>
         /// The company cafes data.

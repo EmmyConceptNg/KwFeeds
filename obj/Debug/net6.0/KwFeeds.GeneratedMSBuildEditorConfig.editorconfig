@@ -146,10 +146,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRBcnRpY2xlL1JlbGF0ZWRBcnRpY2xlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatCoffee/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRDb2ZmZWUvRGV0YWlsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatConfirmation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRDb25maXJtYXRpb24vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -166,6 +162,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRIb21lL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatNutrition/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXROdXRyaXRpb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatPrivacy/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRQcml2YWN5L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -180,6 +180,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatProduct/ProductsList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRQcm9kdWN0L1Byb2R1Y3RzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatSingleProduct/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRTaW5nbGVQcm9kdWN0L0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatTechnology/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRUZWNobm9sb2d5L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/emmy/projects/bles/KwFeeds/Views/DancingGoatTestimonial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFuY2luZ0dvYXRUZXN0aW1vbmlhbC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/emmy/projects/bles/KwFeeds/Views/HttpErrors/NotFound.cshtml]

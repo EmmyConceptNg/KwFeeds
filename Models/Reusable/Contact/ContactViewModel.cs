@@ -19,7 +19,7 @@
                 contact.ContactCountry,
                 contact.ContactZipCode,
                 contact.ContactPhone,
-                contact.ContactEmail
+                contact.ContactEmail    
             );
         }
     }

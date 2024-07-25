@@ -57,7 +57,7 @@ namespace DancingGoat.Controllers
             var products = await GetProducts(languageName, productsSection);
 
             var taxonomies = new Dictionary<string, TaxonomyViewModel>();
-            var taxonomyNames = new List<string> { "CoffeeProcessing", "CoffeeTastes", "GrinderManufacturer", "GrinderType" };
+            var taxonomyNames = new List<string> { "SingleProductProcessing", "SingleProductTastes", "GrinderManufacturer", "GrinderType" };
             foreach (var taxonomyName in taxonomyNames)
             {
                 var taxonomy = await taxonomyRetriever.RetrieveTaxonomy(taxonomyName, languageName);

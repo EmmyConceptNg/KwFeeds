@@ -1,53 +1,24 @@
-# FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
-# WORKDIR /app
-# EXPOSE 23917
-
-# ENV ASPNETCORE_URLS=http://+:23917
-
-# # Creates a non-root user with an explicit UID and adds permission to access the /app folder
-# # For more info, please refer to https://aka.ms/vscode-docker-dotnet-configure-containers
-# RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
-# USER appuser
-
-# FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-# ARG configuration=Release
-# WORKDIR /src
-# COPY ["KwFeeds.csproj", "./"]
-# RUN dotnet restore "KwFeeds.csproj"
-# COPY . .
-# WORKDIR "/src/."
-# RUN dotnet build "KwFeeds.csproj" -c $configuration -o /app/build
-
-# FROM build AS publish
-# ARG configuration=Release
-# RUN dotnet publish "KwFeeds.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
-
-# FROM base AS final
-# WORKDIR /app
-# COPY --from=publish /app/publish .
-# ENTRYPOINT ["dotnet", "KwFeeds.dll"]
-
-# Use the .NET SDK 6.0 for building the project (to match the framework version)
+# Stage 1: Build the .NET application
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["KwFeeds.csproj", "./"]
 RUN dotnet restore "KwFeeds.csproj"
 COPY . .
-WORKDIR "/src/."
 RUN dotnet build "KwFeeds.csproj" -c Release -o /app/build
 
+# Stage 2: Publish the .NET application
 FROM build AS publish
 RUN dotnet publish "KwFeeds.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-# Use the ASP.NET 6.0 runtime for running the application
+# Stage 3: Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Copy the license file into the container
-COPY license2.txt .
+COPY license2.txt /app/license2.txt
 
-# Add Microsoft package repository for .NET
+# Add Microsoft package repository for .NET and install necessary tools
 RUN apt-get update && \
     apt-get install -y wget gnupg && \
     wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb && \
@@ -61,22 +32,18 @@ RUN dotnet tool install --global Kentico.Xperience.DbManager --version 29.1.3
 # Ensure the .dotnet/tools directory is in the PATH for the root user
 ENV PATH="/root/.dotnet/tools:$PATH"
 
-# Verify the tool installation
-RUN dotnet tool list -g
-
 # Set environment variables for sensitive information
 ENV DB_PASSWORD="EmmyConcept_55555"
 ENV ADMIN_PASSWORD="EmmyConcept_55555"
 
 # Run the database manager command
-# RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- -s "kwfeeds.database.windows.net" -u "CloudSA71d9f3dc" -p "EmmyConcept_55555" -a "EmmyConcept_55555" -d "KwFeeds_2024-06-26T08-42Z" --use-existing-database --license-file "license2.txt"
 RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
     -d KwFeeds_2024-06-26T08-42Z \
     -u CloudSA71d9f3dc \
     -s "tcp:kwfeeds.database.windows.net,1433" \
     -p "$DB_PASSWORD" \
     -a "$ADMIN_PASSWORD" \
-    --license-file "license2.txt" \
+    --license-file "/app/license2.txt" \
     --use-existing-database
 
 # Create a non-root user and set permissions

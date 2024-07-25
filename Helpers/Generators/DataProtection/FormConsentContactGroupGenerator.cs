@@ -8,7 +8,7 @@ namespace DancingGoat.Helpers.Generator
     public class FormContactGroupGenerator
     {
         private const string CONTACT_GROUP_DISPLAY_NAME = "Coffee samples applicants";
-        private const string CONTACT_GROUP_NAME = "CoffeeSamplesApplicants";
+        private const string CONTACT_GROUP_NAME = "SingleProductSamplesApplicants";
 
         private readonly IInfoProvider<ContactGroupInfo> contactGroupInfoProvider;
 

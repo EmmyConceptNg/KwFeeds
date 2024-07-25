@@ -17,8 +17,8 @@ namespace DancingGoat.Models
     /// </summary>
     public class ProductRepository : ContentRepositoryBase
     {
-        private const string COFFEE_PROCESSING = "CoffeeProcessing";
-        private const string COFFEE_TASTES = "CoffeeTastes";
+        private const string COFFEE_PROCESSING = "SingleProductProcessing";
+        private const string COFFEE_TASTES = "SingleProductTastes";
         private const string GRINDER_MANUFACTURER = "GrinderManufacturer";
         private const string GRINDER_TYPE = "GrinderType";
 
@@ -97,9 +97,9 @@ namespace DancingGoat.Models
 
             return baseBuilder
                 .Parameters(query => query.Where(where => where
-                    .Where(async coffeeWhere => coffeeWhere
-                        .WhereContainsTags(nameof(Coffee.CoffeeProcessing), await GetSelectedTags(filter, COFFEE_PROCESSING))
-                        .WhereContainsTags(nameof(Coffee.CoffeeTastes), await GetSelectedTags(filter, COFFEE_TASTES))
+                    .Where(async singleProductWhere => singleProductWhere
+                        .WhereContainsTags(nameof(SingleProduct.SingleProductProcessing), await GetSelectedTags(filter, COFFEE_PROCESSING))
+                        .WhereContainsTags(nameof(SingleProduct.SingleProductTastes), await GetSelectedTags(filter, COFFEE_TASTES))
                     .Where(async grinderWhere => grinderWhere
                         .WhereContainsTags(nameof(Grinder.GrinderManufacturer), await GetSelectedTags(filter, GRINDER_MANUFACTURER))
                         .WhereContainsTags(nameof(Grinder.GrinderType), await GetSelectedTags(filter, GRINDER_TYPE))))
@@ -123,7 +123,7 @@ namespace DancingGoat.Models
             var dependencyCacheKeys = new HashSet<string>(StringComparer.InvariantCultureIgnoreCase)
             {
                 CacheHelper.GetCacheItemName(null, WebsiteChannelInfo.OBJECT_TYPE, "byid", WebsiteChannelContext.WebsiteChannelID),
-                CacheHelper.GetCacheItemName(null, "contentitem", "bycontenttype", Coffee.CONTENT_TYPE_NAME, languageName),
+                CacheHelper.GetCacheItemName(null, "contentitem", "bycontenttype", SingleProduct.CONTENT_TYPE_NAME, languageName),
                 CacheHelper.GetCacheItemName(null, "contentitem", "bycontenttype", Grinder.CONTENT_TYPE_NAME, languageName),
                 await GetTaxonomyTagsCacheDependencyKey(COFFEE_PROCESSING),
                 await GetTaxonomyTagsCacheDependencyKey(COFFEE_TASTES),

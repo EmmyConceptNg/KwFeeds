@@ -1,0 +1,72 @@
+@model DancingGoat.Models.NutritionIndexViewModel
+
+
+<section class="page-header-block">
+            <figure>
+                <img src="~/Content/Images/inner-page-header.png">
+            </figure>
+            <div class="content">
+                <h2>Nutrition</h2>
+            </div>
+        </section>
+        <section class="content-block text-full-width background-background">
+            <div class="content">
+                <p class="sub-title">More than feed</p>
+                <h2>@Model.Title</h2>
+                <p>@Model.Content</p>
+            </div>
+        </section>
+<section class="team-block">
+
+    @foreach (var team in Model.Teams){
+        <div class="content">
+            <figure>
+                <img src="@team.HeroBannerImageUrl" alt="@team.HeroBannerShortDescription" width="100%" />
+            </figure>
+
+            <p class="sub-title">@team.JobTitle</p>
+            <h1>@team.Name</h1>
+            <p>@team.Content </p>
+        </div>
+    }
+   
+   
+</section>
+        
+@{
+    var i = 0;
+}       
+@foreach (var article in @Model.Articles.Take(3))
+            {
+                var positionClass = i % 2 == 0 ? "text-left-image-right" : "text-right-image-left";
+    var bgcolor = i % 2 == 0 ? "background-accent-1" : "background-background";
+
+                <section class="content-block @positionClass @bgcolor">
+                    @if (article.TeaserUrl != null)
+                    {
+                        <figure>
+                            <img srcset="@Url.Content(article.TeaserUrl)" src="@Url.Content(article.TeaserUrl)"
+                                alt="@article.Title" title="@article.Title" />
+                        </figure>
+                    }
+                    
+                    <div class="content">
+                        <p class="sub-title">More than feed</p>
+                        <h2 class="h4">
+                            @article.Title
+                        </h2>
+                       
+                        <p>@article.Summary</p>
+                        <a href="#" target="" role="button">Find out more</a>
+                    </div>
+                </section>
+
+                if (i % 4 == 3)
+                {
+                    <div class="clear"></div>
+                }
+                i++;
+            }
+        
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />
