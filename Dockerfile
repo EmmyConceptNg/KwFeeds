@@ -96,4 +96,4 @@ RUN apt-get update && \
     apt-get install -y dotnet-sdk-6.0
 
 # Install the specific version of Kentico Database Manager Tool (matching project version)
-RUN dotnet
+RUN dotnet watch
