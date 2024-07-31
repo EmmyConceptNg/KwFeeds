@@ -7,7 +7,7 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record ArticleDetailViewModel(string Title,  string Summary, string Text,  Guid Guid, bool IsSecured, string Url)
+    public record ArticleDetailViewModel(string Title, string TeaserUrl, string Summary, string Text,  Guid Guid, bool IsSecured, string Url)
         : IWebPageBasedViewModel
     {
         /// <inheritdoc/>
@@ -19,7 +19,7 @@ namespace DancingGoat.Models
         /// </summary>
         public static async Task<ArticleDetailViewModel> GetViewModel(AboutPage aboutPage, string languageName, ArticlePageRepository articlePageRepository, IWebPageUrlRetriever urlRetriever)
         {
-            
+            var teaser = aboutPage.ArticlePageTeaser.FirstOrDefault();
 
           
 
@@ -27,6 +27,7 @@ namespace DancingGoat.Models
 
             return new ArticleDetailViewModel(
                 aboutPage.ArticleTitle,
+                teaser?.ImageFile.Url,
                 aboutPage.ArticlePageSummary,
                 aboutPage.ArticlePageText,
                 aboutPage.SystemFields.ContentItemGUID,
