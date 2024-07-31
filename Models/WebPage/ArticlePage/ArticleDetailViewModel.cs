@@ -7,7 +7,7 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record ArticleDetailViewModel(string Title, string TeaserUrl, string Summary, string Text, DateTime PublicationDate, Guid Guid, bool IsSecured, string Url, IEnumerable<RelatedArticleViewModel> RelatedArticles)
+    public record ArticleDetailViewModel(string Title, string TeaserUrl, string Summary, string Text,  Guid Guid, bool IsSecured, string Url, IEnumerable<RelatedArticleViewModel> RelatedArticles)
         : IWebPageBasedViewModel
     {
         /// <inheritdoc/>
@@ -38,7 +38,6 @@ namespace DancingGoat.Models
                 teaser?.ImageFile.Url,
                 aboutPage.ArticlePageSummary,
                 aboutPage.ArticlePageText,
-                aboutPage.ArticlePagePublishDate,
                 aboutPage.SystemFields.ContentItemGUID,
                 aboutPage.SystemFields.ContentItemIsSecured,
                 url.RelativePath,

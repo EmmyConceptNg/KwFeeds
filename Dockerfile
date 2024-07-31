@@ -43,7 +43,7 @@ RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
     -s "tcp:kwfeeds.database.windows.net,1433" \
     -p "$DB_PASSWORD" \
     -a "$ADMIN_PASSWORD" \
-    --license-file "/app/license2.txt" \
+    --license-file "/app/license.txt" \
     --use-existing-database
 
 # Create a non-root user and set permissions

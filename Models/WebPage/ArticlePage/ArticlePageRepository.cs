@@ -95,7 +95,6 @@ namespace DancingGoat.Models
                 config => config
                     .WithLinkedItems(1)
                     .TopN(topN)
-                    .OrderBy(OrderByColumn.Desc(nameof(AboutPage.ArticlePagePublishDate)))
                     .ForWebsite(WebsiteChannelContext.WebsiteChannelName, PathMatch.Children(treePath)));
         }
 
@@ -107,9 +106,7 @@ namespace DancingGoat.Models
                 q.ForWebsite(guids)
                  .WithContentTypeFields()
                  .WithLinkedItems(1);
-            }).InLanguage(languageName)
-            .Parameters(q =>
-                q.OrderBy(OrderByColumn.Desc(nameof(AboutPage.ArticlePagePublishDate))));
+            }).InLanguage(languageName);
         }
 
 

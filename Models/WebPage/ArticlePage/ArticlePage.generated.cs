@@ -41,10 +41,7 @@ namespace DancingGoat.Models
 		public string ArticleTitle { get; set; }
 
 
-		/// <summary>
-		/// ArticlePagePublishDate.
-		/// </summary>
-		public DateTime ArticlePagePublishDate { get; set; }
+		
 
 
 		/// <summary>

@@ -6,7 +6,7 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record ArticleViewModel(string Title, string TeaserUrl, string Summary, string Text, DateTime PublicationDate, Guid Guid, bool IsSecured, string Url)
+    public record ArticleViewModel(string Title, string TeaserUrl, string Summary, string Text,Guid Guid, bool IsSecured, string Url)
     {
         /// <summary>
         /// Validates and maps <see cref="AboutPage"/> to a <see cref="ArticleViewModel"/>.
@@ -22,7 +22,6 @@ namespace DancingGoat.Models
                 teaser?.ImageFile.Url,
                 aboutPage.ArticlePageSummary,
                 aboutPage.ArticlePageText,
-                aboutPage.ArticlePagePublishDate,
                 aboutPage.SystemFields.ContentItemGUID,
                 aboutPage.SystemFields.ContentItemIsSecured,
                 url.RelativePath
