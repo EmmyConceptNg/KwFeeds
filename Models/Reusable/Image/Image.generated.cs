@@ -44,5 +44,6 @@ namespace DancingGoat.Models
 		/// ImageShortDescription.
 		/// </summary>
 		public string ImageShortDescription { get; set; }
+		public string ImageDescription { get; set; }
 	}
 }

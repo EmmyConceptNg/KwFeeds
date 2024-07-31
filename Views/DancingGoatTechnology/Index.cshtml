@@ -22,8 +22,8 @@
 }       
 @foreach (var article in @Model.Articles.Take(2))
             {
-                var positionClass = i % 2 == 0 ? "text-left-image-right" : "text-right-image-left";
-                var bgcolor = i % 2 == 0 ? "background-background" : " background-accent-1";
+    var positionClass = i % 2 == 0 ? "text-right-image-left" : "text-left-image-right";
+    var bgcolor = i % 2 == 0 ? "background-accent-1" : "background-background";
 
                 <section class="content-block @positionClass @bgcolor">
                     @if (article.TeaserUrl != null)

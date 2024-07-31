@@ -1,0 +1,25 @@
+﻿@using DancingGoat.Models
+
+@model SingleFeedCastDetailViewModel;
+
+@{
+    ViewData["PageClass"] = "inverted";
+    ViewData["Title"] = Model.Name;
+}
+
+<section class="page-header-block">
+    <figure>
+        <img src="~/Content/Images/inner-page-header.png">
+    </figure>
+    <div class="content">
+        <h2>News</h2>
+    </div>
+</section>
+
+<section class="single-post-block">
+    <div class="content">
+        @Html.Raw(Model.Description)
+    </div>
+</section>
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />

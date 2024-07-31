@@ -1,0 +1,33 @@
+﻿@using DancingGoat.Models
+
+@model NewsListViewModel
+
+@{
+    ViewData["PageClass"] = "inverted";
+}
+
+<section class="page-header-block">
+    <figure>
+        <img src="~/Content/Images/inner-page-header.png">
+    </figure>
+    <div class="content">
+        <h2>News</h2>
+    </div>
+</section>
+
+<section class="news-block list-block">
+    <div class="news-filters">
+        <partial name="Filter" model="@Model.Filter" />
+    </div>
+        <partial name="NewsList" model="Model.Items" />
+</section>
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />
+
+@section Scripts {
+    <script src="~/Scripts/formAutoPost.js"></script>
+
+    <script>
+        formAutoPost({ targetContainerSelector: "#news-list" });
+    </script>
+}
