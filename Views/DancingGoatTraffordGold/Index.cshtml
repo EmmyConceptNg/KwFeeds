@@ -11,34 +11,26 @@
 </section>
 
 <section class="content-block text-left-image-right background-background">
-   
-        <figure>
-           
-        
-                <div>
-                <img src="@Model.FirstImage.ImageFile" alt="@Model.FirstImage.ImageShortDescription" />
-                </div>
-        
-        </figure>
-        <div class="content">
-            <p class="sub-title">More than feed</p>
-            <h2>C★Traffordgold Availability</h2>
-        @Model.FirstImage.ImageShortDescription
-            <a href="#" target="" role="button">Find out more</a>
-        </div>
-    
+    <figure>
+        <img srcset="~/Content/Images/Group%20101.png" src="~/Content/Images/Group%20101.png" alt="cows image" title="" />
+    </figure>
+    <div class="content">
+        <p class="sub-title">More than feed</p>
+        <h2>C★Traffordgold Availability</h2>
+        <p>New C★Traffordgold is produced in Cargill Plc's processing facility in Trafford Park, Manchester and is
+            generally available in plentiful supply throughout the year.</p>
+        <p>For maximum economy New C★Traffordgold is delivered in 29 ton, articulated vehicles but we can also deliver
+            in 20 tonne 8-wheel rigid vehicles.</p>
+        <p>Whatever the load size, a storage area should be accessible to the lorry size and weight, plus sufficient
+            overhead clearance for tipping.</p>
+        <p>To discuss pricing and availability and secure your supply please contact your local KW feed specialist.</p>
+        <a href="#" target="" role="button">Find out more</a>
+    </div>
 </section>
 <section class="content-block background-accent-1 text-right-image-left">
-    @* @foreach (var image in Model.Image)
-    {
-        <figure>
-            @if (!string.IsNullOrEmpty(image.ImageFile.Url))
-            {
-                <img src="@image.ImageFile.Url" alt="@image.ImageShortDescription">
-            }
-        </figure>
-    } *@
-
+    <figure>
+        <img srcset="~/Content/Images/pouring.png" src="~/Content/Images/pouring.png" alt="cows image" title="" />
+    </figure>
     <div class="content">
         <p class="sub-title">Trafford Gold</p>
         <h1>Key Features</h1>
@@ -53,27 +45,54 @@
         </div>
     </div>
 </section>
-<section class="news-block list-block">
+<section class="news-block list-block text-full-width">
     <ul class="items-list">
-        @foreach (var newsItem in Model.NewsItems)
-        {
-            <li>
-                <a href="@newsItem.Url">
-                    <div class="featured-img">
-                        <figure>
-                            <img src="@Url.Content(newsItem.ImagePath)" alt="@newsItem.Name">
-                        </figure>
-                    </div>
-                    <h3>@newsItem.Name</h3>
-                    <p>@newsItem.ShortDescription</p>
-                </a>
-            </li>
-        }
+        <li>
+            <a href="single.html">
+                <div class="featured-img">
+                    <figure>
+                        <img src="~/Content/Images/blog%20image.png">
+                    </figure>
+                </div>
+                <h3>The Role of Nutrition in Dairy Cow Feeding</h3>
+                <p>Discover the essential nutrients and feeding strategies that can help dairy farmers optimize milk
+                    production in their herds. Learn how the right balance of protein, carbohydrates, vitamins, and
+                    minerals in cow feeds can contribute to healthier cows and increased milk yields.</p>
+            </a>
+        </li>
+        <li>
+            <a href="single.html">
+                <div class="featured-img">
+                    <figure>
+                        <img src="~/Content/Images/cow.png">
+                    </figure>
+                </div>
+                <h3>Going Green: Sustainable Feed Choices</h3>
+                <p>Explore the growing trend of eco-friendly farming practices and how choosing sustainable cow feeds
+                    can benefit both the environment and your bottom line. From organic options to feed formulations
+                    with minimal environmental impact, discover ways to reduce your carbon footprint while nourishing
+                    your cattle.</p>
+            </a>
+        </li>
+        <li>
+            <a href="single.html">
+                <div class="featured-img">
+                    <figure>
+                        <img src="~/Content/Images/farmer.png">
+                    </figure>
+                </div>
+                <h3>The Importance of Nutritional Supplements</h3>
+                <p>Delve into the world of beef cattle nutrition and learn how incorporating nutritional supplements
+                    into their diets can promote overall health and wellbeing. From enhancing immune function to
+                    supporting growth and reproduction, discover the benefits of supplementing your herd's feed regimen
+                    with key nutrients.</p>
+            </a>
+        </li>
     </ul>
 </section>
 <section class="content-block background-accent-1 text-left-image-right">
     <figure>
-        <img srcset="images/Group%20102.png" src="images/Group%20102.png" alt="cows image" title="" />
+        <img srcset="~/Content/Images/Group%20102.png" src="~/Content/Images/Group%20102.png" alt="cows image" title="" />
         <p>The Role of Nutrition in Dairy Cow Feeding</p>
     </figure>
     <div class="content">
