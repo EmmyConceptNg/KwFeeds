@@ -62,10 +62,6 @@ namespace DancingGoat.Models
 		public string ArticlePageText { get; set; }
 
 
-		/// <summary>
-		/// ArticleRelatedArticles.
-		/// </summary>
-		public IEnumerable<WebPageRelatedItem> ArticleRelatedArticles { get; set; }
 
 
 		/// <summary>

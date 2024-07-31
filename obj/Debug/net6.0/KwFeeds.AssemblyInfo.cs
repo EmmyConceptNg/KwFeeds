@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KwFeeds")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b0650f83c73fef6af97da4e039707e85833fad8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7cfd32c612793f4c77c5a23e92cb020f67f1e0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("KwFeeds")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KwFeeds")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
