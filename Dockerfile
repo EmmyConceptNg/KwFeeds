@@ -16,7 +16,7 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Copy the license file into the container
-COPY license2.txt /app/license2.txt
+COPY license.txt /app/license.txt
 
 # Add Microsoft package repository for .NET and install necessary tools
 RUN apt-get update && \
