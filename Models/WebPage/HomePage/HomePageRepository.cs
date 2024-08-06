@@ -68,6 +68,7 @@ namespace DancingGoat.Models
 
             return (await webPageLinkedItemsDependencyRetriever.Get(homePage.SystemFields.WebPageItemID, 4, cancellationToken))
                 .Concat(GetCacheByGuidKeys(homePage.HomePageArticlesSection.Select(articlesSection => articlesSection.WebPageGuid)))
+                .Concat(GetCacheByGuidKeys(homePage.HomePageProducts.Select(productSection => productSection.WebPageGuid)))
                 .Append(CacheHelper.BuildCacheItemName(new[] { "webpageitem", "byid", homePage.SystemFields.WebPageItemID.ToString() }, false))
                 .Append(CacheHelper.GetCacheItemName(null, WebsiteChannelInfo.OBJECT_TYPE, "byid", WebsiteChannelContext.WebsiteChannelID))
                 .Append(CacheHelper.GetCacheItemName(null, ContentLanguageInfo.OBJECT_TYPE, "all"))
