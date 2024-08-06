@@ -62,14 +62,8 @@ namespace DancingGoat.Models
 		/// <summary>
 		/// Products.
 		/// </summary>
-		public IEnumerable<Products> Products { get; set; }
+		public IEnumerable<IProductPage> Products { get; set; }
 
-		public IEnumerable<WebPageRelatedItem> RelatedProducts { get; set; }
-
-
-		/// <summary>
-		/// HomePageArticlesSection.
-		/// </summary>
 		public IEnumerable<WebPageRelatedItem> HomePageArticlesSection { get; set; }
 
 

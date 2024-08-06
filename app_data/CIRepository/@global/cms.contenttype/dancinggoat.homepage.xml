@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contenttype>
   <ClassContentTypeType>Website</ClassContentTypeType>
-  <ClassDisplayName>Home page</ClassDisplayName>
+  <ClassDisplayName>HomePage</ClassDisplayName>
   <ClassFormDefinition>
     <form>
       <field column="ContentItemDataID" columntype="integer" enabled="true" guid="e9f9ebe2-be0d-4148-bce4-249779f49000" isPK="true" />
@@ -20,57 +20,19 @@
           <controlname>Kentico.Administration.ContentItemSelector</controlname>
         </settings>
       </field>
-      <field allowempty="true" column="Products" columnprecision="0" columntype="contentitemreference" enabled="true" guid="8c596b5f-0ce9-4125-867e-038adfc8bb37" visible="true">
+      <field allowempty="true" column="Products" columnprecision="0" columntype="contentitemreference" enabled="true" guid="ecaf8ec3-7b9a-4f0c-b164-a3a00a24556d" visible="true">
         <properties>
           <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Products</fieldcaption>
+          <fieldcaption>Product</fieldcaption>
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
         <settings>
-          <AllowedContentItemTypeIdentifiers>
-            <![CDATA[["2f06d20b-3357-48e6-b0f8-2ca7ef737237"]]]>
-          </AllowedContentItemTypeIdentifiers>
+          <AllowedSchemaIdentifiers>
+            <![CDATA[["fe13f703-8744-4947-8c01-5f78bbd5039d"]]]>
+          </AllowedSchemaIdentifiers>
           <controlname>Kentico.Administration.ContentItemSelector</controlname>
-          <SelectionType>contentTypes</SelectionType>
-        </settings>
-      </field>
-      <field allowempty="true" column="HomePageEvent" columnprecision="0" columntype="contentitemreference" enabled="true" guid="9088319d-f909-4f38-93aa-e8598c78382b" visible="true">
-        <properties>
-          <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Events</fieldcaption>
-          <fielddescriptionashtml>False</fielddescriptionashtml>
-        </properties>
-        <settings>
-          <AllowedContentItemTypeIdentifiers>
-            <![CDATA[["1f61cca9-7551-4634-82ed-dfb4e4db8c0e"]]]>
-          </AllowedContentItemTypeIdentifiers>
-          <controlname>Kentico.Administration.ContentItemSelector</controlname>
-        </settings>
-      </field>
-      <field column="HomePageOurStory" columnprecision="0" columntype="longtext" enabled="true" guid="63720e59-8be0-4233-b8d5-f585fd9fb044" visible="true">
-        <properties>
-          <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Our story</fieldcaption>
-          <fielddescriptionashtml>False</fielddescriptionashtml>
-        </properties>
-        <settings>
-          <controlname>Kentico.Administration.TextArea</controlname>
-          <CopyButtonVisible>False</CopyButtonVisible>
-          <MaxRowsNumber>5</MaxRowsNumber>
-          <MinRowsNumber>3</MinRowsNumber>
-        </settings>
-      </field>
-      <field allowempty="true" column="HomePageReference" columnprecision="0" columntype="contentitemreference" enabled="true" guid="cbb9f04b-4901-4773-b551-a17ad70ca6e6" visible="true">
-        <properties>
-          <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Reference</fieldcaption>
-          <fielddescriptionashtml>False</fielddescriptionashtml>
-        </properties>
-        <settings>
-          <AllowedContentItemTypeIdentifiers>
-            <![CDATA[["fd221dc3-2ad9-443a-88b4-b15d52873d7f"]]]>
-          </AllowedContentItemTypeIdentifiers>
-          <controlname>Kentico.Administration.ContentItemSelector</controlname>
+          <MinimumItems>1</MinimumItems>
+          <SelectionType>reusableFieldSchemas</SelectionType>
         </settings>
       </field>
       <field allowempty="true" column="HomePageArticlesSection" columnprecision="0" columntype="webpages" enabled="true" guid="4d18ccea-4ea6-4ec1-88e9-bdbecc8e1ff5" visible="true">
