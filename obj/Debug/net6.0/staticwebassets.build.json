@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wvvdgSa7zVosap8cfn9Tvr3UhL3FliGv2HwKGFCGoQE=",
+  "Hash": "6ef6uBOvTMtEXPrAprntofiy3P9oyykKIOkB7FgGbCc=",
   "Source": "KwFeeds",
   "BasePath": "_content/KwFeeds",
   "Mode": "Default",
@@ -1157,25 +1157,6 @@
       "OriginalItemSpec": "wwwroot/Content/Images/404.jpg"
     },
     {
-      "Identity": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/404.png",
-      "SourceId": "KwFeeds",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmy/projects/bles/KwFeeds/wwwroot/",
-      "BasePath": "_content/KwFeeds",
-      "RelativePath": "Content/Images/404.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Content/Images/404.png"
-    },
-    {
       "Identity": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/arrow-left-thin.png",
       "SourceId": "KwFeeds",
       "SourceType": "Discovered",
@@ -1630,6 +1611,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Content/Images/Image 3.png"
+    },
+    {
+      "Identity": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/image.png",
+      "SourceId": "KwFeeds",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmy/projects/bles/KwFeeds/wwwroot/",
+      "BasePath": "_content/KwFeeds",
+      "RelativePath": "Content/Images/image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Content/Images/image.png"
     },
     {
       "Identity": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/inner-page-header.png",

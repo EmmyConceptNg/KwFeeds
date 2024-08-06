@@ -7,37 +7,33 @@
     <vc:banner banner="@Model.Banner" />
 }
 
-@* <vc:cafe-card-section cafes="@Model.Products" /> *@
+    <vc:cafe-card-section cafes="@Model.Products" />
 
 
-@* @if (Model.Event != null)
-{
-<partial name="_Event" model="@Model.Event" />
-} *@
+    @* @if (Model.Event != null)
+    {
+        <partial name="_Event" model="@Model.Event" />
+    } *@
 
 @if (Model.ArticlesSection != null)
 {
     <vc:articles articles-section-item="@Model.ArticlesSection" />
 }
-@if (Model.ProductSection != null)
-{
-    @* <vc:articles articles-section-item="@Model.ProductSection" /> *@
-}
 
 @* <div class="row ourstory-section">
-<div class="title-wrapper">
-<h1 class="title-tab">@HtmlLocalizer["Our Story"]</h1>
-</div>
-<div class="col-sm-12">
-<div class="center-text section-text">
-@Model.OurStoryText
-</div>
-</div>
+    <div class="title-wrapper">
+        <h1 class="title-tab">@HtmlLocalizer["Our Story"]</h1>
+    </div>
+    <div class="col-sm-12">
+        <div class="center-text section-text">
+            @Model.OurStoryText
+        </div>
+    </div>
 </div> *@
-@*
+@* 
 @if (Model.Reference != null)
 {
-<partial name="_reference" model="@Model.Reference" />
+    <partial name="_reference" model="@Model.Reference" />
 } *@
 
 

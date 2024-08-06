@@ -70,7 +70,6 @@ namespace DancingGoat.Models
 		/// <summary>
 		/// HomePageArticlesSection.
 		/// </summary>
-		public IEnumerable<WebPageRelatedItem> HomePageProducts { get; set; }
 		public IEnumerable<WebPageRelatedItem> HomePageArticlesSection { get; set; }
 
 

@@ -109,10 +109,6 @@
       "PackagePath": "staticwebassets/Content/Images/404.jpg"
     },
     {
-      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/404.png",
-      "PackagePath": "staticwebassets/Content/Images/404.png"
-    },
-    {
       "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/FEMAS.png",
       "PackagePath": "staticwebassets/Content/Images/FEMAS.png"
     },
@@ -235,6 +231,10 @@
     {
       "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/iconmonstr-plus-lined.png",
       "PackagePath": "staticwebassets/Content/Images/iconmonstr-plus-lined.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/image.png",
+      "PackagePath": "staticwebassets/Content/Images/image.png"
     },
     {
       "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/inner-page-header.png",

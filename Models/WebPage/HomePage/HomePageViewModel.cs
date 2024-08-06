@@ -6,7 +6,7 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record HomePageViewModel(BannerViewModel Banner, WebPageRelatedItem ArticlesSection, WebPageRelatedItem ProductSection)
+    public record HomePageViewModel(BannerViewModel Banner, IEnumerable<CafeViewModel> Products, WebPageRelatedItem ArticlesSection)
         : IWebPageBasedViewModel
     {
         /// <inheritdoc/>
@@ -25,9 +25,8 @@ namespace DancingGoat.Models
 
             return new HomePageViewModel(
                 BannerViewModel.GetViewModel(home.HomePageBanner.FirstOrDefault()),
-                
-                home.HomePageArticlesSection.FirstOrDefault(),
-                home.HomePageProducts.FirstOrDefault())
+                home.Products.Select(CafeViewModel.GetViewModel),
+                home.HomePageArticlesSection.FirstOrDefault())
             {
                 WebPage = home
             };
