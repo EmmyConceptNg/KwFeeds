@@ -7,7 +7,7 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record HomePageViewModel(BannerViewModel Banner, IEnumerable<ProductListItemViewModel> Products, WebPageRelatedItem ArticlesSection)
+    public record HomePageViewModel(BannerViewModel Banner, IEnumerable<SingleProductViewModel> Products, WebPageRelatedItem ArticlesSection)
         : IWebPageBasedViewModel
     {
         public IWebPageFieldsSource WebPage { get; init; }
@@ -19,21 +19,12 @@ namespace DancingGoat.Models
                 return null;
             }
 
-            // Ensure the correct types in linkedProducts
-            var linkedProducts = home.Products.SelectMany(p => p.RelatedItem).ToList();
-            var productPages = await productPageRepository.GetProducts(home.SystemFields.WebPageItemTreePath, languageName, linkedProducts);
-
-            // Filter to ensure only IProductPage types are processed
-            var validProductPages = productPages.Where(page => page is IProductPage).Cast<IProductPage>();
-
-            // Create the view models for valid product pages
-            var productTasks = validProductPages.Select(productPage =>
-                ProductListItemViewModel.GetViewModel(productPage, urlRetriever, languageName));
-            var productViewModels = await Task.WhenAll(productTasks);
+             var productViewModels = home.Products.Select(SingleProductViewModel.GetViewModel);
 
             return new HomePageViewModel(
                 BannerViewModel.GetViewModel(home.HomePageBanner.FirstOrDefault()),
-                productViewModels,
+                   productViewModels,
+                // productViewModels,
                 home.HomePageArticlesSection.FirstOrDefault())
             {
                 WebPage = home

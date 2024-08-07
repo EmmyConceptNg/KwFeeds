@@ -27,12 +27,11 @@
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
         <settings>
-          <AllowedSchemaIdentifiers>
-            <![CDATA[["fe13f703-8744-4947-8c01-5f78bbd5039d"]]]>
-          </AllowedSchemaIdentifiers>
+          <AllowedContentItemTypeIdentifiers>
+            <![CDATA[["7f74020d-0a9e-46fd-bfcc-50b893e94452"]]]>
+          </AllowedContentItemTypeIdentifiers>
           <controlname>Kentico.Administration.ContentItemSelector</controlname>
-          <MinimumItems>1</MinimumItems>
-          <SelectionType>reusableFieldSchemas</SelectionType>
+          <SelectionType>contentTypes</SelectionType>
         </settings>
       </field>
       <field allowempty="true" column="HomePageArticlesSection" columnprecision="0" columntype="webpages" enabled="true" guid="4d18ccea-4ea6-4ec1-88e9-bdbecc8e1ff5" visible="true">

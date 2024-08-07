@@ -12,7 +12,7 @@
   </ContentItemCommonDataContentLanguageID>
   <ContentItemCommonDataGUID>52c47d26-697c-4e56-90fc-e7f1d8164429</ContentItemCommonDataGUID>
   <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
-  <ContentItemCommonDataLastPublishedWhen>2024-08-07 00:16:51Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataLastPublishedWhen>2024-08-07 01:59:44Z</ContentItemCommonDataLastPublishedWhen>
   <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
   <SEOFieldsAllowSearchIndexing>True</SEOFieldsAllowSearchIndexing>
   <SEOFieldsDescription>Odit assumenda sit </SEOFieldsDescription>
@@ -33,7 +33,7 @@
     </cms.contentitemreference>
     <cms.contentitemreference>
       <ContentItemReferenceGroupGUID>ecaf8ec3-7b9a-4f0c-b164-a3a00a24556d</ContentItemReferenceGroupGUID>
-      <ContentItemReferenceGUID>7c9a6d6f-c602-4772-95c6-0f6e71616e26</ContentItemReferenceGUID>
+      <ContentItemReferenceGUID>63ef0b1c-02ed-4512-b4d2-226d53c7ef91</ContentItemReferenceGUID>
       <ContentItemReferenceSourceCommonDataID>
         <GUID>52c47d26-697c-4e56-90fc-e7f1d8164429</GUID>
         <ObjectType>cms.contentitemcommondata</ObjectType>
