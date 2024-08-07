@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.singleproduct>
+  <ContentItemDataCommonDataID>
+    <GUID>c6994091-2ac3-4ea1-b8aa-ba48e545ae6f</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>NewProducr-iuhnzxkx</CodeName>
+      <GUID>3ae8e7ba-bc01-40ce-9c05-c996bc075aec</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>5dd9b49f-6f92-4217-a7e3-c9bbc1b55084</ContentItemDataGUID>
+  <FeedingSystem>
+    <![CDATA[[{"Identifier":"e8084bdf-7d22-4e81-89fb-a320ae609ed5"}]]]>
+  </FeedingSystem>
+  <Location>
+    <![CDATA[[{"Identifier":"19c3a5ac-8607-4cb9-8773-fe622676c3ec"}]]]>
+  </Location>
+  <StorageOptions>
+    <![CDATA[[{"Identifier":"b8c50266-b496-4aaf-ab58-022be7c33366"}]]]>
+  </StorageOptions>
+  <TypeOfFeed>
+    <![CDATA[[{"Identifier":"3eebe161-c7fd-42b2-b72c-56a99715402b"}]]]>
+  </TypeOfFeed>
+  <TypeOfStock>
+    <![CDATA[[{"Identifier":"baf15503-a287-4078-ac6f-dc61ac5556b3"}]]]>
+  </TypeOfStock>
+</contentitemdata.dancinggoat.singleproduct>

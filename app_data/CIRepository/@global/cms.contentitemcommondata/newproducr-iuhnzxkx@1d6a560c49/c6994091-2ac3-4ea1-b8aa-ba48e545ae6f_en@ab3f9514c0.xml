@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>NewProducr-iuhnzxkx</CodeName>
+    <GUID>3ae8e7ba-bc01-40ce-9c05-c996bc075aec</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>e4a8fb12-ebc2-45d0-930f-c9fba2780c85</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataFirstPublishedWhen>2024-08-07 00:12:11Z</ContentItemCommonDataFirstPublishedWhen>
+  <ContentItemCommonDataGUID>c6994091-2ac3-4ea1-b8aa-ba48e545ae6f</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataLastPublishedWhen>2024-08-07 00:12:11Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <ProductFieldFeedingGuidelines>New Product with Emmy</ProductFieldFeedingGuidelines>
+  <ProductFieldHandlingInstructions>New Product with Emmy</ProductFieldHandlingInstructions>
+  <ProductFieldHealthBenefits>New Product with Emmy</ProductFieldHealthBenefits>
+  <ProductFieldIngredients>New Product with Emmy</ProductFieldIngredients>
+  <ProductFieldNutritionalInformation>New Product with Emmy</ProductFieldNutritionalInformation>
+  <ProductFieldsDescription>
+    <![CDATA[<p>New Product with Emmy</p>]]>
+  </ProductFieldsDescription>
+  <ProductFieldsImage>
+    <![CDATA[[{"Identifier":"38546af2-95d1-4852-a232-9dc0c9fb24b5"}]]]>
+  </ProductFieldsImage>
+  <ProductFieldsName>New Product with Emmy</ProductFieldsName>
+  <ProductFieldsShortDescription>New Product with Emmy</ProductFieldsShortDescription>
+  <ProductFieldUsageTips>New Product with Emmy</ProductFieldUsageTips>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>af37d29a-2fc8-4ead-82ef-d5ec6998f910</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>2be22648-ef01-4e84-8ee2-6f919f8dbbac</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>c6994091-2ac3-4ea1-b8aa-ba48e545ae6f</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>Events_Battlecreek-coffee-roasters-i22gbC3gFm4-unsplash_50.jpg-h9mzj83x</CodeName>
+        <GUID>38546af2-95d1-4852-a232-9dc0c9fb24b5</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
+</cms.contentitemcommondata>

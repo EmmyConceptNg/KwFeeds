@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>NewProducr-zwn4s29q</CodeName>
+    <GUID>7c18a3bb-ed12-4d27-b830-daa7411d87a0</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>e4a8fb12-ebc2-45d0-930f-c9fba2780c85</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataGUID>03d120d2-b5ab-497b-8897-255604f1a20c</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataVersionStatus>0</ContentItemCommonDataVersionStatus>
+  <ProductFieldFeedingGuidelines>New Product with Emmy</ProductFieldFeedingGuidelines>
+  <ProductFieldHandlingInstructions>New Product with Emmy</ProductFieldHandlingInstructions>
+  <ProductFieldHealthBenefits>New Product with Emmy</ProductFieldHealthBenefits>
+  <ProductFieldIngredients>New Product with Emmy</ProductFieldIngredients>
+  <ProductFieldNutritionalInformation>New Product with Emmy</ProductFieldNutritionalInformation>
+  <ProductFieldsDescription>
+    <![CDATA[<p>New Product with Emmy</p>]]>
+  </ProductFieldsDescription>
+  <ProductFieldsImage>
+    <![CDATA[[{"Identifier":"38546af2-95d1-4852-a232-9dc0c9fb24b5"}]]]>
+  </ProductFieldsImage>
+  <ProductFieldsName>New Product with Emmy</ProductFieldsName>
+  <ProductFieldsShortDescription>New Product with Emmy</ProductFieldsShortDescription>
+  <ProductFieldUsageTips>New Product with Emmy</ProductFieldUsageTips>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>af37d29a-2fc8-4ead-82ef-d5ec6998f910</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>19fb9100-12f9-45ba-9ecc-5271b159fe3c</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>03d120d2-b5ab-497b-8897-255604f1a20c</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>Events_Battlecreek-coffee-roasters-i22gbC3gFm4-unsplash_50.jpg-h9mzj83x</CodeName>
+        <GUID>38546af2-95d1-4852-a232-9dc0c9fb24b5</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
+</cms.contentitemcommondata>
