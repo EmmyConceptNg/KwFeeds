@@ -1,25 +1,33 @@
-﻿namespace DancingGoat.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace DancingGoat.Models
 {
-    public record ContactViewModel(string Name, string Street, string City, string Country, string ZipCode, string Phone, string Email)
+    public record ContactViewModel(string LocationName, string HeroBannerImageUrl, string HeroBannerShortDescription, string About, string ContactName, string Address, string Phone, string Email, string Title)
     {
         /// <summary>
         /// Validates and maps <see cref="Contact"/> to a <see cref="ContactViewModel"/>.
         /// </summary>
-        public static ContactViewModel GetViewModel(Contact contact)
+        public static ContactViewModel GetViewModel(Contact contactContentItem)
         {
-            if (contact is null)
+            if (contactContentItem is null)
             {
                 return null;
             }
 
+             var bannerImage = contactContentItem.Image.FirstOrDefault();
+
             return new ContactViewModel(
-                contact.ContactName,
-                contact.ContactStreet,
-                contact.ContactCity,
-                contact.ContactCountry,
-                contact.ContactZipCode,
-                contact.ContactPhone,
-                contact.ContactEmail    
+                contactContentItem.LocationName,
+                 bannerImage?.ImageFile.Url,
+                bannerImage?.ImageShortDescription,
+                contactContentItem.About,
+                contactContentItem.ContactName,
+                contactContentItem.Address,
+                contactContentItem.Phone,
+                contactContentItem.Email,
+                contactContentItem.Title
             );
         }
     }

@@ -11,6 +11,7 @@ namespace DancingGoat.Models
         /// </summary>
         public ContactViewModel CompanyContact { get; set; }
 
+        public string Title { get; init; }
         public string Content { get; init; }
 
 
@@ -22,5 +23,7 @@ namespace DancingGoat.Models
 
         /// <inheritdoc/>
         public IWebPageFieldsSource WebPage { get; init; }
+        public IEnumerable<ArticleViewModel> Articles { get; set; }
+        public IEnumerable<ContactViewModel> Contacts { get; set; }
     }
 }

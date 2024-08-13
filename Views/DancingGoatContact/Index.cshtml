@@ -93,6 +93,47 @@
 
 <partial name="~/Views/Shared/_LogoSection.cshtml" />
 
+@foreach (var contact in Model.Contacts){
+    <div class="modal">
+    <div class="modal-box">
+        <div class="top-box">
+            <h1>Your local specialist</h1>
+            <div class="left">
+                <figure>
+                    <img src="@contact.HeroBannerImageUrl">
+                </figure>
+                <div class="content">
+                    <h2>@contact.ContactName</h2>
+                    <p>@contact.Title</p>
+                    <div class="actions">
+                        <a href="tel:@contact.Phone" target="" role="button">Call Me</a>
+                        <a href="mailto:@contact.Email" target="" role="button">Email Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <p>@contact.About</p>
+            </div>
+        </div>
+        <div class="bottom-box">
+            <div class="location">
+                <h2>KW OFFICE LOCATIONS</h2>
+                <p><span style="font-weight:bold;">KW North</span><br /> Bishopdyke Road, Sherburn-in-Elmet,Leeds, West
+                    Yorkshire, LS25 6JZ</p><a href="tel:01977 686262">t. 01977 686262</a>
+                <a href="#" target="" role="button">Contact Us</a>
+            </div>
+            <div class="location">
+                <h2>BLENDS SITE LOCATIONS</h2>
+                <p><span style="font-weight:bold;">@contact.LocationName</span><br />@contact.Address</p><a href="tel:@contact.Phone">t. @contact.Phone</a>
+                <a href="mailto:@contact.Email" target="" role="button">Contact Us</a>
+            </div>
+        </div>
+        <div class="close">
+            <img src="~/Content/Images/iconmonstr-plus-lined.png">
+        </div>
+    </div>
+</div>
+}
 
  <script>
         document.addEventListener('DOMContentLoaded', function() {

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>Testimonial-wchkj9yj</CodeName>
+    <GUID>1cf25f94-acc9-4cbd-8073-bb3be014d98c</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>e4a8fb12-ebc2-45d0-930f-c9fba2780c85</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataFirstPublishedWhen>2024-07-19 09:18:43Z</ContentItemCommonDataFirstPublishedWhen>
+  <ContentItemCommonDataGUID>cd816933-bf9f-4acb-bc99-d540d91df57e</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataLastPublishedWhen>2024-08-12 19:01:47Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <SEOFieldsAllowSearchIndexing>True</SEOFieldsAllowSearchIndexing>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>7014090f-f211-4d2a-9d25-fbc89417df40</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>39dc500c-f9ae-4eb1-9586-0cd874686d4f</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>cd816933-bf9f-4acb-bc99-d540d91df57e</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>Testimonial-3hr3xzos</CodeName>
+        <GUID>d79b6298-7ced-4992-af41-910dd870e9bf</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>7014090f-f211-4d2a-9d25-fbc89417df40</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>8f177447-a99e-4268-8bb6-1e49b00941dd</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>cd816933-bf9f-4acb-bc99-d540d91df57e</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>NewTestTestimonial-0j3vmfib</CodeName>
+        <GUID>095ff210-228b-4b9c-a08e-b37d94de20c1</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
+</cms.contentitemcommondata>

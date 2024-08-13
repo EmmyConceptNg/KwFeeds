@@ -409,6 +409,22 @@
       "PackagePath": "staticwebassets/Scripts/mobileMenu.js"
     },
     {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style (Aaron Davis's conflicted copy 2024-05-16).css",
+      "PackagePath": "staticwebassets/css/style (Aaron Davis's conflicted copy 2024-05-16).css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style (Aaron Davis's conflicted copy 2024-05-16).less",
+      "PackagePath": "staticwebassets/css/style (Aaron Davis's conflicted copy 2024-05-16).less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style.less",
+      "PackagePath": "staticwebassets/css/style.less"
+    },
+    {
       "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/styles.css",
       "PackagePath": "staticwebassets/css/styles.css"
     },
