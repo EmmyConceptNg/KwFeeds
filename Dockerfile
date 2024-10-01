@@ -101,8 +101,8 @@ ENV PATH="/root/.dotnet/tools:$PATH"
 
 # Run the database manager command using the installed tool
 RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
-    -d KwFeeds \
-    -u EC2AMAZ-HCLCP8V\\external_admin \
+    -d "KwFeeds" \
+    -u "EC2AMAZ-HCLCP8V\\external_admin" \
     -s "tcp:34.249.232.53" \
     -p "$DB_PASSWORD" \
     -a "$ADMIN_PASSWORD" \
