@@ -80,7 +80,7 @@ COPY --from=publish /app/publish .
 COPY license.txt /app/license.txt
 
 # Set environment variables for sensitive information and configuration
-ENV DB_PASSWORD="EmmyConcept_55555" \
+ENV DB_PASSWORD="QKfDN3Jy~5P}dh}f" \
     ADMIN_PASSWORD="EmmyConcept_55555" \
     ASPNETCORE_ENVIRONMENT=Production \
     KENTICO_LICENSE_PATH="/app/license.txt"
@@ -101,9 +101,9 @@ ENV PATH="/root/.dotnet/tools:$PATH"
 
 # Run the database manager command using the installed tool
 RUN /root/.dotnet/tools/kentico-xperience-dbmanager -- \
-    -d KwFeeds_2024-06-26T08-42Z \
-    -u CloudSA71d9f3dc \
-    -s "tcp:kwfeeds.database.windows.net,1433" \
+    -d KwFeeds \
+    -u EC2AMAZ-HCLCP8V\\external_admin \
+    -s "tcp:34.249.232.53" \
     -p "$DB_PASSWORD" \
     -a "$ADMIN_PASSWORD" \
     --license-file "/app/license.txt" \
