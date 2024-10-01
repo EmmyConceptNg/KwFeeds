@@ -208,3 +208,4 @@
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.pdb
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/KwFeeds.genruntimeconfig.cache
 /Users/emmy/projects/bles/KwFeeds/obj/Debug/net6.0/ref/KwFeeds.dll
+/Users/emmy/projects/bles/KwFeeds/bin/Debug/net6.0/package-lock.json
