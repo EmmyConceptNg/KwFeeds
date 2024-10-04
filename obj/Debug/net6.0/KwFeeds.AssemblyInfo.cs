@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KwFeeds")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eea6a4b8089e15a41bd6c12d1f8685ed4dabd939")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a2e474ad04aeb5dc9834f8c4ab78263b6d7d8d2")]
->>>>>>> parent of a00dcd1 (changed settings)
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26ca1a851234f946b26a00c36e2ddd6a8008f1c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("KwFeeds")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KwFeeds")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
