@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging; // Ensure this is imported
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +25,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Logging.AddDebug();
 
+// Add Kentico services
 builder.Services.AddKentico(features =>
 {
     features.UsePageBuilder(new PageBuilderOptions
@@ -63,7 +64,7 @@ ConfigureMembershipServices(builder.Services);
 
 var app = builder.Build();
 
-// Initialize Kentico
+// Initialize Kentico before setting up middleware
 app.InitKentico();
 
 // Use Kentico middleware
@@ -98,7 +99,6 @@ static void ConfigureMembershipServices(IServiceCollection services)
         options.Password.RequireUppercase = false;
         options.Password.RequireLowercase = false;
         options.Password.RequiredUniqueChars = 0;
-        // Ensures, that disabled member cannot sign in.
         options.SignIn.RequireConfirmedAccount = true;
     })
     .AddUserStore<ApplicationUserStore<ApplicationUser>>()
