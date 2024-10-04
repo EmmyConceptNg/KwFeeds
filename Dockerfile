@@ -54,6 +54,16 @@
 # ENTRYPOINT ["dotnet", "KwFeeds.dll"]
 
 
+# dotnet kentico-xperience-dbmanager -- -s "tcp:EC2AMAZ-HCLCP8V,1433" -d "KwFeeds" -a "KwFeeds" --hash-string-salt "kwfeeds" --license-file "license.txt" --use-existing-database
+
+
+
+
+
+
+
+
+
 
 
 
