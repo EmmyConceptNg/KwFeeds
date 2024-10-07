@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.image>
+  <ContentItemDataCommonDataID>
+    <GUID>2b072d51-8f55-4f89-ae7c-43b837582e72</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>GeorgeHolland-nnpqhk6j</CodeName>
+      <GUID>0261b28b-05ce-4f06-98ba-83a3a9a353b9</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>80873b47-91d9-4b86-bc51-6b3e04f87eff</ContentItemDataGUID>
+  <ImageDescription>George Holland</ImageDescription>
+  <ImageFile>
+    <![CDATA[{"Identifier":"4a3054e3-3e1a-401c-b3ac-f3267cb8dc63","Name":"george-holland-profile.png","Extension":".png","Size":45363,"LastModified":"2024-08-12T18:51:55.961308Z"}]]>
+  </ImageFile>
+  <ImageShortDescription>George Holland</ImageShortDescription>
+</contentitemdata.dancinggoat.image>

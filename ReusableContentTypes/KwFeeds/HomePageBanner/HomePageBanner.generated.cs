@@ -50,6 +50,10 @@ namespace KwFeeds
 		/// button_text.
 		/// </summary>
 		public string button_text { get; set; }
+<<<<<<< HEAD
         public object Id { get; internal set; }
     }
+=======
+	}
+>>>>>>> c68d7c0056d2f3da3c09bcdb8f23d2a11805a4eb
 }

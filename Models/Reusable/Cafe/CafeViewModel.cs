@@ -2,23 +2,25 @@
 
 namespace DancingGoat.Models
 {
-    public record CafeViewModel(string Name, string PhotoPath, string PhotoShortDescription, string Street, string City, string Country, string ZipCode, string Phone)
+    public record CafeViewModel(string Name, string Description, string NutritionalInformation, string Ingredients, string FeedingGuidelines, string UsageTips, string StorageInstructions, string PhotoPath, string PhotoShortDescription)
     {
         /// <summary>
-        /// Maps <see cref=Cafe"/> to a <see cref="CafeViewModel"/>.
+        /// Maps <see cref=Products"/> to a <see cref="CafeViewModel"/>.
         /// </summary>
-        public static CafeViewModel GetViewModel(Cafe cafe)
+        public static CafeViewModel GetViewModel(Products cafe)
         {
             var cafePhoto = cafe.CafePhoto?.FirstOrDefault();
             return new CafeViewModel(
-                cafe.CafeName,
+                cafe.Name,
+                cafe.Description,
+                cafe.NutritionalInformation,
+                cafe.Ingredients,
+                cafe.FeedingGuidelines,
+                cafe.UsageTips,
+                cafe.StorageInstructions,
                 cafePhoto?.ImageFile.Url,
-                cafePhoto?.ImageShortDescription,
-                cafe.CafeStreet,
-                cafe.CafeCity,
-                cafe.CafeCountry,
-                cafe.CafeZipCode,
-                cafe.CafePhone);
+                cafePhoto?.ImageShortDescription
+                );
         }
     }
 }

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.image>
+  <ContentItemDataCommonDataID>
+    <GUID>f99377b6-745f-4691-818a-1289d5e4118c</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>ContactImage-mivp582k</CodeName>
+      <GUID>7d0cf1bb-233f-490f-9353-ea21d7e8fe9a</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>22147bc7-c1ab-49f2-ba76-4ddef3a338e0</ContentItemDataGUID>
+  <ImageFile>
+    <![CDATA[{"Identifier":"ef272f55-3e54-455e-84da-89100ddff45d","Name":"george-holland-profile.png","Extension":".png","Size":45363,"LastModified":"2024-08-13T08:10:56.123328Z"}]]>
+  </ImageFile>
+</contentitemdata.dancinggoat.image>

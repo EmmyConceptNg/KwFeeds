@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<media.file>
+  <FileCreatedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileCreatedByUserID>
+  <FileCreatedWhen>2024-07-11 07:27:27Z</FileCreatedWhen>
+  <FileDescription />
+  <FileExtension>.png</FileExtension>
+  <FileGUID>f3396fcc-4e03-4230-9c68-3e7820eccb1a</FileGUID>
+  <FileImageHeight>2092</FileImageHeight>
+  <FileImageWidth>3360</FileImageWidth>
+  <FileLibraryID>
+    <CodeName>FwFeeds</CodeName>
+    <GUID>872efbe6-ed7d-440a-9724-60a14039aea8</GUID>
+    <ObjectType>media.library</ObjectType>
+  </FileLibraryID>
+  <FileMimeType>image/png</FileMimeType>
+  <FileModifiedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileModifiedByUserID>
+  <FileName>Screenshot-2024-07-01-at-14-01-33</FileName>
+  <FilePath>Screenshot-2024-07-01-at-14-01-33.png</FilePath>
+  <FileSize>360737</FileSize>
+  <FileTitle />
+</media.file>

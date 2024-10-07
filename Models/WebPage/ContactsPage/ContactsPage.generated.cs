@@ -39,6 +39,7 @@ namespace DancingGoat.Models
 		/// SEOFieldsTitle.
 		/// </summary>
 		public string SEOFieldsTitle { get; set; }
+		public string Content { get; set; }
 
 
 		/// <summary>

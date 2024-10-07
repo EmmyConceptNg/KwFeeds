@@ -1,0 +1,50 @@
+﻿@using DancingGoat.Models
+
+@model FeedCastListViewModel
+
+@{
+    ViewData["PageClass"] = "inverted";
+}
+
+<section class="page-header-block">
+    <figure>
+        <img src="~/Content/Images/inner-page-header.png">
+    </figure>
+    <div class="content">
+        <h2>KW Feedcast</h2>
+    </div>
+</section>
+
+
+<section class="content-block text-left-image-right background-background">
+    <figure>
+        <img srcset="~/Content/Images/Group%2098.png" src="~/Content/Images/Group%2098.png" alt="cows image" title="" />
+    </figure>
+    <div class="content">
+        <p class="sub-title">More than feed</p>
+        <h2>Helping customers produce healthy high performance herds</h2>
+        <p>At KW we lead the development of alternative feeding in the UK, making it the natural choice on high
+            performance livestock farms. Today, the choice of alternative feeds is greater than ever and we offer the
+            widest possible range of dry, moist, liquid, blended and compounded feeds alongside more traditional
+            straights, minerals, vitamins, protected fats, secure covers and silage additives.</p>
+    </div>
+</section>
+
+
+
+ <section class="feedcast-block list-block">
+    <partial name="FeedCastsList" model="Model.Items" />
+          
+           
+        </section>
+
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />
+
+@section Scripts {
+    <script src="~/Scripts/formAutoPost.js"></script>
+
+    <script>
+        formAutoPost({ targetContainerSelector: "#product-list" });
+    </script>
+}

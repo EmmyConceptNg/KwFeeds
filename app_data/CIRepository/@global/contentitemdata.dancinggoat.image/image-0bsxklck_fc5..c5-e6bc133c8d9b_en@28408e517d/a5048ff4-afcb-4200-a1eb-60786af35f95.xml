@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.image>
+  <ContentItemDataCommonDataID>
+    <GUID>fc59da2f-b03f-4f51-abc5-e6bc133c8d9b</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Image-0bsxklck</CodeName>
+      <GUID>a68aca94-8b5e-4409-8127-77bcd3453d8c</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>a5048ff4-afcb-4200-a1eb-60786af35f95</ContentItemDataGUID>
+  <ImageFile>
+    <![CDATA[{"Identifier":"94e3e69c-34a2-4171-a929-1deaded9ad49","Name":"Screenshot 2024-07-01 at 14.01.33.png","Extension":".png","Size":360737,"LastModified":"2024-07-11T07:31:53.408419Z"}]]>
+  </ImageFile>
+</contentitemdata.dancinggoat.image>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.event>
+  <ContentItemDataCommonDataID>
+    <GUID>6fea3c84-3bf8-45ba-9cc1-c304826867d7</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-6zx53v5g</CodeName>
+      <GUID>144ab790-9f1b-4cfd-bb98-1ef133efd63c</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>2b1586c3-2fe1-4d81-b469-596b46b117e4</ContentItemDataGUID>
+  <EventCafe>
+    <![CDATA[[{"Identifier":"4c84719d-689e-460e-8cc1-5495c367b249"}]]]>
+  </EventCafe>
+  <EventDate>2024-07-11 08:43:27Z</EventDate>
+  <EventHeroBannerImage>
+    <![CDATA[[{"Identifier":"b8117d96-dfb3-474d-ad27-c3b0d3bd26db"}]]]>
+  </EventHeroBannerImage>
+  <EventPromoText>Iusto fugiat fugit sd</EventPromoText>
+  <EventTitle>Odio labore quibusda</EventTitle>
+</contentitemdata.dancinggoat.event>

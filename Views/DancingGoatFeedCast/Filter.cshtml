@@ -1,0 +1,32 @@
+﻿@using DancingGoat.Models
+
+@model Dictionary<string, TaxonomyViewModel>
+
+<div class="shop-filters">
+    <form asp-controller="DancingGoatFeedCast" asp-action="Filter" autocomplete="off" >
+        @Html.Kentico().PageData()
+
+        @foreach (var key in Model.Keys)
+        {
+            <div class="accordion" style="margin: 10px 0px !important;">
+                <input type="checkbox" id="accordion-@Model[key].CodeName">
+                <h3>
+                    <label for="accordion-@Model[key].CodeName">@HtmlLocalizer[Model[key].Name]</label>
+                </h3>
+                <div class="panel">
+                    <ul>
+                        <!-- Assuming Model[key].Tags is a collection of TagViewModel -->
+                        @foreach (var tag in Model[key].Tags)
+                        {
+                            <li class="checkbox level-@tag.Level">
+                                <input id="filter-@Model[key].CodeName-@tag.Value" type="checkbox" class="custom-filter"
+                                    name="@Model[key].CodeName" value="@tag.Value" @(tag.IsChecked ? "checked" : "")>
+                                <label for="filter-@Model[key].CodeName-@tag.Value">@tag.Name</label>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+    </form>
+</div>

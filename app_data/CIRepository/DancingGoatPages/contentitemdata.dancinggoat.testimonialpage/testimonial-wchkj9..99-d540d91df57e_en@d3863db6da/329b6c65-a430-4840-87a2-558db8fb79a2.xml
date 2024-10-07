@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.testimonialpage>
+  <ContentItemDataCommonDataID>
+    <GUID>cd816933-bf9f-4acb-bc99-d540d91df57e</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Testimonial-wchkj9yj</CodeName>
+      <GUID>1cf25f94-acc9-4cbd-8073-bb3be014d98c</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>329b6c65-a430-4840-87a2-558db8fb79a2</ContentItemDataGUID>
+  <Testimonial>
+    <![CDATA[[{"Identifier":"d79b6298-7ced-4992-af41-910dd870e9bf"},{"Identifier":"095ff210-228b-4b9c-a08e-b37d94de20c1"}]]]>
+  </Testimonial>
+</contentitemdata.dancinggoat.testimonialpage>

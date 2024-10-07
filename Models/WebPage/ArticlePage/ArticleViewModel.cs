@@ -6,25 +6,24 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record ArticleViewModel(string Title, string TeaserUrl, string Summary, string Text, DateTime PublicationDate, Guid Guid, bool IsSecured, string Url)
+    public record ArticleViewModel(string Title, string TeaserUrl, string Summary, string Text,Guid Guid, bool IsSecured, string Url)
     {
         /// <summary>
-        /// Validates and maps <see cref="ArticlePage"/> to a <see cref="ArticleViewModel"/>.
+        /// Validates and maps <see cref="AboutPage"/> to a <see cref="ArticleViewModel"/>.
         /// </summary>
-        public static async Task<ArticleViewModel> GetViewModel(ArticlePage articlePage, IWebPageUrlRetriever urlRetriever, string languageName)
+        public static async Task<ArticleViewModel> GetViewModel(AboutPage aboutPage, IWebPageUrlRetriever urlRetriever, string languageName)
         {
-            var teaser = articlePage.ArticlePageTeaser.FirstOrDefault();
+            var teaser = aboutPage.ArticlePageTeaser.FirstOrDefault();
 
-            var url = await urlRetriever.Retrieve(articlePage, languageName);
+            var url = await urlRetriever.Retrieve(aboutPage, languageName);
 
             return new ArticleViewModel(
-                articlePage.ArticleTitle,
+                aboutPage.ArticleTitle,
                 teaser?.ImageFile.Url,
-                articlePage.ArticlePageSummary,
-                articlePage.ArticlePageText,
-                articlePage.ArticlePagePublishDate,
-                articlePage.SystemFields.ContentItemGUID,
-                articlePage.SystemFields.ContentItemIsSecured,
+                aboutPage.ArticlePageSummary,
+                aboutPage.ArticlePageText,
+                aboutPage.SystemFields.ContentItemGUID,
+                aboutPage.SystemFields.ContentItemIsSecured,
                 url.RelativePath
             );
         }

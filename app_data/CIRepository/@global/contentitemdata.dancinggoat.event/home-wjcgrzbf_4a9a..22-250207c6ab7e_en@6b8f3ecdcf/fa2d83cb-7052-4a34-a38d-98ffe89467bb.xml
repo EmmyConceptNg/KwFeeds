@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.event>
+  <ContentItemDataCommonDataID>
+    <GUID>4a9a09db-7f34-45c7-9622-250207c6ab7e</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-wjcgrzbf</CodeName>
+      <GUID>60026009-7c3c-49e6-9444-289d169a3f3e</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>fa2d83cb-7052-4a34-a38d-98ffe89467bb</ContentItemDataGUID>
+  <EventCafe>
+    <![CDATA[[{"Identifier":"4c84719d-689e-460e-8cc1-5495c367b249"}]]]>
+  </EventCafe>
+  <EventDate>2024-07-11 08:43:27Z</EventDate>
+  <EventHeroBannerImage>
+    <![CDATA[[{"Identifier":"b8117d96-dfb3-474d-ad27-c3b0d3bd26db"}]]]>
+  </EventHeroBannerImage>
+  <EventPromoText>Iusto fugiat fugit sd</EventPromoText>
+  <EventTitle>Odio labore quibusda</EventTitle>
+</contentitemdata.dancinggoat.event>

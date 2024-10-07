@@ -1,0 +1,449 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Admin/pageComponents.css",
+      "PackagePath": "staticwebassets/Content/Bundles/Admin/pageComponents.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Admin/pageComponents.js",
+      "PackagePath": "staticwebassets/Content/Bundles/Admin/pageComponents.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Admin/pageComponents.min.css",
+      "PackagePath": "staticwebassets/Content/Bundles/Admin/pageComponents.min.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Admin/pageComponents.min.js",
+      "PackagePath": "staticwebassets/Content/Bundles/Admin/pageComponents.min.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Public/pageComponents.css",
+      "PackagePath": "staticwebassets/Content/Bundles/Public/pageComponents.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Public/pageComponents.js",
+      "PackagePath": "staticwebassets/Content/Bundles/Public/pageComponents.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Public/pageComponents.min.css",
+      "PackagePath": "staticwebassets/Content/Bundles/Public/pageComponents.min.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Bundles/Public/pageComponents.min.js",
+      "PackagePath": "staticwebassets/Content/Bundles/Public/pageComponents.min.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/Core-icons.eot",
+      "PackagePath": "staticwebassets/Content/Fonts/Core-icons.eot"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/Core-icons.svg",
+      "PackagePath": "staticwebassets/Content/Fonts/Core-icons.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/Core-icons.ttf",
+      "PackagePath": "staticwebassets/Content/Fonts/Core-icons.ttf"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/Core-icons.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/Core-icons.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Bold.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Bold.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Bold.woff2",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Bold.woff2"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Light.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Light.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Light.woff2",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Light.woff2"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Medium.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Medium.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Medium.woff2",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Medium.woff2"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Regular.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Regular.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Regular.woff2",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Regular.woff2"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Thin.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Thin.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/GT-Walsheim-Thin.woff2",
+      "PackagePath": "staticwebassets/Content/Fonts/GT-Walsheim-Thin.woff2"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/PTSerif-Bold.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/PTSerif-Bold.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/SourceSansPro-Bold.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/SourceSansPro-Bold.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/SourceSansPro-Light.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/SourceSansPro-Light.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Fonts/SourceSansPro-Regular.woff",
+      "PackagePath": "staticwebassets/Content/Fonts/SourceSansPro-Regular.woff"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/404.jpg",
+      "PackagePath": "staticwebassets/Content/Images/404.jpg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/404.png",
+      "PackagePath": "staticwebassets/Content/Images/404.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/FEMAS.png",
+      "PackagePath": "staticwebassets/Content/Images/FEMAS.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Group 101.png",
+      "PackagePath": "staticwebassets/Content/Images/Group 101.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Group 102.png",
+      "PackagePath": "staticwebassets/Content/Images/Group 102.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Group 98.png",
+      "PackagePath": "staticwebassets/Content/Images/Group 98.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Image 2.png",
+      "PackagePath": "staticwebassets/Content/Images/Image 2.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Image 3.png",
+      "PackagePath": "staticwebassets/Content/Images/Image 3.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/KW-hero-image.mp4",
+      "PackagePath": "staticwebassets/Content/Images/KW-hero-image.mp4"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/KW-new-logo.png",
+      "PackagePath": "staticwebassets/Content/Images/KW-new-logo.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/UFAS.png",
+      "PackagePath": "staticwebassets/Content/Images/UFAS.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/UK map.svg",
+      "PackagePath": "staticwebassets/Content/Images/UK map.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Untitled design (15).png",
+      "PackagePath": "staticwebassets/Content/Images/Untitled design (15).png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Untitled design (16).png",
+      "PackagePath": "staticwebassets/Content/Images/Untitled design (16).png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/Untitled design (17).png",
+      "PackagePath": "staticwebassets/Content/Images/Untitled design (17).png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/arrow-left-thin.png",
+      "PackagePath": "staticwebassets/Content/Images/arrow-left-thin.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/bg.jpg",
+      "PackagePath": "staticwebassets/Content/Images/bg.jpg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/blog image.png",
+      "PackagePath": "staticwebassets/Content/Images/blog image.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/check-solid.svg",
+      "PackagePath": "staticwebassets/Content/Images/check-solid.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/checkbox-yellow.svg",
+      "PackagePath": "staticwebassets/Content/Images/checkbox-yellow.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/checkbox.svg",
+      "PackagePath": "staticwebassets/Content/Images/checkbox.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/chevron-down.png",
+      "PackagePath": "staticwebassets/Content/Images/chevron-down.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/cow.png",
+      "PackagePath": "staticwebassets/Content/Images/cow.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/cows.png",
+      "PackagePath": "staticwebassets/Content/Images/cows.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/cup.png",
+      "PackagePath": "staticwebassets/Content/Images/cup.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/default-avatar.png",
+      "PackagePath": "staticwebassets/Content/Images/default-avatar.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/draff.png",
+      "PackagePath": "staticwebassets/Content/Images/draff.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/farmer.png",
+      "PackagePath": "staticwebassets/Content/Images/farmer.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/favicon.svg",
+      "PackagePath": "staticwebassets/Content/Images/favicon.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/find-kw.png",
+      "PackagePath": "staticwebassets/Content/Images/find-kw.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/form-block-background.png",
+      "PackagePath": "staticwebassets/Content/Images/form-block-background.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/george-holland-profile.png",
+      "PackagePath": "staticwebassets/Content/Images/george-holland-profile.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/iconmonstr-plus-lined.png",
+      "PackagePath": "staticwebassets/Content/Images/iconmonstr-plus-lined.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/image.png",
+      "PackagePath": "staticwebassets/Content/Images/image.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/inner-page-header.png",
+      "PackagePath": "staticwebassets/Content/Images/inner-page-header.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/key-features-background.png",
+      "PackagePath": "staticwebassets/Content/Images/key-features-background.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/kw-in-the-press.png",
+      "PackagePath": "staticwebassets/Content/Images/kw-in-the-press.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/logo.svg",
+      "PackagePath": "staticwebassets/Content/Images/logo.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/logos-FAR.png",
+      "PackagePath": "staticwebassets/Content/Images/logos-FAR.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/man.png",
+      "PackagePath": "staticwebassets/Content/Images/man.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/minus.svg",
+      "PackagePath": "staticwebassets/Content/Images/minus.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/pin.png",
+      "PackagePath": "staticwebassets/Content/Images/pin.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/plant-1.png",
+      "PackagePath": "staticwebassets/Content/Images/plant-1.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/plant-2.png",
+      "PackagePath": "staticwebassets/Content/Images/plant-2.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/plant-3.png",
+      "PackagePath": "staticwebassets/Content/Images/plant-3.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/plant-4.png",
+      "PackagePath": "staticwebassets/Content/Images/plant-4.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/plus.svg",
+      "PackagePath": "staticwebassets/Content/Images/plus.svg"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/pouring.png",
+      "PackagePath": "staticwebassets/Content/Images/pouring.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/product-of-the-month.png",
+      "PackagePath": "staticwebassets/Content/Images/product-of-the-month.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/red tractor.png",
+      "PackagePath": "staticwebassets/Content/Images/red tractor.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/testimonial-profile.png",
+      "PackagePath": "staticwebassets/Content/Images/testimonial-profile.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/tractor.png",
+      "PackagePath": "staticwebassets/Content/Images/tractor.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Images/woman.png",
+      "PackagePath": "staticwebassets/Content/Images/woman.png"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Buttons.less",
+      "PackagePath": "staticwebassets/Content/Styles/Buttons.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Controls.less",
+      "PackagePath": "staticwebassets/Content/Styles/Controls.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Fonts.less",
+      "PackagePath": "staticwebassets/Content/Styles/Fonts.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Form.less",
+      "PackagePath": "staticwebassets/Content/Styles/Form.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Grid.less",
+      "PackagePath": "staticwebassets/Content/Styles/Grid.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Landing-page.css",
+      "PackagePath": "staticwebassets/Content/Styles/Landing-page.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Landing-page.less",
+      "PackagePath": "staticwebassets/Content/Styles/Landing-page.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Menu.less",
+      "PackagePath": "staticwebassets/Content/Styles/Menu.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Mixins.less",
+      "PackagePath": "staticwebassets/Content/Styles/Mixins.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Products.less",
+      "PackagePath": "staticwebassets/Content/Styles/Products.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Reset.less",
+      "PackagePath": "staticwebassets/Content/Styles/Reset.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Sections.less",
+      "PackagePath": "staticwebassets/Content/Styles/Sections.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Site.css",
+      "PackagePath": "staticwebassets/Content/Styles/Site.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/Site.less",
+      "PackagePath": "staticwebassets/Content/Styles/Site.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/TrackingConsent.less",
+      "PackagePath": "staticwebassets/Content/Styles/TrackingConsent.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/icons-core.less",
+      "PackagePath": "staticwebassets/Content/Styles/icons-core.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Content/Styles/variables.less",
+      "PackagePath": "staticwebassets/Content/Styles/variables.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/PageBuilder/Admin/InlineEditors/ColorPickerEditor/ColorPickerEditor.css",
+      "PackagePath": "staticwebassets/PageBuilder/Admin/InlineEditors/ColorPickerEditor/ColorPickerEditor.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/PageBuilder/Admin/InlineEditors/ColorPickerEditor/color-picker-editor.js",
+      "PackagePath": "staticwebassets/PageBuilder/Admin/InlineEditors/ColorPickerEditor/color-picker-editor.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/PageBuilder/Admin/InlineEditors/TextEditor/TextEditor.css",
+      "PackagePath": "staticwebassets/PageBuilder/Admin/InlineEditors/TextEditor/TextEditor.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/PageBuilder/Admin/InlineEditors/TextEditor/text-editor.js",
+      "PackagePath": "staticwebassets/PageBuilder/Admin/InlineEditors/TextEditor/text-editor.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Scripts/formAutoPost.js",
+      "PackagePath": "staticwebassets/Scripts/formAutoPost.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/Scripts/mobileMenu.js",
+      "PackagePath": "staticwebassets/Scripts/mobileMenu.js"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style (Aaron Davis's conflicted copy 2024-05-16).css",
+      "PackagePath": "staticwebassets/css/style (Aaron Davis's conflicted copy 2024-05-16).css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style (Aaron Davis's conflicted copy 2024-05-16).less",
+      "PackagePath": "staticwebassets/css/style (Aaron Davis's conflicted copy 2024-05-16).less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/style.less",
+      "PackagePath": "staticwebassets/css/style.less"
+    },
+    {
+      "Id": "/Users/emmy/projects/bles/KwFeeds/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.KwFeeds.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.KwFeeds.props",
+      "PackagePath": "build\\KwFeeds.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.KwFeeds.props",
+      "PackagePath": "buildMultiTargeting\\KwFeeds.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.KwFeeds.props",
+      "PackagePath": "buildTransitive\\KwFeeds.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

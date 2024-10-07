@@ -1,6 +1,6 @@
 ﻿@using DancingGoat.Models
 @model CafeViewModel
-
+@* 
 <div>
     @if (String.IsNullOrEmpty(Model.Name) && string.IsNullOrEmpty(Model.PhotoPath))
     {
@@ -17,4 +17,27 @@
             }
         </a>
     }
-</div>
+</div> *@
+
+
+
+    <div class="product-logo">
+        <figure>
+            <img src="~/Content/Images/KW-new-logo.png" alt="KW-new-logo" />
+        </figure>
+    </div>
+    <figure>
+        @if (!string.IsNullOrEmpty(Model.PhotoPath))
+        {
+            <img src="@Url.Content(Model.PhotoPath)" alt="@Model.PhotoShortDescription" title="@Model.Name"
+                class="ourcoffee-tile-image" loading="lazy" />
+        }
+    </figure>
+    <div class="content">
+    <h2>@Model.Name</h2>
+    <p>@Model.Description</p>
+        <div class="actions">
+            <a href="https://trulycontent.com/kwfeeds/single-product.html" target="" role="button">Find out
+                more</a>
+        </div>
+    </div>

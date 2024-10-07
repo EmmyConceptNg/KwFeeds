@@ -14,8 +14,13 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.fileproviders.embedded/6.0.29/build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.fileproviders.embedded/6.0.29/build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore/6.0.11/buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore/6.0.11/buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design/6.0.11/build/net6.0/Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design/6.0.11/build/net6.0/Microsoft.EntityFrameworkCore.Design.props')" />
     <Import Project="$(NuGetPackageRoot)hotchocolate.data/13.9.4/build/HotChocolate.Data.props" Condition="Exists('$(NuGetPackageRoot)hotchocolate.data/13.9.4/build/HotChocolate.Data.props')" />
     <Import Project="$(NuGetPackageRoot)hotchocolate.aspnetcore/13.9.4/build/HotChocolate.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)hotchocolate.aspnetcore/13.9.4/build/HotChocolate.AspNetCore.props')" />
     <Import Project="$(NuGetPackageRoot)kentico.xperience.webapp/29.1.3/buildTransitive/Kentico.Xperience.WebApp.props" Condition="Exists('$(NuGetPackageRoot)kentico.xperience.webapp/29.1.3/buildTransitive/Kentico.Xperience.WebApp.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/Users/emmy/.nuget/packages/microsoft.entityframeworkcore.tools/6.0.11</PkgMicrosoft_EntityFrameworkCore_Tools>
+  </PropertyGroup>
 </Project>

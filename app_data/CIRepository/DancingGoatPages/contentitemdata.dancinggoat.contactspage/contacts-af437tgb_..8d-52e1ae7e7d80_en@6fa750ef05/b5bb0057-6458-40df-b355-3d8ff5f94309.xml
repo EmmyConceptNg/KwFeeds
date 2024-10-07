@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.contactspage>
+  <Content>
+<![CDATA[
+At KWFEEDS, we're dedicated to providing top-notch service and support for all your livestock feed needs. Utilize our interactive map feature to easily access contact details for dairy, beef, and sheep enquiries at each of our locations.
+
+Simply rollover each location on the map to reveal comprehensive contact information, ensuring quick and convenient communication with our knowledgeable team.
+
+For inquiries related to pig feed, please don't hesitate to call us directly at 0845 491 7344. We're here to assist you in selecting the right feed solutions for your livestock and to address any questions or concerns you may have. Get in touch with KWFEEDS today and experience unparalleled customer service and expertise.
+]]>
+  </Content>
+  <ContentItemDataCommonDataID>
+    <GUID>6b6b58d1-a0ac-400e-ad8d-52e1ae7e7d80</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Contacts-af437tgb</CodeName>
+      <GUID>688a474e-a995-42e4-a397-0c692f14d885</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>b5bb0057-6458-40df-b355-3d8ff5f94309</ContentItemDataGUID>
+</contentitemdata.dancinggoat.contactspage>

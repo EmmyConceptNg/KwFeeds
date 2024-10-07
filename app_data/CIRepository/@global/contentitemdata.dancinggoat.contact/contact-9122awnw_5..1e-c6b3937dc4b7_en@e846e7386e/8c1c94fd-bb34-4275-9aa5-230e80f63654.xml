@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.dancinggoat.contact>
+  <About>Qui natus magna cill</About>
+  <Address>Provident sequi mol</Address>
+  <ContactName>Angela Christian</ContactName>
+  <ContentItemDataCommonDataID>
+    <GUID>5d321802-abd9-4c80-971e-c6b3937dc4b7</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Contact-9122awnw</CodeName>
+      <GUID>d5348556-5162-4f96-9261-1926f36a456a</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>8c1c94fd-bb34-4275-9aa5-230e80f63654</ContentItemDataGUID>
+  <Image>
+    <![CDATA[[{"Identifier":"7d0cf1bb-233f-490f-9353-ea21d7e8fe9a"}]]]>
+  </Image>
+  <Phone>+1 (905) 613-4748</Phone>
+  <Title>Quis nostrum omnis p</Title>
+</contentitemdata.dancinggoat.contact>

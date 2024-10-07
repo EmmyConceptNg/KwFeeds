@@ -1,0 +1,32 @@
+﻿@model DancingGoat.Widgets.NewsCardListViewModel
+
+<div class="content-wrapper" style="padding: 0 2.4rem 2em 2.4rem;">
+    @if (@Model.News.Count() == 0)
+    {
+        <h3 style="text-align: center">Please select a news.</h3>
+    }
+    else
+    {
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            @foreach (var news in Model.News)
+            {
+                <div class="col-md-4" style="padding: 0 0.6rem;">
+                    <div class="news-card">
+                        <div style="text-align: center;">
+                            @if (!string.IsNullOrEmpty(@news.ImagePath))
+                            {
+                                <img src="@Url.Content(news.ImagePath)" alt="@news.Heading" title="@news.Heading" loading="lazy" />
+                            }
+                            <h3>@news.Heading</h3>
+
+                            @if (!string.IsNullOrEmpty(news.Text))
+                            {
+                                <p>@news.Text</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

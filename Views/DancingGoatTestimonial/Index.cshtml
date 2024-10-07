@@ -1,0 +1,74 @@
+@model DancingGoat.Models.TestimonialIndexViewModel
+
+
+<section class="page-header-block">
+    <figure>
+        <img src="~/Content/Images/inner-page-header.png">
+    </figure>
+    <div class="content">
+        <h2>Testimonials</h2>
+    </div>
+</section>
+
+
+@{
+    var i = 0;
+}
+@foreach (var article in @Model.Articles.Take(1))
+{
+    var positionClass = i % 2 == 0 ? "text-left-image-right" : "text-right-image-left";
+    var bgcolor = i % 2 == 0 ? "background-background" : "background-accent-1";
+
+    <section class="content-block @positionClass @bgcolor">
+    @if (article.TeaserUrl != null)
+        {
+            <figure>
+                <img srcset="@Url.Content(article.TeaserUrl)" src="@Url.Content(article.TeaserUrl)" alt="@article.Title"
+                    title="@article.Title" />
+            </figure>
+        }
+
+        <div class="content">
+            <p class="sub-title">More than feed</p>
+            <h2 class="h4">
+                @article.Title
+            </h2>
+
+            <p>@article.Summary</p>
+            <a href="#" target="" role="button">Find out more</a>
+        </div>
+    </section>
+
+    if (i % 4 == 3)
+    {
+        <div class="clear"></div>
+    }
+    i++;
+}
+
+<section class="testimonials-block">
+    <ul>
+        @foreach (var testimonial in Model.Testimonials)
+        {
+            <li>
+                <div class="content">
+                    <h2>@testimonial.Name</h2>
+                    <h4>@testimonial.JobTitle</h4>
+                </div>
+                <p>@testimonial.Content</p>
+                <figure style="display:flex; align-items:center">
+                    <img src="@testimonial.HeroBannerImageUrl" alt="@testimonial.HeroBannerShortDescription" width="100%" />
+                </figure>
+            </li>
+        }
+
+    </ul>
+    <div class="pagination">
+        <p>SHOWING 15/40 TESTIMONIALS</p>
+        <a href="#" target="" role="button">Show More</a>
+    </div>
+</section>
+
+
+
+<partial name="~/Views/Shared/_LogoSection.cshtml" />

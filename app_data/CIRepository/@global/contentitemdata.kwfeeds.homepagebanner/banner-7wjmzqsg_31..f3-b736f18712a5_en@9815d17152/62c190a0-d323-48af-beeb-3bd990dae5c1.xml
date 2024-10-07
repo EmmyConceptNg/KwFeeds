@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.homepagebanner>
+  <button_text>check</button_text>
+  <ContentItemDataCommonDataID>
+    <GUID>317dc7f4-9f08-41de-9ef3-b736f18712a5</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Banner-7wjmzqsg</CodeName>
+      <GUID>caa52b71-582c-48c7-b19b-17abf35815f4</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>62c190a0-d323-48af-beeb-3bd990dae5c1</ContentItemDataGUID>
+  <tag>MORE THAN FEED</tag>
+  <title>
+    <![CDATA[<p>hf</p>]]>
+  </title>
+</contentitemdata.kwfeeds.homepagebanner>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>NewProducr-b4dt6dsm</CodeName>
+    <GUID>88fa4439-4a6f-472d-9590-adf881c1d254</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>e4a8fb12-ebc2-45d0-930f-c9fba2780c85</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataFirstPublishedWhen>2024-08-07 00:11:49Z</ContentItemCommonDataFirstPublishedWhen>
+  <ContentItemCommonDataGUID>96116224-1f69-44dd-bfe7-a01801f6b192</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataLastPublishedWhen>2024-08-07 00:11:49Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <ProductFieldFeedingGuidelines>New Product with Emmy</ProductFieldFeedingGuidelines>
+  <ProductFieldHandlingInstructions>New Product with Emmy</ProductFieldHandlingInstructions>
+  <ProductFieldHealthBenefits>New Product with Emmy</ProductFieldHealthBenefits>
+  <ProductFieldIngredients>New Product with Emmy</ProductFieldIngredients>
+  <ProductFieldNutritionalInformation>New Product with Emmy</ProductFieldNutritionalInformation>
+  <ProductFieldsDescription>
+    <![CDATA[<p>New Product with Emmy</p>]]>
+  </ProductFieldsDescription>
+  <ProductFieldsImage>
+    <![CDATA[[{"Identifier":"38546af2-95d1-4852-a232-9dc0c9fb24b5"}]]]>
+  </ProductFieldsImage>
+  <ProductFieldsName>New Product with Emmy</ProductFieldsName>
+  <ProductFieldsShortDescription>New Product with Emmy</ProductFieldsShortDescription>
+  <ProductFieldUsageTips>New Product with Emmy</ProductFieldUsageTips>
+</cms.contentitemcommondata>

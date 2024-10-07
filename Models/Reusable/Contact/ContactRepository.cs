@@ -1,60 +1,65 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
 using CMS.ContentEngine;
 using CMS.Helpers;
+using CMS.Websites;
 using CMS.Websites.Routing;
 
 namespace DancingGoat.Models
 {
     /// <summary>
-    /// Represents a collection of contact information.
+    /// Represents a collection of cafes.
     /// </summary>
-    public class ContactRepository : ContentRepositoryBase
+    public partial class ContactRepository : ContentRepositoryBase
     {
-        public ContactRepository(IWebsiteChannelContext websiteChannelContext, IContentQueryExecutor executor, IProgressiveCache cache)
+        private readonly ILinkedItemsDependencyAsyncRetriever linkedItemsDependencyRetriever;
+
+
+        public ContactRepository(
+            IWebsiteChannelContext websiteChannelContext,
+            IContentQueryExecutor executor,
+            IProgressiveCache cache,
+            ILinkedItemsDependencyAsyncRetriever linkedItemsDependencyRetriever)
             : base(websiteChannelContext, executor, cache)
         {
+            this.linkedItemsDependencyRetriever = linkedItemsDependencyRetriever;
         }
-
 
         /// <summary>
-        /// Returns the first <see cref="Contact"/> content item.
+        /// Returns an enumerable collection of company cafes ordered by a position in the content tree.
         /// </summary>
-        public async Task<Contact> GetContact(string languageName, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<Contact>> GetCompanyContacts(int count, string languageName, CancellationToken cancellationToken = default)
         {
-            var queryBuilder = GetQueryBuilder(languageName);
+            var queryBuilder = GetQueryBuilder(count, languageName);
 
-            var cacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, languageName, nameof(Contact));
+            var cacheSettings = new CacheSettings(5, WebsiteChannelContext.WebsiteChannelName, nameof(ContactRepository), languageName, nameof(GetCompanyContacts), count);
 
-            var result = await GetCachedQueryResult<Contact>(queryBuilder, null, cacheSettings, GetDependencyCacheKeys, cancellationToken);
-
-            return result.FirstOrDefault();
+            return await GetCachedQueryResult<Contact>(queryBuilder, null, cacheSettings, GetDependencyCacheKeys, cancellationToken);
         }
 
-
-        private static ContentItemQueryBuilder GetQueryBuilder(string languageName)
+        private static ContentItemQueryBuilder GetQueryBuilder(int count, string languageName)
         {
             return new ContentItemQueryBuilder()
-                    .ForContentType(Contact.CONTENT_TYPE_NAME, config => config.TopN(1))
+                    .ForContentType(Contact.CONTENT_TYPE_NAME,
+                        config => config
+                            .WithLinkedItems(1)
+                            .TopN(count))
                     .InLanguage(languageName);
         }
 
 
-        private static Task<ISet<string>> GetDependencyCacheKeys(IEnumerable<Contact> contacts, CancellationToken cancellationToken)
+        private async Task<ISet<string>> GetDependencyCacheKeys(IEnumerable<Contact> testimonilas, CancellationToken cancellationToken)
         {
-            var dependencyCacheKeys = new HashSet<string>();
+            var contactIds = testimonilas.Select(contact => contact.SystemFields.ContentItemID);
+            var dependencyCacheKeys = (await linkedItemsDependencyRetriever.Get(contactIds, 1, cancellationToken))
+                .ToHashSet(StringComparer.InvariantCultureIgnoreCase);
+            dependencyCacheKeys.Add(CacheHelper.BuildCacheItemName(new[] { "contentitem", "bycontenttype", Contact.CONTENT_TYPE_NAME }, false));
 
-            var contact = contacts.FirstOrDefault();
-
-            if (contact != null)
-            {
-                dependencyCacheKeys.Add(CacheHelper.BuildCacheItemName(new[] { "contentitem", "byid", contact.SystemFields.ContentItemID.ToString() }, false));
-            }
-
-            return Task.FromResult<ISet<string>>(dependencyCacheKeys);
+            return dependencyCacheKeys;
         }
     }
 }

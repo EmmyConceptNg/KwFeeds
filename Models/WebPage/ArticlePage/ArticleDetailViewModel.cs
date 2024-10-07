@@ -7,7 +7,7 @@ using CMS.Websites;
 
 namespace DancingGoat.Models
 {
-    public record ArticleDetailViewModel(string Title, string TeaserUrl, string Summary, string Text, DateTime PublicationDate, Guid Guid, bool IsSecured, string Url, IEnumerable<RelatedArticleViewModel> RelatedArticles)
+    public record ArticleDetailViewModel(string Title, string TeaserUrl, string Summary, string Text,  Guid Guid, bool IsSecured, string Url)
         : IWebPageBasedViewModel
     {
         /// <inheritdoc/>
@@ -15,36 +15,26 @@ namespace DancingGoat.Models
 
 
         /// <summary>
-        /// Validates and maps <see cref="ArticlePage"/> to a <see cref="ArticleDetailViewModel"/>.
+        /// Validates and maps <see cref="AboutPage"/> to a <see cref="ArticleDetailViewModel"/>.
         /// </summary>
-        public static async Task<ArticleDetailViewModel> GetViewModel(ArticlePage articlePage, string languageName, ArticlePageRepository articlePageRepository, IWebPageUrlRetriever urlRetriever)
+        public static async Task<ArticleDetailViewModel> GetViewModel(AboutPage aboutPage, string languageName, ArticlePageRepository articlePageRepository, IWebPageUrlRetriever urlRetriever)
         {
-            var teaser = articlePage.ArticlePageTeaser.FirstOrDefault();
+            var teaser = aboutPage.ArticlePageTeaser.FirstOrDefault();
 
-            var relatedArticles = await articlePageRepository
-                .GetArticles(articlePage.ArticleRelatedArticles.Select(article => article.WebPageGuid).ToList(), languageName);
+          
 
-            var relatedArticlesViewModels = new List<RelatedArticleViewModel>();
-
-            foreach (var relatedArticle in relatedArticles)
-            {
-                relatedArticlesViewModels.Add(await RelatedArticleViewModel.GetViewModel(relatedArticle, urlRetriever, languageName));
-            }
-
-            var url = await urlRetriever.Retrieve(articlePage, languageName);
+            var url = await urlRetriever.Retrieve(aboutPage, languageName);
 
             return new ArticleDetailViewModel(
-                articlePage.ArticleTitle,
+                aboutPage.ArticleTitle,
                 teaser?.ImageFile.Url,
-                articlePage.ArticlePageSummary,
-                articlePage.ArticlePageText,
-                articlePage.ArticlePagePublishDate,
-                articlePage.SystemFields.ContentItemGUID,
-                articlePage.SystemFields.ContentItemIsSecured,
-                url.RelativePath,
-                relatedArticlesViewModels)
+                aboutPage.ArticlePageSummary,
+                aboutPage.ArticlePageText,
+                aboutPage.SystemFields.ContentItemGUID,
+                aboutPage.SystemFields.ContentItemIsSecured,
+                url.RelativePath)
             {
-                WebPage = articlePage
+                WebPage = aboutPage
             };
         }
     }

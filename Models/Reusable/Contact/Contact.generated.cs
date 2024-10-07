@@ -35,44 +35,27 @@ namespace DancingGoat.Models
 
 
 		/// <summary>
-		/// ContactName.
+		/// TeamTitle.
 		/// </summary>
+		public string LocationName { get; set; }
+
+
+		/// <summary>
+		/// TeamHeroBannerImage.
+		/// </summary>
+		public IEnumerable<Image> Image { get; set; }
+
+
+		/// <summary>
+		/// TeamPromoText.
+		/// </summary>
+		public string About { get; set; }
 		public string ContactName { get; set; }
+		public string Address { get; set; }
+		public string Phone { get; set; }
+		public string Email { get; set; }
+		public string Title { get; set; }
 
 
-		/// <summary>
-		/// ContactStreet.
-		/// </summary>
-		public string ContactStreet { get; set; }
-
-
-		/// <summary>
-		/// ContactCity.
-		/// </summary>
-		public string ContactCity { get; set; }
-
-
-		/// <summary>
-		/// ContactCountry.
-		/// </summary>
-		public string ContactCountry { get; set; }
-
-
-		/// <summary>
-		/// ContactZipCode.
-		/// </summary>
-		public string ContactZipCode { get; set; }
-
-
-		/// <summary>
-		/// ContactPhone.
-		/// </summary>
-		public string ContactPhone { get; set; }
-
-
-		/// <summary>
-		/// ContactEmail.
-		/// </summary>
-		public string ContactEmail { get; set; }
 	}
 }

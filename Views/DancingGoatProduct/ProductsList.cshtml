@@ -2,17 +2,32 @@
 
 @model IEnumerable<ProductListItemViewModel>
 
+<div class="product-list">
 @if (Model.Any())
 {
-    foreach (var product in Model)
+    
+   <ul>
+     @foreach (var product in Model)
     {
-        <!-- 3 products on row for large screen -->
-        <div class="col-md-6 col-lg-4">
+        
             @Html.DisplayFor(m => product, "ProductListItem")
-        </div>
+        
+
+
     }
+   </ul>
+    <div class="pagination">
+                <p>SHOWING @Model.Count()/@Model.Count() Products</p>
+                <a href="single-product.html" target="" role="button">Show More</a>
+            </div>
 }
 else
 {
     <span class="ContentLabel">@HtmlLocalizer["No matching products."]</span>
 }
+
+
+
+ 
+                    
+                      

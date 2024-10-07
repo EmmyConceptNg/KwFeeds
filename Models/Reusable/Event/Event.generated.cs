@@ -61,6 +61,6 @@ namespace DancingGoat.Models
 		/// <summary>
 		/// EventCafe.
 		/// </summary>
-		public IEnumerable<Cafe> EventCafe { get; set; }
+		public IEnumerable<Products> EventCafe { get; set; }
 	}
 }

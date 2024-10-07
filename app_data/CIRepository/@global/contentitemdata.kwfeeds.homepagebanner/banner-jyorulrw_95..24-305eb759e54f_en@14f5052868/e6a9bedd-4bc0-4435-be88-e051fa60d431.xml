@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kwfeeds.homepagebanner>
+  <button_text>Learn more</button_text>
+  <ContentItemDataCommonDataID>
+    <GUID>95580872-5c77-401f-9324-305eb759e54f</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Banner-jyorulrw</CodeName>
+      <GUID>bae51fde-d422-4518-bcfe-864d66fe7e02</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>e6a9bedd-4bc0-4435-be88-e051fa60d431</ContentItemDataGUID>
+  <tag>MORE THAN FEED</tag>
+  <title>
+    <![CDATA[<p>feeds</p>]]>
+  </title>
+</contentitemdata.kwfeeds.homepagebanner>

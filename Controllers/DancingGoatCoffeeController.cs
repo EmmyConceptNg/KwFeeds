@@ -11,11 +11,11 @@ using DancingGoat;
 using DancingGoat.Controllers;
 using DancingGoat.Models;
 
-[assembly: RegisterWebPageRoute(CoffeePage.CONTENT_TYPE_NAME, typeof(DancingGoatCoffeeController), WebsiteChannelNames = new[] { DancingGoatConstants.WEBSITE_CHANNEL_NAME }, ActionName = nameof(DancingGoatCoffeeController.Detail))]
+[assembly: RegisterWebPageRoute(SingleProductPage.CONTENT_TYPE_NAME, typeof(DancingGoatSingleProductController), WebsiteChannelNames = new[] { DancingGoatConstants.WEBSITE_CHANNEL_NAME }, ActionName = nameof(DancingGoatSingleProductController.Detail))]
 
 namespace DancingGoat.Controllers
 {
-    public class DancingGoatCoffeeController : Controller
+    public class DancingGoatSingleProductController : Controller
     {
         private readonly ProductPageRepository productPageRepository;
         private readonly IWebPageDataContextRetriever webPageDataContextRetriever;
@@ -23,7 +23,7 @@ namespace DancingGoat.Controllers
         private readonly ITaxonomyRetriever taxonomyRetriever;
 
 
-        public DancingGoatCoffeeController(ProductPageRepository productPageRepository, 
+        public DancingGoatSingleProductController(ProductPageRepository productPageRepository, 
             IWebPageDataContextRetriever webPageDataContextRetriever, 
             IPreferredLanguageRetriever currentLanguageRetriever,
             ITaxonomyRetriever taxonomyRetriever)
@@ -40,9 +40,9 @@ namespace DancingGoat.Controllers
             var languageName = currentLanguageRetriever.Get();
             var webPageItemId = webPageDataContextRetriever.Retrieve().WebPage.WebPageItemID;
 
-            var coffee = await productPageRepository.GetProduct<CoffeePage>(CoffeePage.CONTENT_TYPE_NAME, webPageItemId, languageName, cancellationToken: HttpContext.RequestAborted);
+            var singleProduct = await productPageRepository.GetProduct<SingleProductPage>(SingleProductPage.CONTENT_TYPE_NAME, webPageItemId, languageName, cancellationToken: HttpContext.RequestAborted);
 
-            return View(await CoffeeDetailViewModel.GetViewModel(coffee, languageName, taxonomyRetriever));
+            return View(await SingleProductDetailViewModel.GetViewModel(singleProduct, languageName, taxonomyRetriever));
         }
     }
 }

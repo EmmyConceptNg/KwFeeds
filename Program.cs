@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
-
 using DancingGoat;
 using DancingGoat.Models;
-
 using Kentico.Activities.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.Membership;
 using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -19,9 +16,16 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
+// Add Kentico services
 builder.Services.AddKentico(features =>
 {
     features.UsePageBuilder(new PageBuilderOptions
@@ -32,7 +36,8 @@ builder.Services.AddKentico(features =>
         {
             LandingPage.CONTENT_TYPE_NAME,
             ContactsPage.CONTENT_TYPE_NAME,
-            ArticlePage.CONTENT_TYPE_NAME,
+            TechnologyPage.CONTENT_TYPE_NAME,
+            AboutPage.CONTENT_TYPE_NAME,
             HomePage.CONTENT_TYPE_NAME
         }
     });
@@ -59,7 +64,7 @@ ConfigureMembershipServices(builder.Services);
 
 var app = builder.Build();
 
-// Initialize Kentico
+// Initialize Kentico before setting up middleware
 app.InitKentico();
 
 // Use Kentico middleware
@@ -94,7 +99,6 @@ static void ConfigureMembershipServices(IServiceCollection services)
         options.Password.RequireUppercase = false;
         options.Password.RequireLowercase = false;
         options.Password.RequiredUniqueChars = 0;
-        // Ensures, that disabled member cannot sign in.
         options.SignIn.RequireConfirmedAccount = true;
     })
     .AddUserStore<ApplicationUserStore<ApplicationUser>>()

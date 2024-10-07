@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-
+using CMS.Websites;
 using DancingGoat;
 using DancingGoat.Controllers;
 using DancingGoat.Models;
@@ -15,23 +15,35 @@ namespace DancingGoat.Controllers
 {
     public class DancingGoatHomeController : Controller
     {
-        private readonly HomePageRepository homePageRepository;
-        private readonly IWebPageDataContextRetriever webPageDataContextRetriever;
+        private readonly HomePageRepository _homePageRepository;
+        private readonly ProductPageRepository _productPageRepository;
+        private readonly IWebPageUrlRetriever _urlRetriever;
+        private readonly IWebPageDataContextRetriever _webPageDataContextRetriever;
 
-        public DancingGoatHomeController(HomePageRepository homePageRepository, IWebPageDataContextRetriever webPageDataContextRetriever)
+        public DancingGoatHomeController(
+            HomePageRepository homePageRepository,
+            ProductPageRepository productPageRepository,
+            IWebPageUrlRetriever urlRetriever,
+            IWebPageDataContextRetriever webPageDataContextRetriever)
         {
-            this.homePageRepository = homePageRepository;
-            this.webPageDataContextRetriever = webPageDataContextRetriever;
+            _homePageRepository = homePageRepository;
+            _productPageRepository = productPageRepository;
+            _urlRetriever = urlRetriever;
+            _webPageDataContextRetriever = webPageDataContextRetriever;
         }
-
 
         public async Task<IActionResult> Index()
         {
-            var webPage = webPageDataContextRetriever.Retrieve().WebPage;
+            var webPage = _webPageDataContextRetriever.Retrieve().WebPage;
 
-            var homePage = await homePageRepository.GetHomePage(webPage.WebPageItemID, webPage.LanguageName, HttpContext.RequestAborted);
+            var homePage = await _homePageRepository.GetHomePage(webPage.WebPageItemID, webPage.LanguageName, HttpContext.RequestAborted);
+            if (homePage == null)
+            {
+                return NotFound();
+            }
 
-            return View(HomePageViewModel.GetViewModel(homePage));
+            var viewModel = await HomePageViewModel.GetViewModel(homePage, _urlRetriever, webPage.LanguageName, _productPageRepository);
+            return View(viewModel);
         }
     }
 }

@@ -1,0 +1,32 @@
+﻿@using DancingGoat.Models
+@model IEnumerable<FeedCastListItemViewModel>
+
+
+@if (Model.Any())
+{
+    
+    <ul class="items-list">
+     @foreach (var feedcast in Model)
+    {
+        
+            @Html.DisplayFor(m => feedcast, "FeedCastListItem")
+        
+
+
+    }
+   </ul>
+    <div class="pagination">
+    <p>SHOWING 15/40 FEEDCAST</p>
+    <a href="#" target="" role="button">Show More</a>
+</div>
+}
+else
+{
+    <span class="ContentLabel">@HtmlLocalizer["No matching feedcasts."]</span>
+}
+
+
+
+ 
+                    
+                      

@@ -1,0 +1,19 @@
+﻿@using DancingGoat.Models
+
+@model NewsListItemViewModel
+
+<li>
+    <a href="@Model.Url">
+        <div class=" featured-img">
+            <figure>
+                @if (!string.IsNullOrEmpty(Model.ImagePath))
+                {
+                    <img src="@Model.ImagePath" alt="@Model.Name" title="@Model.Name">
+                }
+            </figure>
+            <img class="pin" src="~/Content/Images/pin.png">
+        </div>
+        <h3>@Model.Name</h3>
+        <p>@Model.ShortDescription.</p>
+    </a>
+</li>

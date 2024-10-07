@@ -8,9 +8,32 @@
     }
 }
 
-<section class="banner-section" @Html.Raw(styleAttribute)>
+@* <section class="banner-section" @Html.Raw(styleAttribute)>
     <h2 class="banner-heading">@Model.HeaderText</h2>
     <div class="banner-text">
         @Model.Text
+    </div>
+</section> *@
+
+
+<section class="intro-block">
+    <div class="slider auto-scroll">
+        <input type="radio" name="slider_header" id="slide-0" checked>
+        <input type="radio" name="slider_header" id="slide-1">
+        <input type="radio" name="slider_header" id="slide-2">
+        <ul>
+            <li>
+                <video class="background" src="~/Content/Images/KW-hero-image.mp4" playsinline="" muted="" autoplay="" loop=""
+                    poster=""></video>
+                <div class="content">
+                    <p>@Model.HeaderText</p>
+                    <h2> @Model.Text</h2>
+                    <div class="actions">
+                        <a href="/products" target="" role="button">Find out
+                            more</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </section>

@@ -1,0 +1,23 @@
+﻿@using DancingGoat.Models
+
+@model IEnumerable<NewsListItemViewModel>
+
+
+@if (Model.Any())
+{
+
+    <ul class="items-list">
+    @foreach (var news in Model)
+        {
+            @Html.DisplayFor(m => news, "NewsListItem")
+        }
+    </ul>
+    <div class="pagination">
+    <p>SHOWING @Model.Count()/@Model.Count() News</p>
+    <a href="/news" target="" role="button">Show More</a>
+</div>
+}
+else
+{
+    <span class="ContentLabel">@HtmlLocalizer["No matching news."]</span>
+}

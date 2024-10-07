@@ -33,23 +33,5 @@ namespace KwFeeds
 		/// </summary>
 		[SystemField]
 		public WebPageFields SystemFields { get; set; }
-
-
-		/// <summary>
-		/// title.
-		/// </summary>
-		public string title { get; set; }
-
-
-		/// <summary>
-		/// Sections.
-		/// </summary>
-		public IEnumerable<About> Sections { get; set; }
-
-
-		/// <summary>
-		/// PageId.
-		/// </summary>
-		public Guid PageId { get; set; }
 	}
 }
